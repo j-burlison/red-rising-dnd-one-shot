@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="../../shared/dm-gate.js"></script>
+<title>NPCs &amp; Monsters — Benediction of Dis (DM)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#0B0C0F;
+  --panel:#14161B;
+  --panel-2:#0F1013;
+  --hair:#2A2D34;
+  --bone:#E9E4D8;
+  --muted:#8B8F98;
+  --gold:#D4AF37;
+  --dm:#C1502E;
+  --purple:#A855F7;
+  --blue:#5FB3D9;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:radial-gradient(ellipse at 50% 0%, #1a1c22 0%, var(--ink) 60%);
+  font-family:'Inter',sans-serif;
+  color:var(--bone);
+  padding:50px 20px 90px;
+}
+.wrap{ max-width:800px; margin:0 auto; }
+.dm-tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--dm);
+  border:1px solid var(--dm);
+  border-radius:3px;
+  padding:3px 10px;
+  display:table;
+  margin:0 auto 18px;
+}
+h1{
+  font-family:'Cinzel',serif;
+  font-weight:900;
+  font-size:36px;
+  letter-spacing:2px;
+  text-align:center;
+  color:var(--gold);
+  margin:0 0 40px;
+  text-shadow:0 0 24px rgba(212,175,55,0.3);
+}
+h2{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:20px;
+  letter-spacing:1px;
+  color:var(--gold);
+  margin:46px 0 14px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--hair);
+}
+p{
+  font-size:13.5px;
+  line-height:1.7;
+  color:var(--bone);
+  opacity:0.92;
+  margin:0 0 12px;
+}
+p b, li b{ color:var(--gold); }
+ul{ padding-left:20px; margin:0 0 14px; }
+li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
+.npc-card{
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--hair);
+  border-radius:8px;
+  padding:22px 26px;
+  margin-bottom:20px;
+}
+.npc-name{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:19px;
+  color:var(--gold);
+}
+.npc-meta{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.5px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+.callout{
+  background:rgba(193,80,46,0.06);
+  border:1px solid #5C2415;
+  border-radius:6px;
+  padding:12px 16px;
+  font-size:12.5px;
+  line-height:1.6;
+  margin:12px 0 0;
+  font-style:italic;
+}
+.callout b{ color:var(--dm); font-style:normal; }
+
+.statblock{
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--hair);
+  border-radius:8px;
+  padding:22px 26px;
+  margin-bottom:22px;
+}
+.statblock.devil{ border-color:#4C1D7A; }
+.sb-name{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:20px;
+  color:var(--gold);
+  margin-bottom:2px;
+}
+.statblock.devil .sb-name{ color:var(--purple); }
+.sb-type{
+  font-style:italic;
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+.sb-core{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  line-height:1.9;
+  color:var(--bone);
+  opacity:0.9;
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding:10px 0;
+  margin-bottom:12px;
+}
+.sb-core b{ color:var(--gold); }
+.statblock.devil .sb-core b{ color:var(--purple); }
+.sb-ability{
+  font-size:13px;
+  line-height:1.6;
+  margin-bottom:8px;
+}
+.sb-ability b{ font-family:'JetBrains Mono',monospace; font-weight:600; }
+
+.enc-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:14px;
+  margin:16px 0;
+}
+.enc-card{
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--hair);
+  border-radius:8px;
+  padding:16px 20px;
+}
+.enc-title{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:14px;
+  color:var(--gold);
+  margin-bottom:8px;
+}
+.enc-list{ font-size:12.5px; line-height:1.7; margin:0 0 8px; padding-left:18px; }
+.enc-note{ font-size:11.5px; font-style:italic; color:var(--muted); line-height:1.5; }
+
+nav.back{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:1px;
+  margin-bottom:10px;
+}
+nav.back a{ color:var(--muted); text-decoration:none; }
+nav.back a:hover{ color:var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="back"><a href="../index.html">&larr; DM Home</a></nav>
+  <div class="dm-tag">DM ONLY — NPC &amp; MONSTER REFERENCE</div>
+  <h1>NPCs &amp; MONSTERS</h1>
+
+  <p style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:var(--muted);">Naming convention: Golds carry House names ("au [House]" — e.g., <i>Servian au Ferrox</i>). All other Colors take their Color as a surname (e.g., <i>Ryn Gray</i>).</p>
+
+  <h2>NPCs</h2>
+
+  <div class="npc-card">
+    <div class="npc-name">Servian au Ferrox, Peerless Scarred</div>
+    <div class="npc-meta">Class: Paladin &nbsp;|&nbsp; Combat role: heavy melee, razor-wielder in Act 3, Bred to Command support</div>
+    <p>A Peerless Scarred commander, bred and trained since birth for exactly this kind of operation — decisive, controlled, and utterly convinced of the righteousness of the Society's order. Doesn't relish cruelty, which makes him scarier: every order he gives in Act 3, including "kill the Gray," is delivered with total calm, because to him it isn't murder, it's maintenance of the system that keeps the galaxy — and now the planes — from chaos. (Play him with a Cassius au Bellona-style cold composure: precise, unshaken, dangerous specifically because he never seems to struggle.)</p>
+    <ul>
+      <li><b>Personal stake:</b> knows the true objective from the start — the mission is to retrieve the Chimera Codex and bring the cross-color breeding pipeline fully "in house." He believes the book was meant to be destroyed, not exploited; he does not know the true scale of its use.</li>
+      <li><b>The cousin twist:</b> when the Logbook surfaces his cousin's House, Servian is genuinely surprised and disgusted — a real crack in his composure, one of the only moments his control visibly slips.</li>
+      <li><b>Roleplay hook:</b> clipped, formal command language even under pressure; never raises his voice</li>
+      <li><b>In Act 3:</b> draws a razor once the party's loyalty is in question — the "boss reveal" of the fight</li>
+    </ul>
+  </div>
+
+  <div class="npc-card">
+    <div class="npc-name">Ryn Gray, Rising Agent</div>
+    <div class="npc-meta">Class: Ranger &nbsp;|&nbsp; Combat role: skirmisher, razor-wielder in Act 3, leads the Rising/devil defense</div>
+    <p>Been running this troupe long enough that the Grays trust her instincts without question — which is exactly what let her quietly recruit and vet the party over the course of the mission without anyone noticing. Genuinely cares about the Grays under her command; the betrayal in Act 3 isn't cold calculation like the Gold's orders, it's personal. (Play her with a Holiday-style bluntness and loyalty — plainspoken, protective of her people over any chain of command, quietly formidable rather than showy about it.)</p>
+    <ul>
+      <li><b>Personal stake:</b> knows the true objective via Rising channels from the start; has likely been probing 1-2 PCs' loyalties since Act 1's ceremony scene</li>
+      <li><b>Roleplay hook:</b> talks to Grays and Obsidians alike as people rather than ranks — the contrast between her command style and Servian's is worth playing up throughout</li>
+      <li><b>In Act 3:</b> reveals the truth when the devil horde arrives, draws a razor of her own, makes it clear she's not asking the party to follow her — just choose</li>
+    </ul>
+  </div>
+
+  <div class="npc-card">
+    <div class="npc-name">Devil Patrol Leader</div>
+    <div class="npc-meta">Act 2, Library Guards &nbsp;|&nbsp; Suggested type: Bearded devil or similar mid-tier fiend, reskinned as Dis city watch</div>
+    <p>Not expecting a fight — this is a guard captain used to ally-status routine, not an invasion footing, which is exactly why the Act 2 encounter should read as "lighter than expected." Could have a brief, almost confused moment before combat (Insight-worthy) — they genuinely don't understand why Society forces are attacking.</p>
+  </div>
+
+  <div class="npc-card">
+    <div class="npc-name">Key Petitioners / Slaves</div>
+    <div class="npc-meta">Logbook context, Act 2 flavor</div>
+    <p>Non-combat NPCs encountered near the library or archive — souls or servants (mortal petitioners bound to Dis, or Society slaves brought along for labor) who can be a source of the moral wrinkle. Consider one who's overheard something about the Logbook and can point PCs toward it, or who simply reacts with fear/resignation when PCs appear.</p>
+  </div>
+
+  <h2>NPC Stat Blocks</h2>
+
+  <div class="statblock">
+    <div class="sb-name">Servian au Ferrox</div>
+    <div class="sb-type">Medium humanoid (Gold), lawful neutral — CR 6 (2,300 XP)</div>
+    <div class="sb-core">
+      <b>AC</b> 20 (Pulse Armor + Pulse Shield) &nbsp;|&nbsp; <b>HP</b> 130 (14d10+42) &nbsp;|&nbsp; <b>Speed</b> 30 ft.<br>
+      <b>STR</b> 20 (+5) &nbsp;<b>DEX</b> 12 (+1) &nbsp;<b>CON</b> 16 (+3) &nbsp;<b>INT</b> 13 (+1) &nbsp;<b>WIS</b> 14 (+2) &nbsp;<b>CHA</b> 18 (+4)<br>
+      <b>Saving Throws</b> Wis +5, Cha +7, Con +6 (Peerless Instinct)<br>
+      <b>Skills</b> Athletics +8, Insight +5, Persuasion +7<br>
+      <b>Damage Resistances</b> slashing from razors (Pulse Field)<br>
+      <b>Senses</b> passive Perception 12 &nbsp;|&nbsp; <b>Languages</b> Common, Infernal
+    </div>
+    <div class="sb-ability"><b>Bred to Command (3/Short Rest).</b> Grants an ally within 30 ft. advantage on its next attack roll, saving throw, or ability check.</div>
+    <div class="sb-ability"><b>Aura of Protection.</b> Servian and allies within 10 ft. add +4 (Cha mod) to saving throws.</div>
+    <div class="sb-ability"><b>Lay on Hands.</b> Pool of 35 HP; action to restore HP to a touched creature, up to the pool's remaining total.</div>
+    <div class="sb-ability"><b>Peerless Reflexes (1/Day).</b> If Servian fails a save, he can choose to succeed instead.</div>
+    <div class="sb-ability"><b>Pulse Shield.</b> +2 AC (included above).</div>
+    <div class="sb-ability"><b>Multiattack.</b> Two razor attacks.</div>
+    <div class="sb-ability"><b>Razor.</b> +9 to hit, reach 5 ft. <i>Hit:</i> 1d8+5 slashing; ignores the target's armor AC bonus.</div>
+    <div class="sb-ability"><b>Divine Smite.</b> On a razor hit, expend a spell slot for +2d8 radiant (+1d8 per slot level above 1st).</div>
+    <div class="sb-ability"><b>Pulse Fist (3/Short Rest, Bonus Action).</b> 15-ft. cone; DC 15 Dex save or 2d6 force + pushed 10 ft. (half damage, no push on success).</div>
+    <div class="sb-ability"><b>Gravity Boots.</b> Functions as <i>Boots of Flying</i> in the Zero-G Corridor. 2 charges, recharge on long rest.</div>
+    <div class="callout"><b>DM Note:</b> consider having Servian's gravity boots run out of charges or take damage during the Act 1 corridor fight — disabling them mid-encounter. The damaged boots can carry forward as flavor into Act 3 without further mechanical effect (Act 3 has normal gravity).</div>
+  </div>
+
+  <div class="statblock">
+    <div class="sb-name">Ryn Gray</div>
+    <div class="sb-type">Medium humanoid (Gray), chaotic good — CR 6 (2,300 XP)</div>
+    <div class="sb-core">
+      <b>AC</b> 16 (Duro-Steel Medium + Dex) &nbsp;|&nbsp; <b>HP</b> 85 (14d8+14) &nbsp;|&nbsp; <b>Speed</b> 35 ft.<br>
+      <b>STR</b> 12 (+1) &nbsp;<b>DEX</b> 18 (+4) &nbsp;<b>CON</b> 14 (+2) &nbsp;<b>INT</b> 12 (+1) &nbsp;<b>WIS</b> 16 (+3) &nbsp;<b>CHA</b> 12 (+1)<br>
+      <b>Saving Throws</b> Str +4, Dex +7<br>
+      <b>Skills</b> Perception +9, Stealth +7, Survival +9<br>
+      <b>Senses</b> passive Perception 19 &nbsp;|&nbsp; <b>Languages</b> Common
+    </div>
+    <div class="sb-ability"><b>Pack Tactics.</b> Advantage on an attack roll against a creature if an ally is within 5 ft. of it and isn't incapacitated.</div>
+    <div class="sb-ability"><b>Tracker's Eye.</b> Advantage on Survival checks to track creatures.</div>
+    <div class="sb-ability"><b>Fleet-Footed.</b> +2 initiative.</div>
+    <div class="sb-ability"><b>Hunter's Mark (1/Short Rest, no slot).</b> Bonus action, mark a creature within 90 ft.; weapon attacks against it deal +1d6.</div>
+    <div class="sb-ability"><b>Multiattack.</b> Two attacks — Pulse Blade, Razor, longbow, or a combination.</div>
+    <div class="sb-ability"><b>Pulse Blade (longsword).</b> +8 to hit, reach 5 ft. <i>Hit:</i> 1d8+4 slashing (1d10+4 two-handed). Her visible "legal" weapon until the reveal.</div>
+    <div class="sb-ability"><b>Razor (Act 3 Reveal).</b> +8 to hit, reach 5 ft. <i>Hit:</i> 1d8+4 slashing; ignores the target's armor AC bonus. <i>Hold this back until Ryn's betrayal is revealed.</i></div>
+    <div class="sb-ability"><b>Longbow.</b> +8 to hit, range 150/600 ft. <i>Hit:</i> 1d8+4 piercing.</div>
+    <div class="sb-ability"><b>Pulse Grenade (3, thrown, Action).</b> 15-ft. radius; DC 15 Dex save or 3d8 force (half on success).</div>
+    <div class="callout">Both statted for a level-5 party facing level-7-equivalent NPCs; adjust HP down slightly if the party fights both simultaneously without splitting off against devils/each other.<br><br><b>DM Note — Weakening Servian before Act 3:</b> have him personally engage the Act 2 library guards — spend a Lay on Hands charge, use Pulse Fist once or twice, or take a smite on a guard. He should walk into Act 3 visibly capable but not at full resources.</div>
+  </div>
+
+  <h2>Monster Stat Blocks</h2>
+  <p>Original homebrew devils, styled for Dis's iron-and-ash aesthetic. Three tiers scale from disposable fodder to squad leader.</p>
+
+  <div class="statblock devil">
+    <div class="sb-name">Ash-Bound Wretch</div>
+    <div class="sb-type">Small fiend, CR 1/8 (25 XP) — fodder</div>
+    <div class="sb-core">
+      <b>AC</b> 11 &nbsp;|&nbsp; <b>HP</b> 11 (2d8+2) &nbsp;|&nbsp; <b>Speed</b> 20 ft.<br>
+      <b>STR</b> 10 (+0) &nbsp;<b>DEX</b> 11 (+0) &nbsp;<b>CON</b> 12 (+1) &nbsp;<b>INT</b> 3 (-4) &nbsp;<b>WIS</b> 8 (-1) &nbsp;<b>CHA</b> 3 (-4)<br>
+      <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> fire, poison<br>
+      <b>Senses</b> darkvision 60 ft., passive Perception 9 &nbsp;|&nbsp; <b>Languages</b> understands Infernal, can't speak
+    </div>
+    <div class="sb-ability"><b>Claw.</b> +2 to hit, reach 5 ft. <i>Hit:</i> 1d4 slashing.</div>
+    <div class="callout">Swarm in numbers — deploy in packs of 3-6 as filler threats around a stronger devil.</div>
+  </div>
+
+  <div class="statblock devil">
+    <div class="sb-name">Barbtail Skirmisher</div>
+    <div class="sb-type">Small fiend, CR 2 (450 XP) — mid-tier, ranged/flying harasser</div>
+    <div class="sb-core">
+      <b>AC</b> 14 (natural armor) &nbsp;|&nbsp; <b>HP</b> 33 (6d6+12) &nbsp;|&nbsp; <b>Speed</b> 20 ft., fly 40 ft.<br>
+      <b>STR</b> 14 (+2) &nbsp;<b>DEX</b> 15 (+2) &nbsp;<b>CON</b> 14 (+2) &nbsp;<b>INT</b> 6 (-2) &nbsp;<b>WIS</b> 12 (+1) &nbsp;<b>CHA</b> 8 (-1)<br>
+      <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> poison<br>
+      <b>Senses</b> darkvision 60 ft., passive Perception 11 &nbsp;|&nbsp; <b>Languages</b> understands Infernal, can't speak
+    </div>
+    <div class="sb-ability"><b>Multiattack.</b> Two claw attacks, or one claw and one tail spike.</div>
+    <div class="sb-ability"><b>Claw.</b> +4 to hit, reach 5 ft. <i>Hit:</i> 1d4+2 slashing.</div>
+    <div class="sb-ability"><b>Tail Spike.</b> +4 to hit, range 20/80 ft. <i>Hit:</i> 1d4+2 piercing.</div>
+  </div>
+
+  <div class="statblock devil">
+    <div class="sb-name">Iron Ward Enforcer</div>
+    <div class="sb-type">Medium fiend, CR 3 (700 XP) — squad leader</div>
+    <div class="sb-core">
+      <b>AC</b> 15 (natural armor) &nbsp;|&nbsp; <b>HP</b> 55 (10d8+10) &nbsp;|&nbsp; <b>Speed</b> 30 ft.<br>
+      <b>STR</b> 16 (+3) &nbsp;<b>DEX</b> 14 (+2) &nbsp;<b>CON</b> 15 (+2) &nbsp;<b>INT</b> 9 (-1) &nbsp;<b>WIS</b> 11 (+0) &nbsp;<b>CHA</b> 12 (+1)<br>
+      <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> poison<br>
+      <b>Senses</b> darkvision 60 ft., passive Perception 10 &nbsp;|&nbsp; <b>Languages</b> Infernal
+    </div>
+    <div class="sb-ability"><b>Multiattack.</b> Two glaive attacks.</div>
+    <div class="sb-ability"><b>Glaive.</b> +5 to hit, reach 10 ft. <i>Hit:</i> 1d10+3 slashing, and DC 12 Con save or 1d6 poison from the barbed edge.</div>
+    <div class="sb-ability"><b>Rally Cry (Recharge 5-6).</b> Up to 3 Ash-Bound Wretches/Barbtail Skirmishers within 30 ft. that can hear it gain advantage on their next attack roll before the end of their next turn.</div>
+  </div>
+
+  <h2>Encounter Compositions</h2>
+  <div class="enc-grid">
+    <div class="enc-card">
+      <div class="enc-title">Act 1 — Ship-Boarding Party</div>
+      <ul class="enc-list">
+        <li>4x Ash-Bound Wretch</li>
+        <li>2x Barbtail Skirmisher</li>
+        <li>1x Iron Ward Enforcer</li>
+      </ul>
+      <div class="enc-note">Deploy in waves, not all at once — stagger devils in small groups as the party moves through the corridor.</div>
+    </div>
+    <div class="enc-card">
+      <div class="enc-title">Act 2 — Library Guards</div>
+      <ul class="enc-list">
+        <li>2x Barbtail Skirmisher</li>
+        <li>2x Ash-Bound Wretch</li>
+      </ul>
+      <div class="enc-note">Deliberately undertuned, no Enforcer — sells the "ally, not warzone" reframe. Consider hesitation/questions before combat breaks out.</div>
+    </div>
+    <div class="enc-card">
+      <div class="enc-title">Act 3 — Final Horde</div>
+      <ul class="enc-list">
+        <li>3x Ash-Bound Wretch</li>
+        <li>3x Barbtail Skirmisher</li>
+        <li>2x Iron Ward Enforcer</li>
+      </ul>
+      <div class="enc-note">Scale live depending on how the party splits between Servian and Ryn. If siding with Ryn, consider 1-2 Skirmishers fighting alongside the party against Servian.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

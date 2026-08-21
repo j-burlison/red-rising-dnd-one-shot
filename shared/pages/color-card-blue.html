@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Color Card — Blue</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#0B0C0F;
+  --panel:#14161B;
+  --panel-2:#0F1013;
+  --hair:#2A2D34;
+  --bone:#E9E4D8;
+  --muted:#8B8F98;
+  --accent:#5FB3D9;
+  --accent-dim:#1F4A5C;
+  --accent-glow: rgba(95,179,217,0.32);
+}
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+    radial-gradient(ellipse at 50% 0%, #1a1c22 0%, var(--ink) 60%);
+  font-family:'Inter',sans-serif;
+  padding:40px 20px;
+}
+.card{
+  position:relative;
+  width:420px;
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--accent-dim);
+  border-radius:8px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.03),
+    0 40px 80px rgba(0,0,0,0.65),
+    inset 0 0 60px rgba(95,179,217,0.04);
+  padding:26px 28px 24px;
+  overflow:hidden;
+}
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px);
+  pointer-events:none;
+}
+.pip{
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:2px;
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:1px;
+  color:var(--accent);
+}
+.pip-tl{top:16px; left:18px;}
+.pip-br{bottom:16px; right:18px; transform:rotate(180deg);}
+.pip small{
+  font-family:'JetBrains Mono',monospace;
+  font-size:8px;
+  color:var(--muted);
+  letter-spacing:0.5px;
+  font-weight:400;
+}
+.eyebrow{
+  text-align:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:2.5px;
+  color:var(--muted);
+  margin:2px 0 14px;
+  text-transform:uppercase;
+}
+.rule{
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--accent-dim) 20%, var(--accent-dim) 80%, transparent);
+  margin:16px 0;
+}
+.sigil-wrap{
+  display:flex;
+  justify-content:center;
+  margin:10px 0 12px;
+}
+.sigil{
+  color:var(--accent);
+  filter:drop-shadow(0 0 10px var(--accent-glow));
+}
+.title{
+  text-align:center;
+  font-family:'Cinzel',serif;
+  font-weight:900;
+  font-size:40px;
+  letter-spacing:4px;
+  color:var(--accent);
+  margin:4px 0 6px;
+  text-shadow:0 0 24px var(--accent-glow);
+}
+.tagline{
+  text-align:center;
+  font-style:italic;
+  font-size:13px;
+  color:var(--bone);
+  opacity:0.8;
+  margin:0 8px 4px;
+  line-height:1.5;
+}
+.lore{
+  font-size:14px;
+  line-height:1.7;
+  color:var(--bone);
+  opacity:0.92;
+  margin:0;
+}
+.note{
+  margin-top:20px;
+  text-align:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  letter-spacing:1px;
+  color:var(--muted);
+  font-style:italic;
+}
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:18px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:9px;
+  letter-spacing:1.5px;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.footer .tag{
+  color:var(--accent);
+  border:1px solid var(--accent-dim);
+  border-radius:3px;
+  padding:3px 7px;
+}
+.portrait{
+  display:block;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border:1px solid var(--accent-dim);
+  border-radius:4px;
+  margin-bottom:14px;
+  filter:grayscale(30%) contrast(1.08) brightness(0.88);
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="pip pip-tl">BL<small>BLUE</small></div>
+  <div class="pip pip-br">BL<small>BLUE</small></div>
+
+  <div class="eyebrow">The Society — Caste Dossier</div>
+
+  <img class="portrait" src="https://cdnb.artstation.com/p/assets/images/images/007/914/293/large/lazar-kacarevic-lazar-kacarevic-space-pilot-2.jpg" alt="Blue reference">
+
+  <div class="sigil-wrap">
+    <svg class="sigil" width="108" height="108" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.3">
+      <circle cx="50" cy="50" r="36" stroke-width="0.7" opacity="0.5"/>
+      <circle cx="50" cy="50" r="24" stroke-width="0.9" opacity="0.75"/>
+      <line x1="50" y1="14" x2="50" y2="86" stroke-width="0.6" opacity="0.5"/>
+      <line x1="14" y1="50" x2="86" y2="50" stroke-width="0.6" opacity="0.5"/>
+      <path d="M 50 50 L 68 30" stroke-width="1.6"/>
+      <circle cx="68" cy="30" r="2.6" fill="currentColor" stroke="none"/>
+      <circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/>
+    </svg>
+  </div>
+
+  <div class="title">BLUE</div>
+  <div class="tagline">"They see the paths between worlds that no one else can chart."</div>
+
+  <div class="rule"></div>
+
+  <p class="lore">Blues are the navigators and pilots of the Society's fleets, bred with an uncanny spatial and mathematical sense — able to plot courses through the void, and now, through the planar rifts between realms. Rarely seen outside a ship's helm, a Blue on the ground is a Blue far from home.</p>
+
+  <div class="note">NPC / Flavor Caste</div>
+
+  <div class="footer">
+    <span>Not a player option — this one-shot</span>
+    <span class="tag">Fleet-Bound</span>
+  </div>
+</div>
+</body>
+</html>

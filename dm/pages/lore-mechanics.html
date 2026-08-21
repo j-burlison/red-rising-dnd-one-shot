@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="../../shared/dm-gate.js"></script>
+<title>Lore &amp; Mechanics — Benediction of Dis (DM)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#0B0C0F;
+  --panel:#14161B;
+  --panel-2:#0F1013;
+  --hair:#2A2D34;
+  --bone:#E9E4D8;
+  --muted:#8B8F98;
+  --gold:#D4AF37;
+  --dm:#C1502E;
+  --purple:#A855F7;
+  --blue:#5FB3D9;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:radial-gradient(ellipse at 50% 0%, #1a1c22 0%, var(--ink) 60%);
+  font-family:'Inter',sans-serif;
+  color:var(--bone);
+  padding:50px 20px 90px;
+}
+.wrap{ max-width:800px; margin:0 auto; }
+.dm-tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--dm);
+  border:1px solid var(--dm);
+  border-radius:3px;
+  padding:3px 10px;
+  display:table;
+  margin:0 auto 18px;
+}
+h1{
+  font-family:'Cinzel',serif;
+  font-weight:900;
+  font-size:36px;
+  letter-spacing:2px;
+  text-align:center;
+  color:var(--gold);
+  margin:0 0 40px;
+  text-shadow:0 0 24px rgba(212,175,55,0.3);
+}
+h2{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:20px;
+  letter-spacing:1px;
+  color:var(--gold);
+  margin:46px 0 14px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--hair);
+}
+h3{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--purple);
+  margin:22px 0 8px;
+}
+p{
+  font-size:13.5px;
+  line-height:1.7;
+  color:var(--bone);
+  opacity:0.92;
+  margin:0 0 12px;
+}
+ul{ padding-left:20px; margin:0 0 14px; }
+li{
+  font-size:13.5px;
+  line-height:1.65;
+  color:var(--bone);
+  opacity:0.92;
+  margin-bottom:8px;
+}
+li b, p b{ color:var(--gold); }
+.box{
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--hair);
+  border-radius:8px;
+  padding:20px 24px;
+  margin:14px 0 22px;
+}
+.box h3{ margin-top:0; }
+.tierbox{
+  border-left:3px solid var(--purple);
+  padding-left:16px;
+  margin:16px 0;
+}
+.tierbox.gray{ border-color:var(--blue); }
+.tierbox.gold-b{ border-color:var(--gold); }
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:12.5px;
+  margin:14px 0 24px;
+}
+th, td{
+  text-align:left;
+  padding:9px 12px;
+  border-bottom:1px solid var(--hair);
+}
+th{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+td.total{ color:var(--gold); font-weight:600; }
+tr.total-row td{ border-top:1px solid var(--accent-dim); font-weight:600; }
+.stat-item{
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--hair);
+  border-radius:8px;
+  padding:18px 22px;
+  margin-bottom:16px;
+}
+.stat-name{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:16px;
+  color:var(--gold);
+  margin-bottom:4px;
+}
+.stat-line{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  line-height:1.8;
+  color:var(--bone);
+  opacity:0.85;
+}
+.stat-line b{ color:var(--gold); }
+nav.back{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:1px;
+  margin-bottom:10px;
+}
+nav.back a{ color:var(--muted); text-decoration:none; }
+nav.back a:hover{ color:var(--gold); }
+.checklist{ list-style:none; padding:0; }
+.checklist li{ padding-left:22px; position:relative; }
+.checklist li::before{ content:"☐"; position:absolute; left:0; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="back"><a href="../index.html">&larr; DM Home</a></nav>
+  <div class="dm-tag">DM ONLY — RULES REFERENCE</div>
+  <h1>LORE &amp; MECHANICS</h1>
+
+  <h2>Oathbound Compulsion</h2>
+  <p>Every operative — Obsidian and Gray alike — bears two sigils implanted at birth, one on each hand, binding them to obey the direct spoken orders of a designated superior (in this one-shot, the Gold commander).</p>
+  <p><b>Trigger:</b> a PC takes an action that directly defies an order given by their bound superior.</p>
+  <div class="box">
+    <h3>Each PC can break the oath twice per encounter — one sigil per break</h3>
+    <ul>
+      <li><b>1st break (right-hand sigil):</b> 2d6 damage (Constitution save, DC 14, for half) + disadvantage on the next roll made immediately after</li>
+      <li><b>2nd break (left-hand sigil):</b> 2d6 damage (Constitution save, DC 14, for half) + disadvantage on the next roll + 1 level of exhaustion</li>
+      <li><b>After both sigils are broken:</b> the PC is fully free of the compulsion for the rest of the encounter — further orders have no mechanical effect on them</li>
+    </ul>
+  </div>
+  <p>The compulsion is passive and always active — it doesn't require an action to resist, it simply triggers the moment defiance occurs. Players should know their oath is watching before Act 3, ideally reinforced narratively in Act 1 (a beat where an Obsidian visibly can't act against an order, or flinches when tempted to). Consider narrating the sigils visibly cracking/burning out on each break for a strong table moment.</p>
+
+  <h2>Discovery Handout — The Logbook</h2>
+  <p><a href="handout-logbook.html" style="color:var(--purple);">Open the printable handout &rarr;</a></p>
+  <ul>
+    <li>Infernal-language ledger found near the Chimera Codex, recording every use: Color, date, requesting House, soul-cost paid to devil brokers</li>
+    <li>Entries show low Colors trading their own souls, and both low and high Colors trading the souls of their slaves</li>
+    <li>One entry ties to a Gold House sharing the strike team's Gold's family name — his cousin</li>
+    <li>Discoverable via Investigation/stealth or a social check (Deception/Insight) against a cagey archivist/guard</li>
+  </ul>
+
+  <h2>Caste-to-Class Mapping</h2>
+  <p>Caste is a social/legal tier, not a species restriction — any race can belong to any Color. Caste determines training, starting gear, and legal access to magic. <b>Only Gray and Obsidian are playable castes in this one-shot</b> — Gold is reserved for Servian as an NPC commander.</p>
+
+  <div class="tierbox gold-b">
+    <h3>Gold (NPC-only in this one-shot)</h3>
+    <p>Bred and trained to rule and command.</p>
+    <ul>
+      <li>Paladin (Oath of Conquest/Glory fits the Society's ethos well; a defecting Gold could flip to Oath of Redemption)</li>
+      <li>Fighter (Eldritch Knight) — battlefield commanders who blend martial and arcane</li>
+      <li>Bard (College of Eloquence) — political/administrative Golds</li>
+      <li>Wizard — the "Peerless Scarred" intellectual/strategist track</li>
+    </ul>
+  </div>
+
+  <div class="tierbox">
+    <h3>Obsidian</h3>
+    <p>Bred for war, raised for loyalty, bonded to a Gold house.</p>
+    <ul>
+      <li>Barbarian — raw frontline power, Rage as controlled savagery</li>
+      <li>Fighter (Battle Master or Champion) — disciplined shock troops</li>
+      <li><b>Sorcerer</b> — rare genetic anomaly, traced to illicit Gold-Obsidian bloodline mixing; the Society treats these as flaws or threats, not gifts</li>
+    </ul>
+    <p style="font-style:italic;">Thematic note: Obsidians are the most affected by the Oathbound sigils narratively — their whole upbringing is obedience, so breaking it should feel like the biggest personal violation at the table.</p>
+  </div>
+
+  <div class="tierbox gray">
+    <h3>Gray</h3>
+    <p>The Society's soldiers, police, and special forces.</p>
+    <ul>
+      <li>Rogue (Soldier or Inquisitive-flavored) — infiltration, small-unit tactics</li>
+      <li>Ranger — battlefield scouts, survivalists</li>
+      <li>Fighter — standard-issue soldiers</li>
+      <li><b>Warlock</b> — a quiet pact made with a devil broker; mirrors the exact crime the party investigates</li>
+    </ul>
+    <p style="font-style:italic;">Thematic note: Grays are trained to question and observe — which is exactly why the Rising agent is a Gray.</p>
+  </div>
+
+  <h2>Magic Access by Caste</h2>
+  <p>Magic in this setting is treated like Red Rising treats advanced technology and knowledge — access is a function of power, not talent.</p>
+  <ul>
+    <li><b>High Colors (Gold, and some Copper/Violet)</b> — legal access to "High Magic": formal arcane traditions, taught in Gold institutions, tightly regulated and recorded.</li>
+    <li><b>Obsidian</b> — magic is rare and typically granted, not learned; a Gold house may bind minor combat enchantments into an Obsidian's gear or body.</li>
+    <li><b>Gray</b> — limited legal access, mostly utility/field magic issued as Society-sanctioned tools rather than personally mastered traditions.</li>
+    <li><b>Lower Colors</b> — folk magic, hedge traditions, and black-market spells only; access to real arcane traditions is illegal.</li>
+  </ul>
+
+  <h2>Caste Traits (Racial-Style Templates)</h2>
+  <div class="tierbox">
+    <h3>Obsidian — bred for war, raised harsh</h3>
+    <ul>
+      <li>+2 Strength, +1 Constitution</li>
+      <li><b>Unbreaking:</b> advantage on saves vs. exhaustion; resistance to damage from extreme environments (cold, heat, falling)</li>
+      <li><b>Bred for the Line:</b> +1 to melee damage rolls, or advantage on Athletics checks to shove/grapple/climb</li>
+      <li><b>War Chant:</b> bonus action to begin; Concentration. While chanting, the Obsidian and allies within 15 ft. are immune to frightened. At the start of each of the Obsidian's turns, every "weak" creature (CR 1 or lower) within 30 ft. that can hear it must succeed a Wisdom save (DC 8 + prof + Con mod) or become frightened until the Obsidian's next turn</li>
+      <li>Counts as one size category larger for carrying capacity/grapple purposes</li>
+    </ul>
+  </div>
+  <div class="tierbox gray">
+    <h3>Gray — quick, tough, pack hunters</h3>
+    <ul>
+      <li>+2 Dexterity, +1 Constitution</li>
+      <li><b>Pack Tactics:</b> advantage on an attack roll against a creature if at least one other Gray/ally is within 5 ft of it</li>
+      <li><b>Tracker's Eye:</b> advantage on Survival checks to track; proficiency in Perception if not already proficient</li>
+      <li>+2 bonus to Initiative</li>
+    </ul>
+  </div>
+  <div class="tierbox gold-b">
+    <h3>Gold — good at everything, elite breeding</h3>
+    <ul>
+      <li>+1 to two ability scores of choice, +1 Intelligence</li>
+      <li><b>Bred to Command:</b> once per short rest, grant an ally within 30 ft advantage on their next attack roll, save, or check</li>
+      <li><b>Peerless Instinct:</b> proficiency in one saving throw of choice</li>
+    </ul>
+  </div>
+
+  <h2>Weapons &amp; Armor</h2>
+  <div class="stat-item">
+    <div class="stat-name">Razor</div>
+    <div class="stat-line">
+      Martial melee weapon, finesse, 1d8 slashing, light.<br>
+      <b>Ignores armor</b> — ignore the AC bonus from worn armor (shields/magic bonuses still apply).<br>
+      Requires attunement or a minimum Int/Dex to wield without penalty.<br>
+      <i>Natural 20: DM may rule a severed limb or disabled body part (flavor only).</i>
+    </div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-name">Whip Mode</div>
+    <div class="stat-line">
+      Free item interaction to toggle. Reach 10 ft., <b>1d6 slashing</b>, no longer light, still ignores armor.<br>
+      Instead of damage, a hit can attempt to disarm or trip at range using the attack roll.
+    </div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-name">Pulse Armor (Gold)</div>
+    <div class="stat-line">Heavy armor, equivalent to Plate (<b>base AC 18</b>). <b>Pulse Field:</b> resistance to slashing damage from razors specifically.</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-name">Duro-Steel Armor (everyone else)</div>
+    <div class="stat-line">Maps to standard armor types at equivalent AC. No special property — fully vulnerable to a razor's armor-ignoring cut.</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-name">Stem Injectors (universal)</div>
+    <div class="stat-line"><b>3 charges</b> per short rest. Bonus action. Each charge = Greater Healing Potion (4d4+4).</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-name">Gravity Boots (Gold)</div>
+    <div class="stat-line">Functions as <i>Boots of Flying</i> — flying speed = normal speed, ignores zero-G push-off/anchor rules. <b>2 charges</b>, recharge on long rest.</div>
+  </div>
+
+  <h2>Iron Rain / Drop Pod Mechanics</h2>
+  <p>Two pods launch during the hot/early Iron Rain (Act 1): <b>Pod 1</b> carries the Gold + Obsidian PCs; <b>Pod 2</b> carries the Gray Troupe Leader + Gray PCs. Both land in the same district of Dis but not adjacent.</p>
+  <ul>
+    <li><b>Landing hazard:</b> each PC makes a Dexterity save (DC 13) as their pod takes damage during the hot launch</li>
+    <li><b>Failure:</b> pod lands off-target and rough — 2d6 bludgeoning damage, PC lands slightly separated from pod-mate(s)</li>
+    <li><b>Success:</b> clean landing, no damage, group stays together</li>
+  </ul>
+
+  <h2>Zero-G Corridor (Act 1 escape puzzle)</h2>
+  <p><b>Setup:</b> both squads reach the corridor together. The ship shakes, hull gets cut into from outside, gravity fails. Roll initiative.</p>
+  <p><b>Round 1:</b> the leechcraft carves fully through the hull. Flying devils (Barbtail Skirmishers) pour through first, followed by the Iron Ward Enforcer.</p>
+  <p><b>Mid-fight escalation:</b> at a dramatic moment, the leechcraft tears free — a single round of vacuum pull with debris, not an ongoing hazard.</p>
+  <p><b>End condition:</b> enemy dead, shuttle bay door opens.</p>
+  <ul>
+    <li><b>Movement:</b> no walking in zero-G. Push off a surface (Strength (Athletics), DC 12) to drift your speed in a straight line until you hit something or reach an anchor.</li>
+    <li><b>Anchors:</b> fixed points placed like stepping stones through the corridor — these define the viable route.</li>
+    <li><b>Vacuum pull + debris (one round only):</b> Strength save (DC 13) or pulled toward the opening; Dexterity save (DC 12) or 1d6 bludgeoning from debris.</li>
+    <li><b>Recoil:</b> any weapon attack made while not braced against an anchor pushes the attacker 5 ft. directly away from their target after the attack resolves.</li>
+    <li><b>Enemies</b> aren't slowed by zero-G the way PCs are — let them move freely.</li>
+  </ul>
+  <p style="font-style:italic;">Caste traits matter here: Obsidians push off harder and resist the vacuum pull more easily (Strength); Grays thread debris and stick anchor grabs more reliably (Dexterity).</p>
+
+  <h2>Session Pacing / Time Budget</h2>
+  <p style="font-style:italic;">~4-hour baseline — treat these as minimums. Extra time can go into RP in Act 1/2, table banter, or a slower burn on the Logbook discovery.</p>
+  <table>
+    <tr><th>Segment</th><th>Time</th></tr>
+    <tr><td>Session open / setup</td><td>10 min</td></tr>
+    <tr><td>Act 1 — Benediction ceremony + RP</td><td>20 min</td></tr>
+    <tr><td>Act 1 — Combat (cargo hold &rarr; launch bay) + Iron Rain hazard</td><td>30–35 min</td></tr>
+    <tr><td>Act 2 — Landing/regroup scene</td><td>10–15 min</td></tr>
+    <tr><td>Act 2 — Library approach + Logbook discovery</td><td>20–25 min</td></tr>
+    <tr><td>Act 2 — Combat (library guards, lighter)</td><td>20 min</td></tr>
+    <tr><td>Act 3 — Gray's reveal + Gold's order (RP/tension)</td><td>10–15 min</td></tr>
+    <tr><td>Act 3 — Climax combat</td><td>40–45 min</td></tr>
+    <tr><td>Ending / wrap-up</td><td>10 min</td></tr>
+    <tr class="total-row"><td>Total (floor)</td><td class="total">~3.5–4 hrs</td></tr>
+  </table>
+
+  <h2>Dis/Dispater — Plane-Conquest Reframing</h2>
+  <ul>
+    <li><b>Dis is not conquered territory — it is a long-standing ally.</b> This one-shot's Iron Rain is not an occupation follow-up; it's the opening strike of a sudden, total betrayal.</li>
+    <li><b>The "too quiet" unease (Act 1):</b> Dis has no idea the invasion is coming.</li>
+    <li><b>Guards "lighter than expected" (Act 2):</b> Dis is staffed like an ally's city, not a warzone.</li>
+    <li><b>The Logbook:</b> the cross-color breeding deals were quiet, sanctioned-but-secret arrangements between two allied hierarchies. The Society now wants the pipeline fully "in house" — no longer trusting Dis, and eliminating the risk of exposure.</li>
+    <li>Thematically, <b>betrayal</b> is the throughline: the Society betrays Dis, the Gray Troupe Leader betrays the Society, and the PCs may betray their orders — all in the same session.</li>
+  </ul>
+
+  <h2>Open Items</h2>
+  <ul class="checklist">
+    <li>Star shells — mechanical writeup (cut from scope)</li>
+  </ul>
+</div>
+</body>
+</html>

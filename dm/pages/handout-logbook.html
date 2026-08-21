@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="../../shared/dm-gate.js"></script>
+<title>Handout — The Logbook</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=JetBrains+Mono:wght@400;500&family=Inter:ital@1&display=swap');
+
+:root{
+  --ink:#0B0C0F;
+  --page:#161310;
+  --page-2:#100E0C;
+  --hair:#3A3226;
+  --bone:#E3DCC8;
+  --muted:#8B8172;
+  --accent:#C1502E;
+  --accent-dim:#5C2415;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:radial-gradient(ellipse at 50% 0%, #1a1712 0%, var(--ink) 60%);
+  font-family:'Inter',sans-serif;
+  padding:40px 20px;
+}
+.page{
+  position:relative;
+  width:640px;
+  background:linear-gradient(180deg, var(--page) 0%, var(--page-2) 100%);
+  border:1px solid var(--hair);
+  border-radius:4px;
+  box-shadow:0 40px 90px rgba(0,0,0,0.7), inset 0 0 80px rgba(193,80,46,0.04);
+  padding:34px 36px 28px;
+}
+.page::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:repeating-linear-gradient(0deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 3px);
+  pointer-events:none;
+}
+.stamp{
+  position:absolute;
+  top:28px;
+  right:32px;
+  border:2px solid var(--accent);
+  color:var(--accent);
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  letter-spacing:1.5px;
+  padding:4px 8px;
+  transform:rotate(6deg);
+  opacity:0.85;
+}
+.eyebrow{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  letter-spacing:2.5px;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
+h1{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:28px;
+  letter-spacing:2px;
+  color:var(--bone);
+  margin:0 0 4px;
+}
+.desc{
+  font-style:italic;
+  font-size:12.5px;
+  color:var(--muted);
+  margin:0 0 22px;
+  line-height:1.6;
+  max-width:520px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+}
+thead th{
+  text-align:left;
+  color:var(--accent);
+  font-weight:500;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  font-size:9.5px;
+  padding:0 8px 8px 0;
+  border-bottom:1px solid var(--hair);
+}
+tbody td{
+  padding:10px 8px 10px 0;
+  color:var(--bone);
+  border-bottom:1px solid rgba(58,50,38,0.5);
+  vertical-align:top;
+  line-height:1.4;
+}
+tbody tr.flagged td{
+  color:var(--accent);
+}
+.notes{
+  font-size:9.5px;
+  color:var(--muted);
+  font-style:italic;
+}
+.col-cost{
+  color:#D4AF37;
+  white-space:nowrap;
+}
+.torn{
+  margin-top:20px;
+  padding-top:16px;
+  border-top:1px dashed var(--hair);
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  color:var(--muted);
+  font-style:italic;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="stamp">RESTRICTED</div>
+  <div class="eyebrow">Dis Arcane Library — Records Vault</div>
+  <h1>The Logbook</h1>
+  <p class="desc">A bound ledger, kept in Infernal — translated below. Each entry records a use of the Chimera Codex: the requesting Color and House, the date, and the soul-cost paid to the devil brokers of Dis in exchange.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Requester</th>
+        <th>Soul-Cost Paid</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4 yrs. ago</td>
+        <td>House Ferrox (Gold)<br><span class="notes">petitioner: Lucan au Ferrox</span></td>
+        <td class="col-cost">3 petitioner souls</td>
+        <td class="notes">Cross-Color union w/ a Violet consort. Payment brokered directly.</td>
+      </tr>
+      <tr>
+        <td>4 yrs. ago</td>
+        <td>Administrator, Copper</td>
+        <td class="col-cost">1 fragment, own soul</td>
+        <td class="notes">"Partial remittance accepted — remainder due at term."</td>
+      </tr>
+      <tr>
+        <td>3 yrs. ago</td>
+        <td>House Alcuin (Gold)</td>
+        <td class="col-cost">5 slave souls (Obsidian stock)</td>
+        <td class="notes">Souls drawn from House's own bonded Obsidians.</td>
+      </tr>
+      <tr>
+        <td>3 yrs. ago</td>
+        <td>Violet artisan, unlisted House</td>
+        <td class="col-cost">1 own soul, full</td>
+        <td class="notes">"Client requested full remittance — no fragment terms."</td>
+      </tr>
+      <tr>
+        <td>2 yrs. ago</td>
+        <td>House Alcuin (Gold)</td>
+        <td class="col-cost">4 slave souls (Copper stock)</td>
+        <td class="notes">Second union, same House. Broker notes "repeat client, favorable rate."</td>
+      </tr>
+      <tr class="flagged">
+        <td>1 yr. ago</td>
+        <td>House Ferrox (Gold)<br><span class="notes">petitioner: Lucan au Ferrox</span></td>
+        <td class="col-cost">6 slave souls (mixed stock)</td>
+        <td class="notes">Second union, same petitioner. Cost risen sharply — broker cites "demand."</td>
+      </tr>
+      <tr>
+        <td>8 mo. ago</td>
+        <td>Blue navigator, unlisted House</td>
+        <td class="col-cost">1 own soul, full</td>
+        <td class="notes">Payment logged as "final and complete."</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="torn">— remaining pages torn out; ledger ends abruptly —</div>
+</div>
+</body>
+</html>

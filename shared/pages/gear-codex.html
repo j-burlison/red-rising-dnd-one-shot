@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gear Codex — The Society</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#0B0C0F;
+  --panel:#14161B;
+  --panel-2:#0F1013;
+  --hair:#2A2D34;
+  --bone:#E9E4D8;
+  --muted:#8B8F98;
+  --gold:#D4AF37;
+  --gray:#9AA3AD;
+  --purple:#A855F7;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:radial-gradient(ellipse at 50% 0%, #1a1c22 0%, var(--ink) 60%);
+  font-family:'Inter',sans-serif;
+  color:var(--bone);
+  padding:50px 20px 80px;
+}
+.wrap{
+  max-width:760px;
+  margin:0 auto;
+}
+h1{
+  font-family:'Cinzel',serif;
+  font-weight:900;
+  font-size:38px;
+  letter-spacing:3px;
+  text-align:center;
+  color:var(--gold);
+  margin:0 0 6px;
+  text-shadow:0 0 24px rgba(212,175,55,0.3);
+}
+.subtitle{
+  text-align:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:2.5px;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:50px;
+}
+.item{
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--hair);
+  border-radius:8px;
+  padding:24px 28px;
+  margin-bottom:22px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+.item-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:10px;
+}
+.item-name{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:20px;
+  letter-spacing:1px;
+}
+.tag-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:3px 8px;
+  border-radius:3px;
+  border:1px solid var(--hair);
+  color:var(--muted);
+}
+.tag.access-universal{ color:#5FB3D9; border-color:#1F4A5C; }
+.tag.access-gold{ color:var(--gold); border-color:#6B5A22; }
+.desc{
+  font-size:13.5px;
+  line-height:1.6;
+  color:var(--bone);
+  opacity:0.9;
+  margin:0 0 12px;
+}
+.stats{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  line-height:1.8;
+  color:var(--bone);
+  opacity:0.85;
+  border-left:2px solid var(--hair);
+  padding-left:14px;
+}
+.stats b{ color:var(--gold); font-weight:500; }
+.item.gold-item{ border-color:#6B5A22; }
+.item.gold-item .item-name{ color:var(--gold); }
+.item.universal-item .item-name{ color:#5FB3D9; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>GEAR CODEX</h1>
+  <div class="subtitle">The Society — Standard &amp; Restricted Equipment</div>
+
+  <div class="item universal-item">
+    <div class="item-head">
+      <div class="item-name">DURO-STEEL ARMOR</div>
+      <div class="tag-row"><span class="tag access-universal">Universal</span><span class="tag">Armor</span></div>
+    </div>
+    <p class="desc">Standard-issue armor across every Color below Gold. Rugged, mass-produced, and reliable — the backbone of every Gray and Obsidian loadout.</p>
+    <div class="stats">
+      Maps directly to standard armor types at equivalent AC (Light / Medium / Heavy).<br>
+      <b>No special property</b> — fully vulnerable to a razor's armor-ignoring cut.
+    </div>
+  </div>
+
+  <div class="item universal-item">
+    <div class="item-head">
+      <div class="item-name">STEM INJECTORS</div>
+      <div class="tag-row"><span class="tag access-universal">Universal</span><span class="tag">Armor-Integrated</span></div>
+    </div>
+    <p class="desc">Built into every suit of armor in the field, Duro-Steel and Pulse Armor alike. No medic, no potions to track — just a needle and a prayer.</p>
+    <div class="stats">
+      <b>3 charges</b> per short rest.<br>
+      <b>Bonus action</b> to trigger.<br>
+      Each charge functions as a <b>Greater Healing Potion</b> (4d4+4 healing).
+    </div>
+  </div>
+
+  <div class="item gold-item">
+    <div class="item-head">
+      <div class="item-name">RAZOR</div>
+      <div class="tag-row"><span class="tag access-gold">Gold Only</span><span class="tag">Melee Weapon</span></div>
+    </div>
+    <p class="desc">Neurally-linked, impossibly sharp, and terrifying to face — a razor doesn't just cut through armor, it cuts through the idea that armor matters. Never seen outside trained Gold hands.</p>
+    <div class="stats">
+      Martial melee weapon, finesse, light. <b>1d8 slashing.</b><br>
+      <b>Ignores armor:</b> treats the target's AC as if unarmored (Dex + shield/magic bonus only).<br>
+      Requires attunement or a minimum Int/Dex to wield without penalty.<br>
+      <i>Natural 20: DM may rule a severed limb or disabled body part.</i><br><br>
+      <b>Whip Mode</b> (item interaction to toggle, free): reach 10 ft., <b>1d6 slashing</b>, loses light property. Still ignores armor. Instead of damage, a hit can attempt to disarm or trip at range using the attack roll.
+    </div>
+  </div>
+
+  <div class="item universal-item">
+    <div class="item-head">
+      <div class="item-name">PULSE BLADE</div>
+      <div class="tag-row"><span class="tag access-universal">Universal</span><span class="tag">Melee Weapon</span></div>
+    </div>
+    <p class="desc">A kinetic-edge longsword, standard issue for close-quarters work. Doesn't ignore armor like a razor does — but it doesn't require Gold training to swing, either.</p>
+    <div class="stats">
+      Martial melee weapon, versatile. <b>1d8 slashing (1d10 two-handed).</b>
+    </div>
+  </div>
+
+  <div class="item universal-item">
+    <div class="item-head">
+      <div class="item-name">PULSE FIST</div>
+      <div class="tag-row"><span class="tag access-universal">Universal</span><span class="tag">Kinetic Device</span></div>
+    </div>
+    <p class="desc">A shield- or gauntlet-mounted concussive emitter. A solid slam clears space fast — useful for breaking up a crowd or buying a round to breathe.</p>
+    <div class="stats">
+      <b>3 charges</b> per short rest. <b>Bonus action</b> to use.<br>
+      15-ft. cone of concussive force. Each creature in the cone makes a <b>Dexterity save (DC 15)</b>: on a failure, <b>2d6 force damage</b> and pushed 10 ft. away; on a success, half damage and no push.
+    </div>
+  </div>
+
+  <div class="item universal-item">
+    <div class="item-head">
+      <div class="item-name">PULSE GRENADE</div>
+      <div class="tag-row"><span class="tag access-universal">Universal</span><span class="tag">Thrown Device</span></div>
+    </div>
+    <p class="desc">Standard-issue kinetic ordnance. Small enough to carry a few, loud enough that you'll wish you'd worn ear protection.</p>
+    <div class="stats">
+      Thrown, range 60 ft. <b>Action</b> to use.<br>
+      Each creature within 15 ft. of the target point makes a <b>Dexterity save (DC 15)</b>: on a failure, <b>3d8 force damage</b>; on a success, half damage.
+    </div>
+  </div>
+
+  <div class="item gold-item">
+    <div class="item-head">
+      <div class="item-name">PULSE ARMOR</div>
+      <div class="tag-row"><span class="tag access-gold">Gold Only</span><span class="tag">Heavy Armor</span></div>
+    </div>
+    <p class="desc">The only real answer to a razor. Golds don't win fights by being harder to hit — they win by being harder to cut.</p>
+    <div class="stats">
+      Heavy armor, equivalent to Plate (<b>base AC 18</b>).<br>
+      <b>Pulse Field:</b> resistance to slashing damage from razors specifically.
+    </div>
+  </div>
+
+  <div class="item gold-item">
+    <div class="item-head">
+      <div class="item-name">GRAVITY BOOTS</div>
+      <div class="tag-row"><span class="tag access-gold">Gold Only</span><span class="tag">Footwear</span></div>
+    </div>
+    <p class="desc">Magnetized boots issued to Gold officers for shipboard and void operations. In zero-G, everyone else is fighting the room — a Gold in these just walks through it.</p>
+    <div class="stats">
+      Functions as <b>Boots of Flying</b>: while active, flying speed equal to normal speed; ignores zero-G push-off/anchor rules entirely.<br>
+      <b>2 charges</b>, recharging after a long rest.
+    </div>
+  </div>
+
+  <div class="item gold-item">
+    <div class="item-head">
+      <div class="item-name">AEGIS SHIELD</div>
+      <div class="tag-row"><span class="tag access-gold">Gold Only</span><span class="tag">Off-Hand / Kinetic Device</span></div>
+    </div>
+    <p class="desc">A kinetic field projector worn on the off-hand arm. Deflects blows before they land — and doubles as the housing for a Pulse Fist emitter.</p>
+    <div class="stats">
+      <b>+2 AC</b> while worn.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

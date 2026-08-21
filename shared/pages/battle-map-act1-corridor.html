@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Battle Map — Zero-G Corridor</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#0B0C0F;
+  --wall:#3A3F4A;
+  --grid:#232730;
+  --accent:#D4AF37;
+  --bone:#E9E4D8;
+  --muted:#8B8F98;
+  --hazard:#C1502E;
+  --anchor:#5FB3D9;
+  --ceiling:#A855F7;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--ink);
+  font-family:'JetBrains Mono',monospace;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:24px;
+  color:var(--bone);
+}
+h1{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:24px;
+  letter-spacing:2px;
+  color:var(--accent);
+  margin:0 0 4px;
+  text-align:center;
+}
+.subtitle{
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:1px;
+  margin-bottom:18px;
+  text-align:center;
+}
+.map-wrap{
+  border:2px solid var(--wall);
+  border-radius:4px;
+  overflow:auto;
+  max-width:100%;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+  background:#0B0C0F;
+}
+.legend{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  margin-top:18px;
+  font-size:12px;
+  color:var(--bone);
+  max-width:1000px;
+  justify-content:center;
+}
+.legend-item{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.swatch{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  flex-shrink:0;
+}
+.swatch.sq{ border-radius:3px; }
+</style>
+</head>
+<body>
+<h1>Zero-G Corridor</h1>
+<div class="subtitle">25 ft. wide &nbsp;|&nbsp; 120 ft. long &nbsp;|&nbsp; 15 ft. ceiling &nbsp;|&nbsp; 5 ft. squares</div>
+
+<div class="map-wrap">
+<svg width="1520" height="620" viewBox="0 0 1520 620" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1520" height="620" fill="#0B0C0F"/>
+
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" stroke="#232730" stroke-width="1"/>
+    </pattern>
+    <clipPath id="corridorClip">
+      <polygon points="271.62,320.32 351.35,313.62 431.08,306.92 510.86,300.22 590.59,293.52 670.37,286.81 756,280.32 844.11,287.02 923.84,293.72 1003.62,300.42 1083.35,307.12 1163.13,313.83 1240.38,320.32 1223.62,519.68 1146.37,513.19 1066.59,506.48 986.86,499.78 907.08,493.08 827.35,486.38 756,479.68 687.13,486.17 607.35,492.88 527.62,499.58 447.84,506.28 368.11,512.98 288.38,519.68"/>
+    </clipPath>
+  </defs>
+
+  <!-- Corridor floor fill + grid -->
+  <g clip-path="url(#corridorClip)">
+    <rect x="0" y="0" width="1520" height="620" fill="#161820"/>
+    <rect x="0" y="0" width="1520" height="620" fill="url(#grid)"/>
+  </g>
+
+  <!-- North (inner) wall -->
+  <polyline points="271.62,320.32 351.35,313.62 431.08,306.92 510.86,300.22 590.59,293.52 670.37,286.81 756,280.32 844.11,287.02 923.84,293.72 1003.62,300.42 1083.35,307.12 1163.13,313.83 1240.38,320.32"
+        fill="none" stroke="#3A3F4A" stroke-width="6" stroke-linejoin="round"/>
+  <!-- South (outer) wall -->
+  <polyline points="288.38,519.68 368.11,512.98 447.84,506.28 527.62,499.58 607.35,492.88 687.13,486.17 756,479.68 827.35,486.38 907.08,493.08 986.86,499.78 1066.59,506.48 1146.37,513.19 1223.62,519.68"
+        fill="none" stroke="#3A3F4A" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- End caps (doorways) -->
+  <rect x="252" y="309" width="20" height="222" fill="#2A2418" stroke="#D4AF37" stroke-width="2"/>
+  <rect x="1240" y="309" width="20" height="222" fill="#2A2418" stroke="#D4AF37" stroke-width="2"/>
+
+  <text x="220" y="400" text-anchor="end" font-family="Cinzel" font-size="14" fill="#D4AF37" font-weight="700">TO CARGO HOLD</text>
+  <text x="1300" y="400" text-anchor="start" font-family="Cinzel" font-size="14" fill="#D4AF37" font-weight="700">TO LAUNCH BAY</text>
+
+  <!-- North wall handholds (10 ft intervals) -->
+  <g fill="#5FB3D9" stroke="#0B0C0F" stroke-width="1.5">
+    <circle cx="271.62" cy="320.32" r="8"/>
+    <circle cx="351.35" cy="313.62" r="8"/>
+    <circle cx="431.08" cy="306.92" r="8"/>
+    <circle cx="510.86" cy="300.22" r="8"/>
+    <circle cx="590.59" cy="293.52" r="8"/>
+    <circle cx="670.37" cy="286.81" r="8"/>
+    <circle cx="756" cy="280.32" r="8"/>
+    <circle cx="844.11" cy="287.02" r="8"/>
+    <circle cx="923.84" cy="293.72" r="8"/>
+    <circle cx="1003.62" cy="300.42" r="8"/>
+    <circle cx="1083.35" cy="307.12" r="8"/>
+    <circle cx="1163.13" cy="313.83" r="8"/>
+    <circle cx="1240.38" cy="320.32" r="8"/>
+  </g>
+
+  <!-- South wall handholds (10 ft intervals) -->
+  <g fill="#5FB3D9" stroke="#0B0C0F" stroke-width="1.5">
+    <circle cx="288.38" cy="519.68" r="8"/>
+    <circle cx="368.11" cy="512.98" r="8"/>
+    <circle cx="447.84" cy="506.28" r="8"/>
+    <circle cx="527.62" cy="499.58" r="8"/>
+    <circle cx="607.35" cy="492.88" r="8"/>
+    <circle cx="687.13" cy="486.17" r="8"/>
+    <circle cx="756" cy="479.68" r="8"/>
+    <circle cx="827.35" cy="486.38" r="8"/>
+    <circle cx="907.08" cy="493.08" r="8"/>
+    <circle cx="986.86" cy="499.78" r="8"/>
+    <circle cx="1066.59" cy="506.48" r="8"/>
+    <circle cx="1146.37" cy="513.19" r="8"/>
+    <circle cx="1223.62" cy="519.68" r="8"/>
+  </g>
+
+  <!-- Ceiling handholds (centerline, 10 ft intervals, distinct marker — overhead at 15 ft) -->
+  <g fill="none" stroke="#A855F7" stroke-width="2.5">
+    <rect x="274" y="414" width="12" height="12" transform="rotate(45 280 420)"/>
+    <rect x="353.73" y="407.30" width="12" height="12" transform="rotate(45 359.73 413.30)"/>
+    <rect x="433.46" y="400.6" width="12" height="12" transform="rotate(45 439.46 406.6)"/>
+    <rect x="513.24" y="393.90" width="12" height="12" transform="rotate(45 519.24 399.90)"/>
+    <rect x="592.97" y="387.20" width="12" height="12" transform="rotate(45 598.97 393.20)"/>
+    <rect x="672.75" y="380.49" width="12" height="12" transform="rotate(45 678.75 386.49)"/>
+    <rect x="750" y="374" width="12" height="12" transform="rotate(45 756 380)"/>
+    <rect x="829.73" y="380.70" width="12" height="12" transform="rotate(45 835.73 386.70)"/>
+    <rect x="909.46" y="387.4" width="12" height="12" transform="rotate(45 915.46 393.4)"/>
+    <rect x="989.24" y="394.10" width="12" height="12" transform="rotate(45 995.24 400.10)"/>
+    <rect x="1068.97" y="400.80" width="12" height="12" transform="rotate(45 1074.97 406.80)"/>
+    <rect x="1148.75" y="407.51" width="12" height="12" transform="rotate(45 1154.75 413.51)"/>
+    <rect x="1226" y="414" width="12" height="12" transform="rotate(45 1232 420)"/>
+  </g>
+
+  <!-- Breach zone: wall-mounted, South wall, ~2/3 along corridor -->
+  <g>
+    <polygon points="960,483 1010,470 1050,490 1040,525 995,535 955,510" fill="#C1502E" fill-opacity="0.4" stroke="#C1502E" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="1000" y="565" text-anchor="middle" font-size="12" fill="#C1502E" font-weight="500">BREACH</text>
+    <text x="1000" y="581" text-anchor="middle" font-size="10" fill="#C1502E">(South wall — Round 1)</text>
+  </g>
+
+</svg>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><span class="swatch" style="background:#5FB3D9;"></span>Wall handhold (10 ft. intervals, both walls)</div>
+  <div class="legend-item"><span class="swatch sq" style="background:#A855F7;"></span>Ceiling handhold (10 ft. intervals, overhead at 15 ft.)</div>
+  <div class="legend-item"><span class="swatch sq" style="background:#C1502E;"></span>Breach zone — wall-mounted, opens Round 1</div>
+  <div class="legend-item"><span class="swatch sq" style="background:#2A2418;border:1px solid #D4AF37;"></span>Doorway (cargo hold / launch bay)</div>
+</div>
+</body>
+</html>

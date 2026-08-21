@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="../../shared/dm-gate.js"></script>
+<title>Storyboard — Benediction of Dis (DM)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#0B0C0F;
+  --panel:#14161B;
+  --panel-2:#0F1013;
+  --hair:#2A2D34;
+  --bone:#E9E4D8;
+  --muted:#8B8F98;
+  --gold:#D4AF37;
+  --dm:#C1502E;
+  --purple:#A855F7;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:radial-gradient(ellipse at 50% 0%, #1a1c22 0%, var(--ink) 60%);
+  font-family:'Inter',sans-serif;
+  color:var(--bone);
+  padding:50px 20px 90px;
+}
+.wrap{ max-width:780px; margin:0 auto; }
+.dm-tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--dm);
+  border:1px solid var(--dm);
+  border-radius:3px;
+  padding:3px 10px;
+  display:table;
+  margin:0 auto 18px;
+}
+h1{
+  font-family:'Cinzel',serif;
+  font-weight:900;
+  font-size:36px;
+  letter-spacing:2px;
+  text-align:center;
+  color:var(--gold);
+  margin:0 0 8px;
+  text-shadow:0 0 24px rgba(212,175,55,0.3);
+}
+.premise{
+  font-size:14px;
+  line-height:1.7;
+  color:var(--bone);
+  opacity:0.92;
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--hair);
+  border-radius:8px;
+  padding:22px 26px;
+  margin:30px 0 40px;
+}
+.premise b{ color:var(--gold); }
+h2{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:20px;
+  letter-spacing:1px;
+  color:var(--gold);
+  margin:44px 0 6px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--hair);
+}
+h3{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--purple);
+  margin:22px 0 8px;
+}
+ul{
+  padding-left:20px;
+  margin:0 0 14px;
+}
+li{
+  font-size:13.5px;
+  line-height:1.65;
+  color:var(--bone);
+  opacity:0.92;
+  margin-bottom:8px;
+}
+li b{ color:var(--gold); }
+.callout{
+  background:rgba(193,80,46,0.06);
+  border:1px solid #5C2415;
+  border-radius:6px;
+  padding:14px 18px;
+  font-size:13px;
+  line-height:1.6;
+  margin:14px 0;
+}
+.callout b{ color:var(--dm); }
+.knowledge{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11.5px;
+  letter-spacing:0.3px;
+  color:var(--muted);
+  border-left:2px solid var(--hair);
+  padding-left:14px;
+  margin:16px 0;
+}
+.endings{
+  counter-reset:ending;
+  list-style:none;
+  padding:0;
+}
+.endings li{
+  counter-increment:ending;
+  position:relative;
+  padding-left:34px;
+  margin-bottom:14px;
+}
+.endings li::before{
+  content:counter(ending);
+  position:absolute;
+  left:0;
+  top:-1px;
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:13px;
+  color:var(--ink);
+  background:var(--gold);
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+nav.back{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:1px;
+  margin-bottom:10px;
+}
+nav.back a{ color:var(--muted); text-decoration:none; }
+nav.back a:hover{ color:var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="back"><a href="../index.html">&larr; DM Home</a></nav>
+  <div class="dm-tag">DM ONLY — CONTAINS THE TWIST</div>
+  <h1>STORYBOARD</h1>
+
+  <div class="premise">
+    <b>Premise.</b> Obsidian and Gray operators under a Peerless Scarred Gold are sent to Dis, capital of Dispater, ostensibly to extract intel on troop movements — actually to retrieve <b>the Chimera Codex</b>, a spellbook enabling cross-color breeding (colors bargain with devils to circumvent the Society's genetic caste laws).
+  </div>
+
+  <h3>Key NPCs</h3>
+  <ul>
+    <li><b>The Gold (Peerless Scarred)</b> — Paladin; mission commander, true orders, demands the book be secured for the Society</li>
+    <li><b>Gray Troupe Leader</b> — Ranger; secretly a Rising agent, has been recruiting/scouting since Act 1, turns openly in Act 3</li>
+  </ul>
+
+  <h2>Act 1 — The Benediction</h2>
+  <div class="knowledge">aboard The Concordat, orbit above Farun</div>
+  <ul>
+    <li><b>Cold open:</b> formal ceremony — Obsidians kneeling for the Gold's blessing, Grays checking gear at the margins, unease in the air (Dis has been "too quiet")</li>
+    <li>Roleplay caste dynamics: Obsidians can't speak out of turn, Grays needle at the edges</li>
+    <li>Short skill scene (Insight/Persuasion/Deception) — establish who's suspicious of the mission</li>
+    <li><b>Break:</b> hellish leechcraft breach through portals in space, devils board The Concordat</li>
+    <li>"All units to launch bays. Prepare for planar jump and Iron Rain."</li>
+    <li>Both squads reach the corridor between cargo hold and launch bay together — ship shakes, hull visibly getting cut into, gravity fails, roll initiative</li>
+    <li><b>Round 1:</b> leechcraft carves through the hull; Barbtail Skirmishers pour in first, followed by the Iron Ward Enforcer</li>
+    <li><b>Mid-fight escalation:</b> leechcraft tears free (Enforcer's death, a countermeasure, or a player reaching its control panel) — one sharp round of vacuum pull + debris, not ongoing</li>
+    <li><b>Zero-G Corridor:</b> the escape route is a physical puzzle layered on the fight (see Lore &amp; Mechanics) — anchors, movement-by-push, and attack recoil throughout</li>
+    <li><b>End condition:</b> enemies dead, shuttle bay door opens</li>
+    <li>Ship jumps as pods launch — this is also what makes the Iron Rain hot and early</li>
+    <li><b>Hazard:</b> NPC pods shot down around the PCs; failed save = fall damage on arrival at Dis</li>
+  </ul>
+  <div class="callout"><b>Knowledge split:</b> 1–2 PCs (Gold's confidants) know the true objective now. Everyone else believes it's a standard intel-extraction mission.</div>
+
+  <h2>Act 2 — Iron Rain onto Dis</h2>
+  <ul>
+    <li>Landing scattered across a district of Dis: black iron architecture, screaming stonework, bruised orange sky, devils being actively broken by Society occupation</li>
+    <li>Stated objective: retrieve intel on troop movements from the Dis Arcane Library</li>
+    <li><b>Discovery beat — The Logbook:</b> in the archivist's chambers/records vault adjacent to the objective, PCs find a bound ledger (Infernal) recording every use of the Chimera Codex: Color, date, requesting House, and the soul-cost paid to devil brokers. Entries show low Colors trading their own souls, and both Colors trading the souls of their slaves. One entry names a Gold House that shares the strike team's Gold's family name — implied to be their cousin.
+      <ul>
+        <li>Two paths to the discovery: Investigation/stealth (find and translate the ledger directly) or Deception/Insight against a cagey archivist/guard NPC who denies knowledge</li>
+      </ul>
+    </li>
+    <li><b>Combat encounter:</b> library guards — lighter resistance than expected, which reads as its own unease/warning sign before Act 3</li>
+  </ul>
+
+  <h2>Act 3 — The Twist and Extraction</h2>
+  <ul>
+    <li>A horde of devils arrives as the party secures the book</li>
+    <li><b>The Gray troupe leader turns</b>, reveals the full truth to everyone, sides against the Society</li>
+    <li><b>The Gold orders the party to kill the Gray and the devils</b> — every PC (Obsidian and Gray alike) is Oathbound and must actively break the oath to defy this order</li>
+    <li><b>Climax combat:</b> PCs choose a side — fight for the Gold, fight for the Gray/Rising, or break the oath entirely and run with the book</li>
+    <li>One-shot ends at the close of this combat</li>
+  </ul>
+
+  <h3>Three Endings</h3>
+  <ol class="endings">
+    <li><b>Society wins</b> — Gold retains the book, Gray/Rising forces defeated</li>
+    <li><b>Rising wins</b> — Gray/Rising forces secure the book, Gold defeated/driven off</li>
+    <li><b>PCs escape with the book</b> — party breaks the oath, abandons both sides, flees Dis with the Chimera Codex in hand</li>
+  </ol>
+</div>
+</body>
+</html>
