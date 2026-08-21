@@ -1,6 +1,6 @@
 # "Benediction of Dis" — Reference Image Links
 
-Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, Red, Ash-Bound Wretch, Iron Ward Enforcer, Barbtail Skirmisher, Servian, and Ryn entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below. The Ash-Bound Wretch image is also an exception to the branded-IP note above — it's official Monster Manual art, not independent portfolio work.)
+Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, Red, Ash-Bound Wretch, Iron Ward Enforcer, Barbtail Skirmisher, Servian, Ryn, and Dis entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below. The Ash-Bound Wretch image is confirmed official Monster Manual art rather than independent portfolio work; the Dis image is unconfirmed but likely the same category — see its note.)
 
 ## Color Cards
 
@@ -38,8 +38,7 @@ https://cdnb.artstation.com/p/assets/images/images/005/519/975/large/loc-nguyen-
 **The Dreadnought (Act 1 ship)** — "Heavy Dreadnought Spaceship Concept" by Piotr Michalak
 https://cdnb.artstation.com/p/assets/covers/images/011/235/315/large/piotr-michalak-statek-thumb.jpg
 
-**Dis** — "Dark Fantasy Environment" by Neo Star
-https://cdna.artstation.com/p/assets/covers/images/053/961/730/large/leonardo-jines-leonardo-jines-dl1.jpg
+**Dis** — local asset, `shared/assets/location-dis.jpg` (gothic devil-city skyline, ghostly figures led across a bridge by a devil; supplied directly, no source/artist attribution given — carries a small illegible signature and closely resembles published sourcebook illustration style, so treat as a likely branded-IP exception like the Ash-Bound Wretch image, not confirmed independent portfolio work — replaced the earlier hotlinked "Dark Fantasy Environment" by Neo Star)
 
 ---
 

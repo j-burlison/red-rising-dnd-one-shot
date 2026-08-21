@@ -146,23 +146,22 @@ marked version for their own reference.
   to-do (`docs/one-shot-todo.md`), Obsidian + Gray options per the
   caste-to-class mapping in `docs/lore-mechanics.md`. Not started; next
   batch of artifacts.
-- Reference images are a mix now: only the two locations (The
-  Dreadnought, Dis) are still hotlinked from ArtStation CDN URLs (see
-  `docs/reference-image-links.md`) — fine for now, but they could go
-  stale. Every color card and NPC/monster portrait has been swapped for
-  a locally-supplied image under `shared/assets/`
-  (`color-gold-portrait.jpg`, `color-gray-portrait.jpg`,
-  `color-red-portrait.png`, `monster-ash-bound-wretch.jpg`,
-  `monster-iron-ward-enforcer.jpg`, `monster-barbtail-skirmisher.jpg`,
-  `npc-servian-portrait.jpg`, `npc-ryn-portrait.jpg`), each used by its
+- Reference images are a mix now: only The Dreadnought is still
+  hotlinked from ArtStation (see `docs/reference-image-links.md`) — fine
+  for now, but it could go stale. Every color card, NPC/monster portrait,
+  and the Dis location shot have been swapped for locally-supplied images
+  under `shared/assets/` (`color-gold-portrait.jpg`,
+  `color-gray-portrait.jpg`, `color-red-portrait.png`,
+  `monster-ash-bound-wretch.jpg`, `monster-iron-ward-enforcer.jpg`,
+  `monster-barbtail-skirmisher.jpg`, `npc-servian-portrait.jpg`,
+  `npc-ryn-portrait.jpg`, `location-dis.jpg`), each used by its
   respective color card or `dm/pages/supplemental-images.html` entry. If
-  the two remaining location hotlinks go stale, follow the same pattern —
+  the remaining Dreadnought hotlink goes stale, follow the same pattern —
   save the file under `shared/assets/` and repoint the `<img>` tags. Note
   each color card's `.portrait` CSS is tuned per-image (height +
   `object-position`) to fit that specific portrait's aspect ratio and
   framing — don't copy one card's exact values onto another without
-  checking the source image
-  first.
+  checking the source image first.
 - The Ash-Bound Wretch image is official D&D Monster Manual art (an Imp
   illustration with the sourcebook's own title/stat-block framing baked
   in), not independent portfolio work like the rest of the reference set
@@ -170,7 +169,17 @@ marked version for their own reference.
   otherwise consistent "avoid branded-IP concerns" sourcing choice for
   images. Kept as supplied (not cropped) per an explicit call from the
   repo owner; scoped to private, DM-gated table reference use, not
-  redistributed.
+  redistributed. The Dis image (a gothic devil-city illustration) is
+  similar in style and likely shares that origin, though unconfirmed —
+  treat it the same way (private, DM-gated use, not redistributed) out
+  of caution.
+- Two portraits offered during this session were declined and never
+  added: a Servian piece and a Ryn piece, both carrying visible tiled
+  watermarks ("Sommer Skye Creations" and "k00kiesnmilk" respectively) —
+  clear signals the artist hadn't licensed them for use. Both NPCs ended
+  up with different, unwatermarked images instead (see above). If either
+  watermarked piece resurfaces, don't use it unless the repo owner
+  confirms they've licensed it and supplies a clean copy.
 
 If you're picking this up from a second batch of pasted artifacts, check
 this list first — it's the delta between what the "One Shot" chat produced
