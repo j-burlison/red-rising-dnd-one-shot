@@ -146,22 +146,25 @@ marked version for their own reference.
   to-do (`docs/one-shot-todo.md`), Obsidian + Gray options per the
   caste-to-class mapping in `docs/lore-mechanics.md`. Not started; next
   batch of artifacts.
-- Reference images are a mix now: only The Dreadnought is still
-  hotlinked from ArtStation (see `docs/reference-image-links.md`) — fine
-  for now, but it could go stale. Every color card, NPC/monster portrait,
-  and the Dis location shot have been swapped for locally-supplied images
-  under `shared/assets/` (`color-gold-portrait.jpg`,
-  `color-gray-portrait.jpg`, `color-red-portrait.png`,
-  `monster-ash-bound-wretch.jpg`, `monster-iron-ward-enforcer.jpg`,
-  `monster-barbtail-skirmisher.jpg`, `npc-servian-portrait.jpg`,
-  `npc-ryn-portrait.jpg`, `location-dis.jpg`), each used by its
-  respective color card or `dm/pages/supplemental-images.html` entry. If
-  the remaining Dreadnought hotlink goes stale, follow the same pattern —
-  save the file under `shared/assets/` and repoint the `<img>` tags. Note
-  each color card's `.portrait` CSS is tuned per-image (height +
-  `object-position`) to fit that specific portrait's aspect ratio and
-  framing — don't copy one card's exact values onto another without
-  checking the source image first.
+- Reference images are a mix now: Obsidian, Blue, and White still use
+  their original ArtStation hotlinks (see `docs/reference-image-links.md`)
+  — fine for now, but they could go stale. Every other reference image
+  (Gold, Gray, Red, Servian, Ryn, all three monsters, and both locations)
+  has been swapped for a locally-supplied image under `shared/assets/`
+  (`color-gold-portrait.jpg`, `color-gray-portrait.jpg`,
+  `color-red-portrait.png`, `monster-ash-bound-wretch.jpg`,
+  `monster-iron-ward-enforcer.jpg`, `monster-barbtail-skirmisher.jpg`,
+  `npc-servian-portrait.jpg`, `npc-ryn-portrait.jpg`, `location-dis.jpg`,
+  `location-dreadnought-concordat.jpg`), each used by its respective
+  color card or `dm/pages/supplemental-images.html` entry. If a
+  remaining hotlink goes stale, follow the same pattern — save the file
+  under `shared/assets/` and repoint the `<img>` tags. Note each color
+  card's `.portrait` CSS is tuned per-image (height + `object-position`)
+  to fit that specific portrait's aspect ratio and framing — don't copy
+  one card's exact values onto another without checking the source
+  image first. The Dreadnought's gallery entry was also renamed to "The
+  Concordat (Act 1 Dreadnought)" to surface the ship's actual name (used
+  everywhere else in the site) instead of just its type.
 - The Ash-Bound Wretch image is official D&D Monster Manual art (an Imp
   illustration with the sourcebook's own title/stat-block framing baked
   in), not independent portfolio work like the rest of the reference set
