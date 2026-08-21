@@ -111,9 +111,10 @@ marked version for their own reference.
 - Gear Codex (shared): grouped Universal-access first (Duro-Steel Armor,
   Stem Injectors, Pulse Blade, Pulse Rifle, Pulse Fist, Pulse Grenade),
   then Gold-only (Razor, Pulse Armor, Gravity Boots, Aegis Shield). Pulse
-  Rifle is the 5e-longbow equivalent — matches the `Longbow` entry in Ryn
-  Gray's stat block, which is why it's Universal rather than Gold-only
-  (Ryn is a Gray).
+  Rifle is the 5e-longbow equivalent — matches the `Pulse Rifle` entry in
+  Ryn Gray's stat block (originally written as a plain Longbow, renamed
+  to match once the gear codex item existed), which is why it's Universal
+  rather than Gold-only (Ryn is a Gray).
 - Battle maps: Act 1 Zero-G Corridor (shared, no DM/player split — no
   hidden info on this one), Act 2 Dis Arcane Library (player + DM
   versions, both under `dm/pages/`), Act 3 Extraction Plaza (player + DM

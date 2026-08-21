@@ -88,13 +88,13 @@ Non-combat NPCs encountered near the library or archive — souls or servants (m
 
 **Hunter's Mark (1/Short Rest, no slot required).** As a bonus action, Ryn marks a creature she can see within 90 ft. Her weapon attacks against the marked creature deal an extra 1d6 damage.
 
-**Multiattack.** Ryn makes two attacks, using her Pulse Blade or Razor (see below), her longbow, or a combination.
+**Multiattack.** Ryn makes two attacks, using her Pulse Blade or Razor (see below), her Pulse Rifle, or a combination.
 
 **Pulse Blade (longsword).** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 1d8+4 slashing damage (versatile, 1d10+4 if used two-handed). Ryn's visible, "legal" weapon for most of the encounter — swap to her Razor for the Act 3 reveal.
 
 **Razor (Act 3 Reveal).** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 1d8+4 slashing damage. A razor's cut ignores the AC bonus granted by the target's worn armor (shields and magic bonuses still apply). *DM note: hold this weapon back until Ryn's betrayal is revealed — she fights with the Pulse Blade up to that point, and drawing the Razor should land as a visible escalation at the table.*
 
-**Longbow.** *Ranged Weapon Attack:* +8 to hit, range 150/600 ft., one target. *Hit:* 1d8+4 piercing damage.
+**Pulse Rifle.** *Ranged Weapon Attack:* +8 to hit, range 150/600 ft., one target. *Hit:* 1d8+4 piercing damage.
 
 **Pulse Grenade (3, thrown, Action).** Ryn hurls a Pulse Grenade at a point within 60 ft. Each creature within 15 ft. of that point makes a Dexterity save (DC 15); on a failure, a creature takes 3d8 force damage; on a success, half damage.
 
