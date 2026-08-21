@@ -103,10 +103,15 @@ marked version for their own reference.
   Content came from a dedicated "dm-dashboard" artifact. Each condensed
   section links out to its full-detail page under `dm/pages/`.
 - Color cards (shared, playable/NPC dossiers): Gold, Gray, Obsidian,
-  White, Blue, Society overview — the full six-card set from
-  `docs/one-shot-materials.md` is complete
-- Gear Codex (shared): Razor, Pulse Blade/Fist/Grenade/Armor, Duro-Steel
-  Armor, Stem Injectors, Gravity Boots, Aegis Shield
+  White, Blue, Red, Society overview — the six cards named in
+  `docs/one-shot-materials.md` plus Red (introduced later, in the
+  player-briefing/dm-dashboard artifacts)
+- Gear Codex (shared): grouped Universal-access first (Duro-Steel Armor,
+  Stem Injectors, Pulse Blade, Pulse Rifle, Pulse Fist, Pulse Grenade),
+  then Gold-only (Razor, Pulse Armor, Gravity Boots, Aegis Shield). Pulse
+  Rifle is the 5e-longbow equivalent — matches the `Longbow` entry in Ryn
+  Gray's stat block, which is why it's Universal rather than Gold-only
+  (Ryn is a Gray).
 - Battle maps: Act 1 Zero-G Corridor (shared, no DM/player split — no
   hidden info on this one), Act 2 Dis Arcane Library (player + DM
   versions, both under `dm/pages/`), Act 3 Extraction Plaza (player + DM
@@ -126,13 +131,6 @@ marked version for their own reference.
   hotlinked — see the note in that file about them going stale)
 
 ### Known gaps (flagged in the source to-do list or referenced but not received)
-- **`color-card-red.html`** — referenced by both the Player Briefing and
-  DM Dashboard artifacts (Red is the lowest Color, the foundation the
-  rest of the hierarchy stands on) but the file itself was never
-  supplied. Both `index.html` and `dm/index.html` currently omit the Red
-  link rather than point at a page that doesn't exist — add it to both
-  "Curious About Other Colors?" / "Color Cards" sections once received,
-  following the template of the other NPC-only cards (White, Blue).
 - **Pre-gen character sheets** — explicitly unchecked in the original
   to-do (`docs/one-shot-todo.md`), Obsidian + Gray options per the
   caste-to-class mapping in `docs/lore-mechanics.md`. Not started; next
