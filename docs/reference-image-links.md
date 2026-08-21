@@ -1,6 +1,6 @@
 # "Benediction of Dis" — Reference Image Links
 
-Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, Red, Ash-Bound Wretch, Iron Ward Enforcer, Barbtail Skirmisher, and Servian entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below. The Ash-Bound Wretch image is also an exception to the branded-IP note above — it's official Monster Manual art, not independent portfolio work.)
+Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, Red, Ash-Bound Wretch, Iron Ward Enforcer, Barbtail Skirmisher, Servian, and Ryn entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below. The Ash-Bound Wretch image is also an exception to the branded-IP note above — it's official Monster Manual art, not independent portfolio work.)
 
 ## Color Cards
 
@@ -31,8 +31,7 @@ https://cdnb.artstation.com/p/assets/images/images/005/519/975/large/loc-nguyen-
 
 **Servian au Ferrox (Gold)** — local asset, `shared/assets/npc-servian-portrait.jpg` (golden-armored figure with curled blond hair and a feathered crown; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Golden Paladin" by Autumn Klepal)
 
-**Ryn Gray (Gray)** — "Female Ranger DnD" by Paladraws
-https://cdnb.artstation.com/p/assets/images/images/065/935/065/large/paladraws-female-ranger-1.jpg
+**Ryn Gray (Gray)** — local asset, `shared/assets/npc-ryn-portrait.jpg` (tactical operative in armored gear with a rifle, forest backdrop; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Female Ranger DnD" by Paladraws)
 
 ## Locations
 

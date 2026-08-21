@@ -146,16 +146,17 @@ marked version for their own reference.
   to-do (`docs/one-shot-todo.md`), Obsidian + Gray options per the
   caste-to-class mapping in `docs/lore-mechanics.md`. Not started; next
   batch of artifacts.
-- Reference images are a mix now: Ryn and the two locations (The
+- Reference images are a mix now: only the two locations (The
   Dreadnought, Dis) are still hotlinked from ArtStation CDN URLs (see
   `docs/reference-image-links.md`) — fine for now, but they could go
-  stale. Everything else has been swapped for locally-supplied images
-  under `shared/assets/` (`color-gold-portrait.jpg`,
-  `color-gray-portrait.jpg`, `color-red-portrait.png`,
-  `monster-ash-bound-wretch.jpg`, `monster-iron-ward-enforcer.jpg`,
-  `monster-barbtail-skirmisher.jpg`, `npc-servian-portrait.jpg`), each
-  used by its respective color card or `dm/pages/supplemental-images.html`
-  entry. If any remaining hotlink goes stale, follow the same pattern —
+  stale. Every color card and NPC/monster portrait has been swapped for
+  a locally-supplied image under `shared/assets/`
+  (`color-gold-portrait.jpg`, `color-gray-portrait.jpg`,
+  `color-red-portrait.png`, `monster-ash-bound-wretch.jpg`,
+  `monster-iron-ward-enforcer.jpg`, `monster-barbtail-skirmisher.jpg`,
+  `npc-servian-portrait.jpg`, `npc-ryn-portrait.jpg`), each used by its
+  respective color card or `dm/pages/supplemental-images.html` entry. If
+  the two remaining location hotlinks go stale, follow the same pattern —
   save the file under `shared/assets/` and repoint the `<img>` tags. Note
   each color card's `.portrait` CSS is tuned per-image (height +
   `object-position`) to fit that specific portrait's aspect ratio and
