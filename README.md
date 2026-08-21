@@ -5,12 +5,15 @@ Rising DnD adaptation one-shot: **Benediction of Dis**.
 
 Two sites, one base URL, deployed as a static site on **GitHub Pages**:
 
-- **Player site** (`/`) — color cards, gear codex, and player-safe battle
-  maps. Public, no spoilers.
-- **DM site** (`/dm`) — everything above plus the storyboard, full lore &
-  mechanics reference, NPC/monster stat blocks, the Logbook handout, and
-  battle maps with objectives marked. Gated behind a **password prompt**
-  so a player can't casually browse it and cheat.
+- **Player site** (`/`) — a single-page player briefing: world primer,
+  step-by-step character build, and links to color cards and the gear
+  codex. Public, no spoilers, no battle maps.
+- **DM site** (`/dm`) — a single-page dashboard (storyboard beats,
+  mechanics quick reference, NPC/monster summaries, pacing table) with
+  links out to the full-detail pages, every color card, every battle map
+  (both the player-safe and objective-marked versions), and the Logbook
+  handout. Gated behind a **password prompt** so a player can't casually
+  browse it and cheat.
 
 See `CLAUDE.md` for the full content index (what's included, what's still
 missing) and the design conventions used across pages.
@@ -81,9 +84,11 @@ git push -u origin main
 ## Project structure
 
 ```
-index.html      player-facing landing page (served at "/")
-pages/          player-only battle maps
-dm/             DM-facing site (served at "/dm", gated by shared/dm-gate.js)
-shared/         pages + the dm-gate.js script, linked from both sites
+index.html      Player Briefing — the player-facing site (served at "/")
+dm/             DM Dashboard + full reference pages (served at "/dm",
+                 gated by shared/dm-gate.js) — also holds both the
+                 player-safe and DM battle maps
+shared/         color cards, gear codex, the Act 1 map, and the
+                 dm-gate.js script — linked from both sites
 docs/           raw markdown source notes (not linked from the site)
 ```
