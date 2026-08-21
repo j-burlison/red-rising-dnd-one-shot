@@ -1,6 +1,6 @@
 # "Benediction of Dis" — Reference Image Links
 
-Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, Red, and Ash-Bound Wretch entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below. The Ash-Bound Wretch image is also the one exception to the branded-IP note above — it's official Monster Manual art, not independent portfolio work.)
+Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, Red, Ash-Bound Wretch, Iron Ward Enforcer, and Barbtail Skirmisher entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below. The Ash-Bound Wretch image is also an exception to the branded-IP note above — it's official Monster Manual art, not independent portfolio work.)
 
 ## Color Cards
 
@@ -23,11 +23,9 @@ https://cdnb.artstation.com/p/assets/images/images/005/519/975/large/loc-nguyen-
 
 **Ash-Bound Wretch** — local asset, `shared/assets/monster-ash-bound-wretch.jpg` (Imp illustration, cropped from the D&D Monster Manual — note this one is official WotC sourcebook art, not independent portfolio work like the rest of this list; used here for private table-reference purposes only, not redistributed beyond the DM-gated site — replaced the earlier hotlinked "Mischievous Imp" by Sean Wade)
 
-**Barbtail Skirmisher** — "Devil" by Sophia Goloperova
-https://cdnb.artstation.com/p/assets/covers/images/098/783/729/large/sophia-goloperova-sophia-goloperova-tb11-main-camera-001.webp
+**Barbtail Skirmisher** — local asset, `shared/assets/monster-barbtail-skirmisher.jpg` (winged, spike-quilled devils wielding tridents; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Devil" by Sophia Goloperova)
 
-**Iron Ward Enforcer** — "Pit Fiend from Avernus" by Yağız Kani
-https://cdnb.artstation.com/p/assets/covers/images/077/534/623/large/yagiz-kani-yagiz-kani-pitfiend.jpg
+**Iron Ward Enforcer** — local asset, `shared/assets/monster-iron-ward-enforcer.jpg` (winged horned devil wielding a spiked flail; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Pit Fiend from Avernus" by Yağız Kani)
 
 ## Named NPCs
 

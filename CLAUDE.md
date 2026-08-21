@@ -146,19 +146,21 @@ marked version for their own reference.
   to-do (`docs/one-shot-todo.md`), Obsidian + Gray options per the
   caste-to-class mapping in `docs/lore-mechanics.md`. Not started; next
   batch of artifacts.
-- Reference portraits are mostly hotlinked from ArtStation CDN URLs (see
-  `docs/reference-image-links.md`) rather than stored locally — fine for
-  now, but they could go stale. Gold, Gray, Red, and the Ash-Bound Wretch
-  are the exceptions: all four are locally-stored images
-  (`shared/assets/color-gold-portrait.jpg`,
-  `shared/assets/color-gray-portrait.jpg`,
-  `shared/assets/color-red-portrait.png`,
-  `shared/assets/monster-ash-bound-wretch.jpg`, used by their respective
-  color cards / the Ash-Bound Wretch entry in
-  `dm/pages/supplemental-images.html`), supplied directly rather than
-  pulled from ArtStation. If any of the remaining hotlinks go stale,
-  follow that same pattern — save the file under `shared/assets/` and
-  repoint the `<img>` tags.
+- Reference images are a mix now: Servian, Ryn, and the two locations
+  (The Dreadnought, Dis) are still hotlinked from ArtStation CDN URLs
+  (see `docs/reference-image-links.md`) — fine for now, but they could go
+  stale. Everything else has been swapped for locally-supplied images
+  under `shared/assets/` (`color-gold-portrait.jpg`,
+  `color-gray-portrait.jpg`, `color-red-portrait.png`,
+  `monster-ash-bound-wretch.jpg`, `monster-iron-ward-enforcer.jpg`,
+  `monster-barbtail-skirmisher.jpg`), each used by its respective color
+  card or `dm/pages/supplemental-images.html` entry. If any remaining
+  hotlink goes stale, follow the same pattern — save the file under
+  `shared/assets/` and repoint the `<img>` tags. Note each color card's
+  `.portrait` CSS is tuned per-image (height + `object-position`) to fit
+  that specific portrait's aspect ratio and framing — don't copy one
+  card's exact values onto another without checking the source image
+  first.
 - The Ash-Bound Wretch image is official D&D Monster Manual art (an Imp
   illustration with the sourcebook's own title/stat-block framing baked
   in), not independent portfolio work like the rest of the reference set
