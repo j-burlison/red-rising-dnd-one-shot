@@ -89,7 +89,9 @@ marked version for their own reference.
 
 ### Present and wired into the site
 - `index.html` — the Player Briefing: deployment-orders framing, a world
-  primer, a 6-step "build your operative" walkthrough (choose Color,
+  primer (with labeled, clickable images of The Concordat and Dis under
+  the primer text — both link to their full-size `shared/assets/`
+  originals), a 6-step "build your operative" walkthrough (choose Color,
   choose class, gear up, know your Oath, name yourself, bring a hook),
   and links out to the color cards + gear codex. This *is* the player
   site now, not just a links page — content and copy came from a
