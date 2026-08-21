@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <script src="../shared/dm-gate.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Benediction of Dis — DM Materials</title>
+<title>DM Dashboard — Benediction of Dis</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root{
   --ink:#0B0C0F;
@@ -15,192 +15,515 @@
   --hair:#2A2D34;
   --bone:#E9E4D8;
   --muted:#8B8F98;
-  --accent:#D4AF37;
-  --accent-dim:#6B5A22;
-  --tag:#C1502E;
+  --gold:#D4AF37;
+  --gray:#9AA3AD;
+  --purple:#A855F7;
+  --red:#C1502E;
+  --blue:#5FB3D9;
 }
 *{box-sizing:border-box;}
 body{
   margin:0;
-  min-height:100vh;
   background:radial-gradient(ellipse at 50% 0%, #1a1c22 0%, var(--ink) 60%);
   font-family:'Inter',sans-serif;
   color:var(--bone);
-  padding:56px 20px 90px;
 }
-.wrap{ max-width:920px; margin:0 auto; }
-.eyebrow{
+.nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(11,12,15,0.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--hair);
+  padding:12px 20px;
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  justify-content:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:1px;
+}
+.nav a{
+  color:var(--muted);
+  text-decoration:none;
+  text-transform:uppercase;
+  padding:4px 2px;
+  border-bottom:1px solid transparent;
+}
+.nav a:hover{ color:var(--gold); border-color:var(--gold); }
+
+.hero{
+  padding:50px 24px 30px;
   text-align:center;
+}
+.eyebrow{
   font-family:'JetBrains Mono',monospace;
   font-size:11px;
-  letter-spacing:2.5px;
-  color:var(--tag);
+  letter-spacing:3px;
+  color:var(--red);
   text-transform:uppercase;
-  border:1px solid var(--tag);
-  border-radius:3px;
-  padding:3px 12px;
-  display:table;
-  margin:0 auto 18px;
+  margin-bottom:14px;
 }
 h1{
   font-family:'Cinzel',serif;
   font-weight:900;
-  font-size:44px;
-  letter-spacing:3px;
-  text-align:center;
-  color:var(--accent);
+  font-size:36px;
+  letter-spacing:2px;
+  color:var(--gold);
   margin:0 0 8px;
-  text-shadow:0 0 28px rgba(212,175,55,0.3);
+  text-shadow:0 0 24px rgba(212,175,55,0.3);
 }
-.subtitle{
-  text-align:center;
+.hero-sub{
   font-style:italic;
+  font-size:13.5px;
   color:var(--muted);
-  font-size:14px;
   max-width:560px;
-  margin:0 auto 20px;
-  line-height:1.6;
+  margin:0 auto;
 }
-.spoiler-warning{
-  max-width:520px;
-  margin:0 auto 56px;
-  text-align:center;
-  font-family:'JetBrains Mono',monospace;
-  font-size:11px;
-  letter-spacing:0.5px;
-  color:var(--tag);
-  background:rgba(193,80,46,0.08);
-  border:1px solid var(--tag);
-  border-radius:6px;
-  padding:10px 16px;
+
+.wrap{
+  max-width:900px;
+  margin:0 auto;
+  padding:20px 24px 100px;
 }
-.section-head{
-  font-family:'JetBrains Mono',monospace;
-  font-size:11px;
-  letter-spacing:2.5px;
-  color:var(--accent);
-  text-transform:uppercase;
-  margin:44px 0 16px;
-  padding-bottom:8px;
-  border-bottom:1px solid var(--hair);
-}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
-  gap:16px;
-}
-a.card{
-  display:block;
-  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
-  border:1px solid var(--hair);
-  border-radius:8px;
-  padding:18px 20px;
-  text-decoration:none;
-  color:var(--bone);
-  box-shadow:0 16px 32px rgba(0,0,0,0.35);
-  transition:border-color 0.15s ease, transform 0.15s ease;
-}
-a.card:hover{
-  border-color:var(--accent-dim);
-  transform:translateY(-2px);
-}
-.card-title{
+h2{
   font-family:'Cinzel',serif;
   font-weight:700;
-  font-size:16px;
-  letter-spacing:0.5px;
-  color:var(--accent);
-  margin-bottom:6px;
+  font-size:24px;
+  letter-spacing:1.5px;
+  color:var(--gold);
+  margin:60px 0 6px;
+  scroll-margin-top:60px;
 }
-.card-desc{
-  font-size:12.5px;
-  line-height:1.5;
-  color:var(--muted);
-}
-footer{
-  text-align:center;
-  margin-top:70px;
+.h2-sub{
   font-family:'JetBrains Mono',monospace;
-  font-size:10px;
+  font-size:10.5px;
   letter-spacing:1.5px;
   color:var(--muted);
   text-transform:uppercase;
+  margin-bottom:22px;
+}
+.h2-sub a{ color:var(--purple); text-decoration:none; border-bottom:1px solid var(--purple); text-transform:none; letter-spacing:0.3px; }
+.h2-sub a:hover{ opacity:0.8; }
+h3{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:17px;
+  color:var(--bone);
+  margin:26px 0 8px;
+}
+p{
+  font-size:14px;
+  line-height:1.7;
+  color:var(--bone);
+  opacity:0.9;
+  margin:0 0 12px;
+}
+.rule{
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--hair) 20%, var(--hair) 80%, transparent);
+  margin:50px 0;
+}
+
+/* Link grid */
+.link-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:10px;
+  margin-top:14px;
+}
+.link-card{
+  display:block;
+  background:var(--panel);
+  border:1px solid var(--hair);
+  border-radius:6px;
+  padding:12px 14px;
+  text-decoration:none;
+  color:var(--bone);
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.5px;
+}
+.link-card:hover{ border-color:var(--gold); }
+.link-card .tag{
+  display:block;
+  color:var(--gold);
+  font-family:'Cinzel',serif;
+  font-size:13px;
+  letter-spacing:0.5px;
+  margin-bottom:2px;
+}
+
+/* Act beats */
+.act-block{
+  background:var(--panel);
+  border:1px solid var(--hair);
+  border-left:3px solid var(--gold);
+  border-radius:4px;
+  padding:18px 22px;
+  margin-bottom:16px;
+}
+.act-block h3{ margin-top:0; color:var(--gold); }
+.act-block ul{
+  margin:0;
+  padding-left:18px;
+  font-size:13px;
+  line-height:1.75;
+  color:var(--bone);
+  opacity:0.9;
+}
+.act-block li{ margin-bottom:4px; }
+
+/* NPC cards */
+.npc-card{
+  background:var(--panel);
+  border:1px solid var(--hair);
+  border-radius:6px;
+  padding:20px 24px;
+  margin-bottom:16px;
+}
+.npc-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:8px;
+}
+.npc-name{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:19px;
+  color:var(--gold);
+}
+.npc-stat-row{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  color:var(--muted);
+}
+.npc-abilities{
+  font-size:12.5px;
+  line-height:1.8;
+  margin-top:10px;
+  border-left:2px solid var(--hair);
+  padding-left:14px;
+}
+.npc-abilities b{ color:var(--gold); }
+.npc-note{
+  margin-top:10px;
+  font-size:12px;
+  font-style:italic;
+  color:var(--muted);
+  border-top:1px dashed var(--hair);
+  padding-top:10px;
+}
+
+/* Monster table */
+table.mon-table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11.5px;
+  margin-top:10px;
+}
+table.mon-table th{
+  text-align:left;
+  color:var(--gold);
+  font-weight:500;
+  text-transform:uppercase;
+  font-size:9.5px;
+  letter-spacing:1px;
+  padding:0 10px 8px 0;
+  border-bottom:1px solid var(--hair);
+}
+table.mon-table td{
+  padding:9px 10px 9px 0;
+  border-bottom:1px solid rgba(42,45,52,0.5);
+  color:var(--bone);
+  vertical-align:top;
+}
+
+/* Mechanics quick ref */
+.mech-item{
+  background:var(--panel);
+  border:1px solid var(--hair);
+  border-radius:6px;
+  padding:16px 20px;
+  margin-bottom:12px;
+}
+.mech-item .mname{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:15px;
+  color:var(--gold);
+  margin-bottom:6px;
+  display:block;
+}
+.mech-item p{ font-size:12.5px; margin-bottom:0; opacity:0.85; }
+
+.dm-tip{
+  background:rgba(193,80,46,0.06);
+  border:1px solid #5C2415;
+  border-radius:6px;
+  padding:14px 18px;
+  margin-top:10px;
+  font-size:12.5px;
+  line-height:1.7;
+  color:var(--bone);
+  opacity:0.92;
+}
+.dm-tip b{ color:var(--red); }
+
+/* Pacing table */
+table.pace-table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  margin-top:10px;
+}
+table.pace-table th, table.pace-table td{
+  text-align:left;
+  padding:8px 10px;
+  border-bottom:1px solid var(--hair);
+}
+table.pace-table th{ color:var(--gold); font-size:10px; text-transform:uppercase; letter-spacing:1px; }
+
+.footer-note{
+  text-align:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  color:var(--muted);
+  margin-top:70px;
+  letter-spacing:1px;
 }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="eyebrow">DM Materials — Password Protected</div>
+
+<div class="nav">
+  <a href="#storyboard">Storyboard</a>
+  <a href="#mechanics">Mechanics</a>
+  <a href="#npcs">NPCs</a>
+  <a href="#monsters">Monsters</a>
+  <a href="#pacing">Pacing</a>
+  <a href="#files">All Files</a>
+</div>
+
+<div class="hero">
+  <div class="eyebrow">DM-Only — Do Not Share With Players</div>
   <h1>BENEDICTION OF DIS</h1>
-  <div class="subtitle">Full campaign reference: storyboard, mechanics, NPC stat blocks, and marked-up battle maps.</div>
-  <div class="spoiler-warning">This page contains the twist, NPC stat blocks, and hidden objective markers. Do not share this link or its contents with players.</div>
+  <p class="hero-sub">Command center for running the one-shot. Storyboard, mechanics, NPCs, monsters, pacing, and every linked handout in one place.</p>
+</div>
 
-  <div class="section-head">Run the Session</div>
-  <div class="grid">
-    <a class="card" href="pages/storyboard.html">
-      <div class="card-title">Storyboard</div>
-      <div class="card-desc">Three-act structure, key beats, and the three endings.</div>
-    </a>
-    <a class="card" href="pages/lore-mechanics.html">
-      <div class="card-title">Lore &amp; Mechanics</div>
-      <div class="card-desc">Oathbound compulsion, caste rules, Zero-G rules, pacing.</div>
-    </a>
-    <a class="card" href="pages/npc-and-monsters.html">
-      <div class="card-title">NPCs &amp; Monsters</div>
-      <div class="card-desc">Servian, Ryn, devil stat blocks, and encounter builds.</div>
-    </a>
+<div class="wrap">
+
+  <h2 id="storyboard">Storyboard</h2>
+  <div class="h2-sub">Full detail: <a href="pages/storyboard.html">storyboard.html</a></div>
+
+  <div class="act-block">
+    <h3>Act 1 — The Benediction (aboard The Concordat)</h3>
+    <ul>
+      <li>Cold open: Benediction ceremony, Obsidians kneeling, Grays at the margins, "too quiet" unease. Short RP/skill scene.</li>
+      <li>Break: leechcraft breach through portals. "All units to launch bays. Prepare for planar jump and Iron Rain."</li>
+      <li>Both squads reach the corridor together — ship shakes, hull visibly cut open, gravity fails, roll initiative.</li>
+      <li>Round 1: devils pour through the hull cut — flyers first, then the Iron Ward Enforcer.</li>
+      <li><b>Mid-fight:</b> leechcraft tears free (Enforcer's death / countermeasure / player action) — one sharp round of vacuum pull + debris.</li>
+      <li>Zero-G Corridor rules apply throughout (see Mechanics).</li>
+      <li>Ends when enemies are dead and the shuttle bay door opens. Ship jumps as pods launch — this is what makes the Iron Rain hot and early.</li>
+      <li>1–2 PCs (Gold's confidants) know the true objective now; everyone else believes it's standard intel extraction.</li>
+    </ul>
   </div>
 
-  <div class="section-head">Handouts</div>
-  <div class="grid">
-    <a class="card" href="pages/handout-logbook.html">
-      <div class="card-title">The Logbook</div>
-      <div class="card-desc">Act 2 discovery prop — reveals the House Ferrox tie. Hand to players at the table when found; don't post the link publicly.</div>
-    </a>
+  <div class="act-block">
+    <h3>Act 2 — Iron Rain onto Dis</h3>
+    <ul>
+      <li>Scattered landing across a district of Dis — black iron architecture, screaming stonework, bruised orange sky.</li>
+      <li>Stated objective: retrieve troop movement intel from the Dis Arcane Library.</li>
+      <li><b>Discovery beat:</b> remaining PCs learn the Chimera Codex's true nature via the Logbook — found near the objective, via Investigation/stealth or a social check against a cagey archivist/guard.</li>
+      <li>Combat: library guards, deliberately lighter than expected (2 Barbtail Skirmishers + 2 Ash-Bound Wretches, no Enforcer) — sells the "unprepared ally" reframe.</li>
+      <li><b>DM lever:</b> have Servian spend resources here (Lay on Hands, a Pulse Fist charge, a smite) to weaken him ahead of Act 3.</li>
+    </ul>
   </div>
 
-  <div class="section-head">DM Battle Maps (objectives marked)</div>
-  <div class="grid">
-    <a class="card" href="../shared/pages/battle-map-act1-corridor.html">
-      <div class="card-title">Act 1 — Zero-G Corridor</div>
-      <div class="card-desc">Anchors, breach zone, handholds.</div>
-    </a>
-    <a class="card" href="pages/battle-map-act2-library-dm.html">
-      <div class="card-title">Act 2 — Dis Arcane Library</div>
-      <div class="card-desc">Logbook &amp; spellbook objective marked.</div>
-    </a>
-    <a class="card" href="pages/battle-map-act3-plaza-dm.html">
-      <div class="card-title">Act 3 — Extraction Plaza</div>
-      <div class="card-desc">Chokepoint and cover positions.</div>
-    </a>
+  <div class="act-block">
+    <h3>Act 3 — The Twist and Extraction</h3>
+    <ul>
+      <li>A devil horde arrives as the party secures the Chimera Codex.</li>
+      <li>Ryn Gray turns, reveals the truth to everyone, sides against the Society.</li>
+      <li>Servian orders the party to kill Ryn and the devils — every PC is Oathbound and must actively break the oath to defy this.</li>
+      <li>Both leaders draw razors — Servian and Ryn are equally lethal, so the choice is about loyalty, not safety.</li>
+      <li>Climax combat: PCs choose a side, or break the oath entirely and run with the book.</li>
+      <li>Ends at the close of combat.</li>
+    </ul>
+    <div class="dm-tip"><b>Three endings:</b> Society wins (Servian keeps the book) · Rising wins (Ryn's side secures it) · PCs escape with the book (break the oath, abandon both sides).</div>
   </div>
 
-  <div class="section-head">Caste Dossiers (shared with players)</div>
-  <div class="grid">
-    <a class="card" href="../shared/pages/color-card-society.html">
-      <div class="card-title">The Society</div>
-    </a>
-    <a class="card" href="../shared/pages/color-card-gold.html">
-      <div class="card-title">Gold</div>
-    </a>
-    <a class="card" href="../shared/pages/color-card-gray.html">
-      <div class="card-title">Gray</div>
-    </a>
-    <a class="card" href="../shared/pages/color-card-obsidian.html">
-      <div class="card-title">Obsidian</div>
-    </a>
-    <a class="card" href="../shared/pages/color-card-white.html">
-      <div class="card-title">White</div>
-    </a>
-    <a class="card" href="../shared/pages/color-card-blue.html">
-      <div class="card-title">Blue</div>
-    </a>
-    <a class="card" href="../shared/pages/gear-codex.html">
-      <div class="card-title">Gear Codex</div>
-    </a>
+  <div class="rule"></div>
+
+  <h2 id="mechanics">Mechanics Quick Reference</h2>
+  <div class="h2-sub">Full detail: <a href="pages/lore-mechanics.html">lore-mechanics.html</a></div>
+
+  <div class="mech-item">
+    <span class="mname">Oathbound Compulsion</span>
+    <p>Two sigils, one per hand. Each break: 2d6 damage (Con save DC 14 for half) + disadvantage on next roll. 2nd break also costs 1 exhaustion. After both sigils break, that PC is free of the compulsion for the rest of the encounter.</p>
   </div>
 
-  <footer>Benediction of Dis — DM Site</footer>
+  <div class="mech-item">
+    <span class="mname">Zero-G Corridor (Act 1)</span>
+    <p>25 ft. wide, 120 ft. long, 15 ft. ceiling, gentle bend. Movement: push off (Str/Athletics DC 12) to drift in a straight line to next anchor. Anchors every 10 ft. on both walls + ceiling. Vacuum pull round: Str save DC 13 or pulled toward breach; debris: Dex save DC 12 or 1d6 bludgeoning. Recoil: unbraced attacks push the attacker 5 ft. away from their target. Devils move freely, unaffected by these rules.</p>
+  </div>
+
+  <div class="mech-item">
+    <span class="mname">Stem Injectors (universal)</span>
+    <p>3 charges/short rest. Bonus action. Each charge = Greater Healing Potion (4d4+4).</p>
+  </div>
+
+  <div class="mech-item">
+    <span class="mname">Gravity Boots (Gold only)</span>
+    <p>Functions as Boots of Flying — flying speed = normal speed, ignores zero-G rules. 2 charges, recharge on long rest. Servian wears these into Act 1 — consider having them run out or take damage mid-fight so he's grounded like everyone else for the rest of that encounter.</p>
+  </div>
+
+  <div class="mech-item">
+    <span class="mname">War Chant (Obsidian)</span>
+    <p>Bonus action to start; Concentration. Self + allies within 15 ft. immune to frightened. At the start of the Obsidian's turns, weak creatures (CR 1 or lower — Ash-Bound Wretches) within 30 ft. that can hear it: Wisdom save (DC 8 + prof + Con) or frightened until the Obsidian's next turn.</p>
+  </div>
+
+  <div class="mech-item">
+    <span class="mname">Razor (Gold only)</span>
+    <p>1d8 slashing, finesse, light. Ignores the target's armor AC bonus entirely (Dex + shield/magic only). <b>Whip Mode:</b> item interaction to toggle (free) — reach 10 ft., 1d6 slashing, loses light; hits can disarm/trip at range instead of dealing damage. Both Servian and Ryn carry one — Ryn's stays hidden (Pulse Blade instead) until her Act 3 reveal.</p>
+  </div>
+
+  <div class="rule"></div>
+
+  <h2 id="npcs">NPCs</h2>
+  <div class="h2-sub">Full stat blocks: <a href="pages/npc-and-monsters.html">npc-and-monsters.html</a></div>
+
+  <div class="npc-card">
+    <div class="npc-head">
+      <span class="npc-name">Servian au Ferrox</span>
+      <span class="npc-stat-row">Gold Paladin 7 · CR 6 · AC 20 · HP 130</span>
+    </div>
+    <p style="margin-bottom:6px;">Cassius-style cold composure — precise, unshaken, never raises his voice. Believes the Chimera Codex was meant to be <i>destroyed</i>, not exploited. Genuinely disgusted when his cousin's House (Lucan au Ferrox) surfaces in the Logbook — one of the only moments his mask slips.</p>
+    <div class="npc-abilities">
+      <b>Multiattack:</b> 2 razor attacks (+9, 1d8+5, ignores armor)<br>
+      <b>Divine Smite:</b> +2d8 radiant/slot on razor hit<br>
+      <b>Pulse Fist:</b> 3 charges/short rest, bonus action, 15-ft. cone, 2d6 force + push (DC 15 Dex)<br>
+      <b>Bred to Command:</b> 3/short rest, ally advantage<br>
+      <b>Aura of Protection:</b> +4 saves within 10 ft.<br>
+      <b>Lay on Hands:</b> 35 HP pool<br>
+      <b>Peerless Reflexes:</b> 1/day, turn a failed save into a success<br>
+      <b>Gravity Boots:</b> Boots of Flying, 2 charges
+    </div>
+    <div class="npc-note">DM lever: spend his resources on Act 2 guards so he's weaker going into Act 3.</div>
+  </div>
+
+  <div class="npc-card">
+    <div class="npc-head">
+      <span class="npc-name">Ryn Gray</span>
+      <span class="npc-stat-row">Gray Ranger 7 · CR 6 · AC 16 · HP 85</span>
+    </div>
+    <p style="margin-bottom:6px;">Holiday-style bluntness and loyalty — plainspoken, protective of her people over rank. Has been quietly recruiting/vetting the party since Act 1. The betrayal is personal, not calculated.</p>
+    <div class="npc-abilities">
+      <b>Multiattack:</b> 2 attacks — Pulse Blade (+8, 1d8+4) until reveal, then Razor (+8, 1d8+4, ignores armor); or Longbow (+8, 1d8+4, 150/600)<br>
+      <b>Pulse Grenade:</b> x3, thrown 60 ft., 15-ft. radius, 3d8 force (DC 15 Dex)<br>
+      <b>Hunter's Mark:</b> 1/short rest, no slot, +1d6 on marked target<br>
+      <b>Pack Tactics / Tracker's Eye / +2 Initiative</b>
+    </div>
+    <div class="npc-note">Keep the Razor hidden until the Act 3 reveal — drawing it should land as a visible escalation at the table.</div>
+  </div>
+
+  <div class="rule"></div>
+
+  <h2 id="monsters">Monster Quick Reference</h2>
+  <div class="h2-sub">Full stat blocks: <a href="pages/npc-and-monsters.html">npc-and-monsters.html</a></div>
+
+  <table class="mon-table">
+    <thead><tr><th>Name</th><th>CR</th><th>AC</th><th>HP</th><th>Key Attack</th></tr></thead>
+    <tbody>
+      <tr><td>Ash-Bound Wretch</td><td>1/8</td><td>11</td><td>11</td><td>Claw +2, 1d4 slashing</td></tr>
+      <tr><td>Barbtail Skirmisher</td><td>2</td><td>14</td><td>33</td><td>Claw +4 (1d4+2) / Tail Spike +4 (1d4+2), 20/80 ft.</td></tr>
+      <tr><td>Iron Ward Enforcer</td><td>3</td><td>15</td><td>55</td><td>Glaive +5, 1d10+3 + DC 12 Con or 1d6 poison. Rally Cry (recharge 5–6): advantage to 3 allies within 30 ft.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Suggested Compositions</h3>
+  <table class="mon-table">
+    <thead><tr><th>Encounter</th><th>Composition</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Act 1 — Boarding</td><td>4 Wretch, 2 Skirmisher, 1 Enforcer</td><td>Deploy in waves along the corridor</td></tr>
+      <tr><td>Act 2 — Library Guards</td><td>2 Skirmisher, 2 Wretch</td><td>Deliberately light — no Enforcer</td></tr>
+      <tr><td>Act 3 — Final Horde</td><td>3 Wretch, 3 Skirmisher, 2 Enforcer</td><td>Scale live based on how the party splits</td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule"></div>
+
+  <h2 id="pacing">Session Pacing</h2>
+  <div class="h2-sub">~4-hour floor — you have more runway for a longer Saturday session</div>
+
+  <table class="pace-table">
+    <thead><tr><th>Segment</th><th>Time</th></tr></thead>
+    <tbody>
+      <tr><td>Session open / setup</td><td>10 min</td></tr>
+      <tr><td>Act 1 — Ceremony + RP</td><td>20 min</td></tr>
+      <tr><td>Act 1 — Corridor combat + Zero-G</td><td>30–35 min</td></tr>
+      <tr><td>Act 2 — Landing/regroup</td><td>10–15 min</td></tr>
+      <tr><td>Act 2 — Library approach + Logbook</td><td>20–25 min</td></tr>
+      <tr><td>Act 2 — Combat</td><td>20 min</td></tr>
+      <tr><td>Act 3 — Reveal + order (RP)</td><td>10–15 min</td></tr>
+      <tr><td>Act 3 — Climax combat</td><td>40–45 min</td></tr>
+      <tr><td>Wrap-up</td><td>10 min</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:10px; opacity:0.7; font-size:12.5px;">Extra time is best spent on Act 1–2 roleplay rather than stretching combats.</p>
+
+  <div class="rule"></div>
+
+  <h2 id="files">All Files</h2>
+  <div class="h2-sub">Everything linked, wired to this repo's actual folders</div>
+
+  <h3>Player-Facing</h3>
+  <div class="link-grid">
+    <a class="link-card" href="../index.html"><span class="tag">Player Briefing</span>Onboarding + character build steps</a>
+    <a class="link-card" href="../shared/pages/gear-codex.html"><span class="tag">Gear Codex</span>All equipment reference</a>
+  </div>
+
+  <h3>Full Reference Pages</h3>
+  <div class="link-grid">
+    <a class="link-card" href="pages/storyboard.html"><span class="tag">Storyboard</span>Full act-by-act detail</a>
+    <a class="link-card" href="pages/lore-mechanics.html"><span class="tag">Lore &amp; Mechanics</span>Full rules reference</a>
+    <a class="link-card" href="pages/npc-and-monsters.html"><span class="tag">NPCs &amp; Monsters</span>Full stat blocks + encounters</a>
+  </div>
+
+  <h3>Color Cards</h3>
+  <div class="link-grid">
+    <a class="link-card" href="../shared/pages/color-card-gray.html"><span class="tag">Gray</span>Playable</a>
+    <a class="link-card" href="../shared/pages/color-card-obsidian.html"><span class="tag">Obsidian</span>Playable</a>
+    <a class="link-card" href="../shared/pages/color-card-gold.html"><span class="tag">Gold</span>NPC / command caste</a>
+    <a class="link-card" href="../shared/pages/color-card-red.html"><span class="tag">Red</span>NPC / flavor</a>
+    <a class="link-card" href="../shared/pages/color-card-blue.html"><span class="tag">Blue</span>NPC / flavor</a>
+    <a class="link-card" href="../shared/pages/color-card-white.html"><span class="tag">White</span>NPC / flavor</a>
+    <a class="link-card" href="../shared/pages/color-card-society.html"><span class="tag">The Society</span>Overview / table-setting</a>
+  </div>
+
+  <h3>Battle Maps</h3>
+  <div class="link-grid">
+    <a class="link-card" href="../shared/pages/battle-map-act1-corridor.html"><span class="tag">Act 1</span>Zero-G Corridor</a>
+    <a class="link-card" href="pages/battle-map-act2-library-player.html"><span class="tag">Act 2 (Player)</span>Dis Arcane Library</a>
+    <a class="link-card" href="pages/battle-map-act2-library-dm.html"><span class="tag">Act 2 (DM)</span>Objectives marked</a>
+    <a class="link-card" href="pages/battle-map-act3-plaza-player.html"><span class="tag">Act 3 (Player)</span>Extraction Plaza</a>
+    <a class="link-card" href="pages/battle-map-act3-plaza-dm.html"><span class="tag">Act 3 (DM)</span>Extraction Plaza</a>
+  </div>
+
+  <h3>Handouts</h3>
+  <div class="link-grid">
+    <a class="link-card" href="pages/handout-logbook.html"><span class="tag">The Logbook</span>Act 2 discovery prop</a>
+  </div>
+
+  <div class="footer-note">DM DASHBOARD — BENEDICTION OF DIS</div>
+
 </div>
 </body>
 </html>
