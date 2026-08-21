@@ -84,6 +84,44 @@ p{
   background:linear-gradient(90deg, transparent, var(--hair) 20%, var(--hair) 80%, transparent);
   margin:50px 0;
 }
+.world-images{
+  display:flex;
+  gap:20px;
+  margin-top:24px;
+  flex-wrap:wrap;
+}
+.world-image{
+  flex:1;
+  min-width:240px;
+  text-decoration:none;
+  display:block;
+}
+.world-image img{
+  display:block;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border:1px solid var(--hair);
+  border-radius:6px;
+  filter:grayscale(15%) contrast(1.05) brightness(0.92);
+  transition:border-color 0.15s ease;
+}
+.world-image:hover img{
+  border-color:#6B5A22;
+}
+.world-image-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:1px;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-top:8px;
+  text-align:center;
+}
+.world-image-label b{
+  color:var(--gold);
+  font-weight:600;
+}
 .steps{
   counter-reset:step;
   list-style:none;
@@ -236,6 +274,17 @@ p{
   <p>The Society rose by conquering plane after plane, binding worlds and peoples beneath a single Color-based hierarchy. Where you rank in that hierarchy — your Color — is stamped into you at birth: your training, your gear, your legal rights, even your access to magic.</p>
   <p>You are not Gold. You are the ones Gold sends. Your team is being deployed aboard the interplanar dreadnought <b>The Concordat</b>, currently in orbit above the planet Farun, staged for a mission into Dispater — the plane of iron and law, and the city of Dis at its heart. Beyond that, you know only what your orders tell you.</p>
   <p>Every operative carries something the Society implanted at birth: two sigils, one on each hand, binding you to obey the direct spoken word of your commanding Gold. You've never had reason to test them. Yet.</p>
+
+  <div class="world-images">
+    <a class="world-image" href="shared/assets/location-dreadnought-concordat.jpg" target="_blank" rel="noopener">
+      <img src="shared/assets/location-dreadnought-concordat.jpg" alt="The Concordat, an interplanar dreadnought, in orbit">
+      <div class="world-image-label"><b>The Concordat</b> — your ship</div>
+    </a>
+    <a class="world-image" href="shared/assets/location-dis.jpg" target="_blank" rel="noopener">
+      <img src="shared/assets/location-dis.jpg" alt="Dis, gothic devil-city skyline">
+      <div class="world-image-label"><b>Dis</b> — your destination</div>
+    </a>
+  </div>
 
   <div class="rule"></div>
 
