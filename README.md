@@ -3,69 +3,73 @@
 A set of web pages containing all the information needed to run the Red
 Rising DnD adaptation one-shot: **Benediction of Dis**.
 
-Two sites on one server, one base URL:
+Two sites, one base URL, deployed as a static site on **GitHub Pages**:
 
 - **Player site** (`/`) — color cards, gear codex, and player-safe battle
   maps. Public, no spoilers.
 - **DM site** (`/dm`) — everything above plus the storyboard, full lore &
-  mechanics reference, NPC/monster stat blocks, and battle maps with
-  objectives marked. **Password protected** so players can't peek and
-  cheat.
+  mechanics reference, NPC/monster stat blocks, the Logbook handout, and
+  battle maps with objectives marked. Gated behind a **password prompt**
+  so a player can't casually browse it and cheat.
 
 See `CLAUDE.md` for the full content index (what's included, what's still
 missing) and the design conventions used across pages.
 
+## How the DM gate works
+
+GitHub Pages only serves static files — there's no server to check a
+password against. `/dm` is gated by a small client-side script
+(`shared/dm-gate.js`) that every page under `dm/` loads: it shows a
+password prompt and only reveals the page once the right password is
+entered, then remembers that in the browser via `localStorage` so it
+doesn't ask again on that device.
+
+**This is a deterrent, not real security** — anyone who opens browser dev
+tools can read the password straight out of the script, or just view the
+page source. That's an intentional, explicit tradeoff for a one-shot: it
+keeps a player from casually wandering into spoilers, nothing more.
+
+**Before you run the session:** open `shared/dm-gate.js` and change the
+`PASSWORD` value from the placeholder to whatever you want your table's DM
+password to be, then commit and push. Share that password with your DM
+(yourself), not the players.
+
 ## Running it locally
 
+No build step, no dependencies — it's plain HTML/CSS/JS. Any static file
+server works:
+
 ```bash
-npm install
-cp .env.example .env   # then edit DM_PASSWORD in .env
-npm start
+python3 -m http.server 8080
+# or: npx serve
 ```
 
-- Player site: http://localhost:3000/
-- DM site: http://localhost:3000/dm/ (prompts for the username/password
-  from `.env`)
+Then open:
+- Player site: http://localhost:8080/
+- DM site: http://localhost:8080/dm/ (prompts for the password set in
+  `shared/dm-gate.js`)
 
-## Deploying
+You can also just open `index.html` directly in a browser (`file://`),
+though a local server is closer to how GitHub Pages will actually serve
+it.
 
-This is a small Node/Express app, which means the DM site's password
-protection is enforced **server-side** (HTTP Basic Auth) — a player can't
-bypass it just by guessing the `/dm/...` URL. That constrains hosting to
-something that can run Node.
+## Deploying to GitHub Pages
 
-### DigitalOcean App Platform (recommended)
+1. Push this repo to GitHub (see below) — make sure you've changed the
+   password in `shared/dm-gate.js` first.
+2. On the repo's GitHub page: **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to "Deploy from a
+   branch."
+4. Set **Branch** to `main` (or whichever branch you deploy from) and the
+   folder to `/ (root)`.
+5. Save. GitHub gives you a URL like
+   `https://<username>.github.io/red-rising-dnd-one-shot/` — that's your
+   player site. The DM site is at
+   `https://<username>.github.io/red-rising-dnd-one-shot/dm/`.
 
-1. Push this repo to GitHub (see below).
-2. In DigitalOcean, create a new App → GitHub → select this repo.
-3. App Platform auto-detects the Node buildpack from `package.json`
-   (`npm start` as the run command).
-4. In the app's **Settings → App-Level Environment Variables**, add:
-   - `DM_USERNAME` (defaults to `dm` if unset)
-   - `DM_PASSWORD` — mark this one **encrypted**
-5. Deploy. Your player site is at the app's URL; the DM site is at
-   `<that URL>/dm`. Add a custom domain under Settings if you want one.
-
-Costs roughly $5/mo on the cheapest instance size. Real password
-protection, no extra services needed.
-
-### GitHub Pages — not recommended for this use case
-
-GitHub Pages only serves static files; it can't run the Express server or
-check the DM password. Two options if you still want to use it:
-
-- **Player site only** — host `player/` (plus `shared/`) on GitHub Pages,
-  and don't host `dm/` there at all. Run the DM site locally with
-  `npm start` during sessions instead, or host it separately with option
-  above.
-- **Cloudflare Access in front of Pages** — Cloudflare's free tier can
-  gate a path (like `/dm`) behind a login (email OTP or a shared
-  passcode) even when the origin is static GitHub Pages. This works but
-  is more setup than the Node/Express route and ties you to Cloudflare.
-
-Given the explicit ask for real DM-side password protection, **DigitalOcean
-App Platform (or any other Node host — Render, Railway, Fly.io) is the
-simpler path.**
+Every internal link in this repo uses relative paths, so this works the
+same whether it's served from a GitHub Pages project subpath (as above)
+or from a custom domain root — no path rewriting needed either way.
 
 ### Pushing to GitHub
 
@@ -77,9 +81,9 @@ git push -u origin main
 ## Project structure
 
 ```
-player/     player-facing site (served at "/")
-dm/         DM-facing site (served at "/dm", password protected)
-shared/     pages linked from both sites, served openly at "/shared"
-docs/       raw markdown source notes (not served by the site)
-server.js   the Express app tying it all together
+index.html      player-facing landing page (served at "/")
+pages/          player-only battle maps
+dm/             DM-facing site (served at "/dm", gated by shared/dm-gate.js)
+shared/         pages + the dm-gate.js script, linked from both sites
+docs/           raw markdown source notes (not linked from the site)
 ```
