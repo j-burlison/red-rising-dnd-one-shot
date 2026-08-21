@@ -127,8 +127,19 @@ marked version for their own reference.
   `shared/`, because the flagged entry is the Act 3 twist — it's meant to
   be revealed to players at the table when they find it in-fiction, not
   browsable ahead of time.
+- `dm/pages/supplemental-images.html` — a scrollable gallery of every
+  reference image in `docs/reference-image-links.md` (color card
+  portraits, devil references, NPC references, locations), one large
+  image per section with artist credit, meant to be scrolled through and
+  turned toward players at the table. Linked from the DM Dashboard's
+  sticky nav ("Images") and its "Reference Images" file directory entry.
+  Lives under `dm/`, gated like everything else there, since it's a
+  DM-driven presentation tool rather than something players browse
+  themselves.
 - `docs/reference-image-links.md` — portrait/reference art links (ArtStation,
-  hotlinked — see the note in that file about them going stale)
+  hotlinked — see the note in that file about them going stale). Source
+  for the gallery page above; keep the two in sync if links are added,
+  removed, or replaced.
 
 ### Known gaps (flagged in the source to-do list or referenced but not received)
 - **Pre-gen character sheets** — explicitly unchecked in the original
