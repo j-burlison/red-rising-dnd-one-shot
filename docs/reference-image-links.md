@@ -1,0 +1,51 @@
+# "Benediction of Dis" — Reference Image Links
+
+Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock.
+
+## Color Cards
+
+**Gold** — "Golden Armor" by Timmie
+https://cdnb.artstation.com/p/assets/images/images/056/708/193/large/timea-pap-goldenarmor-legendary-male.jpg
+
+**Gray** — "Tactical Soldier" by Tariq Daradka
+https://cdnb.artstation.com/p/assets/images/images/000/921/653/large/tariq-al-daradkeh-tacticalsoldier.jpg
+
+**Obsidian** — "Dark Plate Armor Concept Art" by A A
+https://cdnb.artstation.com/p/assets/images/images/044/591/935/large/a-a-dark-knight.jpg
+
+**Blue** — "Space Pilot" by Lazar Kacarevic
+https://cdnb.artstation.com/p/assets/images/images/007/914/293/large/lazar-kacarevic-lazar-kacarevic-space-pilot-2.jpg
+
+**White** — "Old Priest" by Loc Nguyen
+https://cdnb.artstation.com/p/assets/images/images/005/519/975/large/loc-nguyen-2016-11-06-old-priest.jpg
+
+## Enemy Types
+
+**Ash-Bound Wretch** — "Mischievous Imp" by Sean Wade
+https://cdnb.artstation.com/p/assets/covers/images/008/906/725/large/sean-wade-impwf.jpg
+
+**Barbtail Skirmisher** — "Devil" by Sophia Goloperova
+https://cdnb.artstation.com/p/assets/covers/images/098/783/729/large/sophia-goloperova-sophia-goloperova-tb11-main-camera-001.webp
+
+**Iron Ward Enforcer** — "Pit Fiend from Avernus" by Yağız Kani
+https://cdnb.artstation.com/p/assets/covers/images/077/534/623/large/yagiz-kani-yagiz-kani-pitfiend.jpg
+
+## Named NPCs
+
+**Servian au Ferrox (Gold)** — "Golden Paladin" by Autumn Klepal
+https://cdnb.artstation.com/p/assets/images/images/024/113/153/large/autumn-klepal-sketch-1581223298758.jpg
+
+**Ryn Gray (Gray)** — "Female Ranger DnD" by Paladraws
+https://cdnb.artstation.com/p/assets/images/images/065/935/065/large/paladraws-female-ranger-1.jpg
+
+## Locations
+
+**The Dreadnought (Act 1 ship)** — "Heavy Dreadnought Spaceship Concept" by Piotr Michalak
+https://cdnb.artstation.com/p/assets/covers/images/011/235/315/large/piotr-michalak-statek-thumb.jpg
+
+**Dis** — "Dark Fantasy Environment" by Neo Star
+https://cdna.artstation.com/p/assets/covers/images/053/961/730/large/leonardo-jines-leonardo-jines-dl1.jpg
+
+---
+
+*Note: these are hotlinked from ArtStation's CDN and could go stale if the artist removes or updates the piece. For a slide deck you plan to keep long-term, consider downloading local copies rather than relying on the links staying live.*

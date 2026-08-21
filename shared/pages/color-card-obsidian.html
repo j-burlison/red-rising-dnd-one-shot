@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Color Card — Obsidian</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#0B0C0F;
+  --panel:#14161B;
+  --panel-2:#0F1013;
+  --hair:#2A2D34;
+  --bone:#E9E4D8;
+  --muted:#8B8F98;
+  --accent:#A855F7;
+  --accent-dim:#4C1D7A;
+  --accent-glow: rgba(168,85,247,0.32);
+}
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+    radial-gradient(ellipse at 50% 0%, #1a1c22 0%, var(--ink) 60%);
+  font-family:'Inter',sans-serif;
+  padding:40px 20px;
+}
+.card{
+  position:relative;
+  width:420px;
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid var(--accent-dim);
+  border-radius:8px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.03),
+    0 40px 80px rgba(0,0,0,0.65),
+    inset 0 0 60px rgba(168,85,247,0.04);
+  padding:26px 28px 22px;
+  overflow:hidden;
+}
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px);
+  pointer-events:none;
+}
+.pip{
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:2px;
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:1px;
+  color:var(--accent);
+}
+.pip-tl{top:16px; left:18px;}
+.pip-br{bottom:16px; right:18px; transform:rotate(180deg);}
+.pip small{
+  font-family:'JetBrains Mono',monospace;
+  font-size:8px;
+  color:var(--muted);
+  letter-spacing:0.5px;
+  font-weight:400;
+}
+.eyebrow{
+  text-align:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:2.5px;
+  color:var(--muted);
+  margin:2px 0 14px;
+  text-transform:uppercase;
+}
+.rule{
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--accent-dim) 20%, var(--accent-dim) 80%, transparent);
+  margin:14px 0;
+}
+.sigil-wrap{
+  display:flex;
+  justify-content:center;
+  margin:6px 0 8px;
+}
+.sigil{
+  color:var(--accent);
+  filter:drop-shadow(0 0 10px var(--accent-glow));
+}
+.title{
+  text-align:center;
+  font-family:'Cinzel',serif;
+  font-weight:900;
+  font-size:34px;
+  letter-spacing:3px;
+  color:var(--accent);
+  margin:4px 0 6px;
+  text-shadow:0 0 24px var(--accent-glow);
+}
+.tagline{
+  text-align:center;
+  font-style:italic;
+  font-size:13px;
+  color:var(--bone);
+  opacity:0.8;
+  margin:0 8px 4px;
+  line-height:1.5;
+}
+.lore{
+  font-size:14px;
+  line-height:1.65;
+  color:var(--bone);
+  opacity:0.92;
+  margin:0;
+}
+.traits{
+  margin-top:4px;
+  border:1px solid var(--hair);
+  background:rgba(168,85,247,0.04);
+  border-radius:6px;
+  padding:14px 16px;
+}
+.traits-head{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--accent);
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+.trait{
+  font-size:12.5px;
+  line-height:1.55;
+  color:var(--bone);
+  opacity:0.9;
+  margin-bottom:8px;
+}
+.trait:last-child{margin-bottom:0;}
+.trait b{
+  color:var(--accent);
+  font-family:'JetBrains Mono',monospace;
+  font-weight:500;
+  letter-spacing:0.3px;
+}
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:16px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:9px;
+  letter-spacing:1.5px;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.footer .tag{
+  color:var(--accent);
+  border:1px solid var(--accent-dim);
+  border-radius:3px;
+  padding:3px 7px;
+}
+.portrait{
+  display:block;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border:1px solid var(--accent-dim);
+  border-radius:4px;
+  margin-bottom:14px;
+  filter:grayscale(30%) contrast(1.08) brightness(0.88);
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="pip pip-tl">OB<small>OBSIDIAN</small></div>
+  <div class="pip pip-br">OB<small>OBSIDIAN</small></div>
+
+  <div class="eyebrow">The Society — Caste Dossier</div>
+
+  <img class="portrait" src="https://cdnb.artstation.com/p/assets/images/images/044/591/935/large/a-a-dark-knight.jpg" alt="Obsidian reference">
+
+  <div class="sigil-wrap">
+    <svg class="sigil" width="108" height="108" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4">
+      <polygon points="50,14 66,42 50,58 34,42" />
+      <polygon points="30,50 50,60 42,88 18,72" stroke-width="1.1" opacity="0.8"/>
+      <polygon points="70,50 50,60 58,88 82,72" stroke-width="1.1" opacity="0.8"/>
+      <polygon points="50,58 58,88 42,88" stroke-width="0.9" opacity="0.55"/>
+    </svg>
+  </div>
+
+  <div class="title">OBSIDIAN</div>
+  <div class="tagline">"Unbreaking. Unbending. The wall that does not fall."</div>
+
+  <div class="rule"></div>
+
+  <p class="lore">Bred huge, strong, and hard as the stone they're named for, Obsidians are raised in the harshest environments the Society could find, forged to endure what would kill anyone else. Bonded from birth to a Gold house, they are the tip of every spear the Society throws.</p>
+
+  <div class="rule"></div>
+
+  <div class="traits">
+    <div class="traits-head">Traits</div>
+    <div class="trait"><b>Ability Score Increase</b> — +2 Strength, +1 Constitution</div>
+    <div class="trait"><b>Unbreaking</b> — advantage on saves vs. exhaustion; resistance to damage from extreme environments (cold, heat, falling)</div>
+    <div class="trait"><b>Bred for the Line</b> — +1 to melee damage rolls, or advantage on Athletics checks to shove/grapple/climb</div>
+    <div class="trait"><b>War Chant</b> — bonus action, Concentration; grants fear immunity to self and nearby allies, and can frighten weak foes each turn</div>
+    <div class="trait"><b>Bonded Frame</b> — counts as one size category larger for carrying capacity/grapple purposes</div>
+  </div>
+
+  <div class="footer">
+    <span>Playable Caste</span>
+    <span class="tag">Tier · War-Bound</span>
+  </div>
+</div>
+</body>
+</html>
