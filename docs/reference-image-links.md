@@ -1,6 +1,6 @@
 # "Benediction of Dis" — Reference Image Links
 
-Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, and Red entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below.)
+Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, Red, and Ash-Bound Wretch entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below. The Ash-Bound Wretch image is also the one exception to the branded-IP note above — it's official Monster Manual art, not independent portfolio work.)
 
 ## Color Cards
 
@@ -21,8 +21,7 @@ https://cdnb.artstation.com/p/assets/images/images/005/519/975/large/loc-nguyen-
 
 ## Enemy Types
 
-**Ash-Bound Wretch** — "Mischievous Imp" by Sean Wade
-https://cdnb.artstation.com/p/assets/covers/images/008/906/725/large/sean-wade-impwf.jpg
+**Ash-Bound Wretch** — local asset, `shared/assets/monster-ash-bound-wretch.jpg` (Imp illustration, cropped from the D&D Monster Manual — note this one is official WotC sourcebook art, not independent portfolio work like the rest of this list; used here for private table-reference purposes only, not redistributed beyond the DM-gated site — replaced the earlier hotlinked "Mischievous Imp" by Sean Wade)
 
 **Barbtail Skirmisher** — "Devil" by Sophia Goloperova
 https://cdnb.artstation.com/p/assets/covers/images/098/783/729/large/sophia-goloperova-sophia-goloperova-tb11-main-camera-001.webp

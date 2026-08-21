@@ -148,14 +148,25 @@ marked version for their own reference.
   batch of artifacts.
 - Reference portraits are mostly hotlinked from ArtStation CDN URLs (see
   `docs/reference-image-links.md`) rather than stored locally — fine for
-  now, but they could go stale. Gold, Gray, and Red are the exceptions:
-  all three are locally-stored images (`shared/assets/color-gold-portrait.jpg`,
-  `shared/assets/color-gray-portrait.jpg`, `shared/assets/color-red-portrait.png`,
-  used by their respective color cards and their entries in
+  now, but they could go stale. Gold, Gray, Red, and the Ash-Bound Wretch
+  are the exceptions: all four are locally-stored images
+  (`shared/assets/color-gold-portrait.jpg`,
+  `shared/assets/color-gray-portrait.jpg`,
+  `shared/assets/color-red-portrait.png`,
+  `shared/assets/monster-ash-bound-wretch.jpg`, used by their respective
+  color cards / the Ash-Bound Wretch entry in
   `dm/pages/supplemental-images.html`), supplied directly rather than
   pulled from ArtStation. If any of the remaining hotlinks go stale,
   follow that same pattern — save the file under `shared/assets/` and
   repoint the `<img>` tags.
+- The Ash-Bound Wretch image is official D&D Monster Manual art (an Imp
+  illustration with the sourcebook's own title/stat-block framing baked
+  in), not independent portfolio work like the rest of the reference set
+  — flagged explicitly since it's a deliberate exception to this repo's
+  otherwise consistent "avoid branded-IP concerns" sourcing choice for
+  images. Kept as supplied (not cropped) per an explicit call from the
+  repo owner; scoped to private, DM-gated table reference use, not
+  redistributed.
 
 If you're picking this up from a second batch of pasted artifacts, check
 this list first — it's the delta between what the "One Shot" chat produced
