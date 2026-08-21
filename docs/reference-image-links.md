@@ -1,11 +1,10 @@
 # "Benediction of Dis" — Reference Image Links
 
-Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock.
+Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold entry is an exception — a locally-stored image supplied directly rather than an ArtStation hotlink; see its note below.)
 
 ## Color Cards
 
-**Gold** — "Golden Armor" by Timmie
-https://cdnb.artstation.com/p/assets/images/images/056/708/193/large/timea-pap-goldenarmor-legendary-male.jpg
+**Gold** — local asset, `shared/assets/color-gold-portrait.jpg` (armored figure in gold plate with a white cape; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Golden Armor" by Timmie)
 
 **Gray** — "Tactical Soldier" by Tariq Daradka
 https://cdnb.artstation.com/p/assets/images/images/000/921/653/large/tariq-al-daradkeh-tacticalsoldier.jpg

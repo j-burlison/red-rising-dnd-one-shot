@@ -146,10 +146,15 @@ marked version for their own reference.
   to-do (`docs/one-shot-todo.md`), Obsidian + Gray options per the
   caste-to-class mapping in `docs/lore-mechanics.md`. Not started; next
   batch of artifacts.
-- Reference portrait images are all hotlinked from ArtStation CDN URLs
-  (see `docs/reference-image-links.md`) rather than stored locally — fine
-  for now, but they could go stale; download local copies under an
-  `shared/assets/` folder if that happens.
+- Reference portraits are mostly hotlinked from ArtStation CDN URLs (see
+  `docs/reference-image-links.md`) rather than stored locally — fine for
+  now, but they could go stale. The Gold portrait is the one exception:
+  it's a locally-stored image at `shared/assets/color-gold-portrait.jpg`
+  (used by `shared/pages/color-card-gold.html` and the Gold entry in
+  `dm/pages/supplemental-images.html`), supplied directly rather than
+  pulled from ArtStation. If any of the remaining hotlinks go stale,
+  follow that same pattern — save the file under `shared/assets/` and
+  repoint the `<img>` tags.
 
 If you're picking this up from a second batch of pasted artifacts, check
 this list first — it's the delta between what the "One Shot" chat produced
