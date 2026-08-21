@@ -1,6 +1,6 @@
 # "Benediction of Dis" — Reference Image Links
 
-Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold and Gray entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below.)
+Direct image URLs pulled from individual ArtStation pages, for use in a slide deck. Each is an independent artist's personal/portfolio work (not official franchise art) chosen to avoid branded-IP concerns. Artist credited — consider keeping attribution visible in the deck as a courtesy, since these are pulled from public portfolios rather than licensed stock. (The Gold, Gray, and Red entries are exceptions — locally-stored images supplied directly rather than ArtStation hotlinks; see their notes below.)
 
 ## Color Cards
 
@@ -17,8 +17,7 @@ https://cdnb.artstation.com/p/assets/images/images/007/914/293/large/lazar-kacar
 **White** — "Old Priest" by Loc Nguyen
 https://cdnb.artstation.com/p/assets/images/images/005/519/975/large/loc-nguyen-2016-11-06-old-priest.jpg
 
-**Red** — by Reinaldo Garcia
-https://cdna.artstation.com/p/assets/covers/images/051/515/090/large/reinaldo-garcia-reinaldo-garcia-14.jpg
+**Red** — local asset, `shared/assets/color-red-portrait.png` (bearded miner in an orange void suit with a lit cigar; supplied directly, no source/artist attribution given — replaced the earlier hotlinked image by Reinaldo Garcia)
 
 ## Enemy Types
 

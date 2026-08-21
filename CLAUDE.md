@@ -148,13 +148,14 @@ marked version for their own reference.
   batch of artifacts.
 - Reference portraits are mostly hotlinked from ArtStation CDN URLs (see
   `docs/reference-image-links.md`) rather than stored locally — fine for
-  now, but they could go stale. Gold and Gray are the exceptions: both
-  are locally-stored images (`shared/assets/color-gold-portrait.jpg`,
-  `shared/assets/color-gray-portrait.jpg`, used by their respective
-  color cards and their entries in `dm/pages/supplemental-images.html`),
-  supplied directly rather than pulled from ArtStation. If any of the
-  remaining hotlinks go stale, follow that same pattern — save the file
-  under `shared/assets/` and repoint the `<img>` tags.
+  now, but they could go stale. Gold, Gray, and Red are the exceptions:
+  all three are locally-stored images (`shared/assets/color-gold-portrait.jpg`,
+  `shared/assets/color-gray-portrait.jpg`, `shared/assets/color-red-portrait.png`,
+  used by their respective color cards and their entries in
+  `dm/pages/supplemental-images.html`), supplied directly rather than
+  pulled from ArtStation. If any of the remaining hotlinks go stale,
+  follow that same pattern — save the file under `shared/assets/` and
+  repoint the `<img>` tags.
 
 If you're picking this up from a second batch of pasted artifacts, check
 this list first — it's the delta between what the "One Shot" chat produced
