@@ -15,25 +15,6 @@ Two sites, one base URL, deployed as a static site on **GitHub Pages**:
 See `CLAUDE.md` for the full content index (what's included, what's still
 missing) and the design conventions used across pages.
 
-## How the DM gate works
-
-GitHub Pages only serves static files — there's no server to check a
-password against. `/dm` is gated by a small client-side script
-(`shared/dm-gate.js`) that every page under `dm/` loads: it shows a
-password prompt and only reveals the page once the right password is
-entered, then remembers that in the browser via `localStorage` so it
-doesn't ask again on that device.
-
-**This is a deterrent, not real security** — anyone who opens browser dev
-tools can read the password straight out of the script, or just view the
-page source. That's an intentional, explicit tradeoff for a one-shot: it
-keeps a player from casually wandering into spoilers, nothing more.
-
-**Before you run the session:** open `shared/dm-gate.js` and change the
-`PASSWORD` value from the placeholder to whatever you want your table's DM
-password to be, then commit and push. Share that password with your DM
-(yourself), not the players.
-
 ## Running it locally
 
 No build step, no dependencies — it's plain HTML/CSS/JS. Any static file
@@ -55,8 +36,7 @@ it.
 
 ## Deploying to GitHub Pages
 
-1. Push this repo to GitHub (see below) — make sure you've changed the
-   password in `shared/dm-gate.js` first.
+1. Push this repo to GitHub (see below)
 2. On the repo's GitHub page: **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to "Deploy from a
    branch."
