@@ -158,7 +158,7 @@ marked version for their own reference.
   `color-red-portrait.png`, `monster-ash-bound-wretch.jpg`,
   `monster-iron-ward-enforcer.jpg`, `monster-barbtail-skirmisher.jpg`,
   `npc-servian-portrait.jpg`, `npc-ryn-portrait.jpg`, `location-dis.jpg`,
-  `location-dreadnought-concordat.jpg`), each used by its respective
+  `location-dreadnought-concordia.jpg`), each used by its respective
   color card or `dm/pages/supplemental-images.html` entry. If a
   remaining hotlink goes stale, follow the same pattern — save the file
   under `shared/assets/` and repoint the `<img>` tags. Note each color
