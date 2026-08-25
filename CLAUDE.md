@@ -125,11 +125,13 @@ marked version for their own reference.
   (full NPC stat blocks for Servian and Ryn, three devil stat blocks, and
   per-act encounter compositions) — these are what the dashboard's
   condensed sections link out to
-- `dm/pages/handout-logbook.html` — the Act 2 discovery prop (7-entry
-  Infernal ledger, House Ferrox entry flagged). Lives under `dm/`, not
-  `shared/`, because the flagged entry is the Act 3 twist — it's meant to
-  be revealed to players at the table when they find it in-fiction, not
-  browsable ahead of time.
+- `dm/pages/handout-logbook.html` — the Act 2 discovery prop, in-fiction
+  titled "Chimera Codex Logbook #145,666" (7-entry Infernal ledger,
+  House Ferrox entry flagged; the closing note implies the full ledger
+  runs to thousands of similar entries, of which this excerpt is one
+  page). Lives under `dm/`, not `shared/`, because the flagged entry is
+  the Act 3 twist — it's meant to be revealed to players at the table
+  when they find it in-fiction, not browsable ahead of time.
 - `dm/pages/supplemental-images.html` — a scrollable gallery of every
   reference image in `docs/reference-image-links.md` (color card
   portraits, devil references, NPC references, locations), one large
