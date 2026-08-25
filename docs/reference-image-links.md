@@ -35,7 +35,7 @@ https://cdnb.artstation.com/p/assets/images/images/005/519/975/large/loc-nguyen-
 
 ## Locations
 
-**The Concordat (Act 1 Dreadnought)** — local asset, `shared/assets/location-dreadnought-concordat.jpg` (paired dreadnought-class capital ships in orbit above a planet; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Heavy Dreadnought Spaceship Concept" by Piotr Michalak)
+**The Concordia (Act 1 Dreadnought)** — local asset, `shared/assets/location-dreadnought-concordia.jpg` (paired dreadnought-class capital ships in orbit above a planet; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Heavy Dreadnought Spaceship Concept" by Piotr Michalak)
 
 **Dis** — local asset, `shared/assets/location-dis.jpg` (gothic devil-city skyline, ghostly figures led across a bridge by a devil; supplied directly, no source/artist attribution given — carries a small illegible signature and closely resembles published sourcebook illustration style, so treat as a likely branded-IP exception like the Ash-Bound Wretch image, not confirmed independent portfolio work — replaced the earlier hotlinked "Dark Fantasy Environment" by Neo Star)
 

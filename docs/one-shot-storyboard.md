@@ -8,11 +8,11 @@
 
 ---
 
-## Act 1 — The Benediction (aboard The Concordat, orbit above Farun)
+## Act 1 — The Benediction (aboard The Concordia, orbit above Farun)
 - **Cold open:** formal ceremony — Obsidians kneeling for the Gold's blessing, Grays checking gear at the margins, unease in the air (Dis has been "too quiet")
 - Roleplay caste dynamics: Obsidians can't speak out of turn, Grays needle at the edges
 - Short skill scene (Insight/Persuasion/Deception) — establish who's suspicious of the mission
-- **Break:** hellish leechcraft breach through portals in space, devils board **The Concordat**
+- **Break:** hellish leechcraft breach through portals in space, devils board **The Concordia**
 - **"All units to launch bays. Prepare for planar jump and Iron Rain."**
 - Both squads reach the corridor between cargo hold and launch bay together — ship shakes, hull visibly getting cut into, gravity fails, roll initiative
 - **Round 1:** leechcraft carves through the hull; Barbtail Skirmishers pour in first, followed by the Iron Ward Enforcer
