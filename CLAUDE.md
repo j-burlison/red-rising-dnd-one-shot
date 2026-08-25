@@ -14,7 +14,7 @@ a spellbook enabling cross-color breeding. Dis has been a long-standing
 *ally* of the Society, not conquered territory, which is what makes the
 Iron Rain in Act 1 a betrayal rather than an occupation follow-up.
 
-Three acts: **Act 1** — the Benediction ceremony aboard The Concordat, a
+Three acts: **Act 1** — the Benediction ceremony aboard The Concordia, a
 leechcraft breach, and a Zero-G Corridor escape fight. **Act 2** — Iron
 Rain landing on Dis, the Dis Arcane Library, and the discovery of The
 Logbook (evidence of a cross-color soul-trading pipeline, tied to
@@ -89,7 +89,7 @@ marked version for their own reference.
 
 ### Present and wired into the site
 - `index.html` — the Player Briefing: deployment-orders framing, a world
-  primer (with labeled, clickable images of The Concordat and Dis under
+  primer (with labeled, clickable images of The Concordia and Dis under
   the primer text — both link to their full-size `shared/assets/`
   originals), a 6-step "build your operative" walkthrough (choose Color,
   choose class, gear up, know your Oath, name yourself, bring a hook),
@@ -166,7 +166,7 @@ marked version for their own reference.
   to fit that specific portrait's aspect ratio and framing — don't copy
   one card's exact values onto another without checking the source
   image first. The Dreadnought's gallery entry was also renamed to "The
-  Concordat (Act 1 Dreadnought)" to surface the ship's actual name (used
+  Concordia (Act 1 Dreadnought)" to surface the ship's actual name (used
   everywhere else in the site) instead of just its type.
 - The Ash-Bound Wretch image is official D&D Monster Manual art (an Imp
   illustration with the sourcebook's own title/stat-block framing baked

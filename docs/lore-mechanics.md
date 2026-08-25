@@ -131,7 +131,7 @@ Two pods launch during the hot/early Iron Rain (Act 1): **Pod 1** carries the Go
 - Optional table beat: an NPC pod (non-PC Obsidian/Gray) can fail catastrophically and be lost on landing — reinforces real danger without punishing a PC for a bad roll
 
 ## Leechcraft
-No mechanics needed — narrated/described only (small fiend-crewed strike ships breaching The Concordat via portals in Act 1).
+No mechanics needed — narrated/described only (small fiend-crewed strike ships breaching The Concordia via portals in Act 1).
 
 ---
 
