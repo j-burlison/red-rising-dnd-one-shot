@@ -25,9 +25,33 @@ body{
   background:radial-gradient(ellipse at 50% 0%, #1a1c22 0%, var(--ink) 60%);
   font-family:'Inter',sans-serif;
   color:var(--bone);
-  padding:50px 20px 90px;
 }
-.wrap{ max-width:800px; margin:0 auto; }
+.wrap{ max-width:800px; margin:0 auto; padding:50px 20px 90px; }
+.nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(11,12,15,0.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--hair);
+  padding:12px 20px;
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  justify-content:center;
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:1px;
+}
+.nav a{
+  color:var(--muted);
+  text-decoration:none;
+  text-transform:uppercase;
+  padding:4px 2px;
+  border-bottom:1px solid transparent;
+}
+.nav a:hover{ color:var(--gold); border-color:var(--gold); }
+.nav a.ext{ color:var(--blue); }
 .dm-tag{
   font-family:'JetBrains Mono',monospace;
   font-size:11px;
@@ -58,6 +82,7 @@ h2{
   margin:46px 0 14px;
   padding-bottom:8px;
   border-bottom:1px solid var(--hair);
+  scroll-margin-top:60px;
 }
 p{
   font-size:13.5px;
@@ -164,26 +189,26 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
 }
 .enc-list{ font-size:12.5px; line-height:1.7; margin:0 0 8px; padding-left:18px; }
 .enc-note{ font-size:11.5px; font-style:italic; color:var(--muted); line-height:1.5; }
-
-nav.back{
-  font-family:'JetBrains Mono',monospace;
-  font-size:11px;
-  letter-spacing:1px;
-  margin-bottom:10px;
-}
-nav.back a{ color:var(--muted); text-decoration:none; }
-nav.back a:hover{ color:var(--gold); }
 </style>
 </head>
 <body>
+
+<div class="nav">
+  <a href="#npcs">NPCs</a>
+  <a href="#stat-blocks">NPC Stat Blocks</a>
+  <a href="#monsters">Monster Stat Blocks</a>
+  <a href="#encounters">Encounters</a>
+  <a href="../index.html" class="ext">DM Home</a>
+  <a href="supplemental-images.html" class="ext">Images</a>
+</div>
+
 <div class="wrap">
-  <nav class="back"><a href="../index.html">&larr; DM Home</a></nav>
   <div class="dm-tag">DM ONLY — NPC &amp; MONSTER REFERENCE</div>
   <h1>NPCs &amp; MONSTERS</h1>
 
   <p style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:1px; color:var(--muted);">Naming convention: Golds carry House names ("au [House]" — e.g., <i>Servian au Ferrox</i>). All other Colors take their Color as a surname (e.g., <i>Ryn Gray</i>).</p>
 
-  <h2>NPCs</h2>
+  <h2 id="npcs">NPCs</h2>
 
   <div class="npc-card">
     <div class="npc-name">Servian au Ferrox, Peerless Scarred</div>
@@ -220,7 +245,7 @@ nav.back a:hover{ color:var(--gold); }
     <p>Non-combat NPCs encountered near the library or archive — souls or servants (mortal petitioners bound to Dis, or Society slaves brought along for labor) who can be a source of the moral wrinkle. Consider one who's overheard something about the Logbook and can point PCs toward it, or who simply reacts with fear/resignation when PCs appear.</p>
   </div>
 
-  <h2>NPC Stat Blocks</h2>
+  <h2 id="stat-blocks">NPC Stat Blocks</h2>
 
   <div class="statblock">
     <div class="sb-name">Servian au Ferrox</div>
@@ -268,7 +293,7 @@ nav.back a:hover{ color:var(--gold); }
     <div class="callout">Both statted for a level-5 party facing level-7-equivalent NPCs; adjust HP down slightly if the party fights both simultaneously without splitting off against devils/each other.<br><br><b>DM Note — Weakening Servian before Act 3:</b> have him personally engage the Act 2 library guards — spend a Lay on Hands charge, use Pulse Fist once or twice, or take a smite on a guard. He should walk into Act 3 visibly capable but not at full resources.</div>
   </div>
 
-  <h2>Monster Stat Blocks</h2>
+  <h2 id="monsters">Monster Stat Blocks</h2>
   <p>Original homebrew devils, styled for Dis's iron-and-ash aesthetic. Three tiers scale from disposable fodder to squad leader.</p>
 
   <div class="statblock devil">
@@ -312,7 +337,7 @@ nav.back a:hover{ color:var(--gold); }
     <div class="sb-ability"><b>Rally Cry (Recharge 5-6).</b> Up to 3 Ash-Bound Wretches/Barbtail Skirmishers within 30 ft. that can hear it gain advantage on their next attack roll before the end of their next turn.</div>
   </div>
 
-  <h2>Encounter Compositions</h2>
+  <h2 id="encounters">Encounter Compositions</h2>
   <div class="enc-grid">
     <div class="enc-card">
       <div class="enc-title">Act 1 — Ship-Boarding Party</div>
