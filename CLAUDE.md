@@ -124,7 +124,13 @@ marked version for their own reference.
   site's visual style: Storyboard, Lore & Mechanics, NPCs & Monsters
   (full NPC stat blocks for Servian and Ryn, three devil stat blocks, and
   per-act encounter compositions) — these are what the dashboard's
-  condensed sections link out to
+  condensed sections link out to. `npc-and-monsters.html` also carries
+  its own sticky jump-nav (NPCs / NPC Stat Blocks / Monster Stat Blocks /
+  Encounters, plus cross-links to DM Home and the Images gallery) — the
+  same `.nav` pattern as `dm/index.html` and `supplemental-images.html`,
+  added because that page runs long and benefits from quick section
+  jumps mid-session. If Storyboard or Lore & Mechanics grow similarly
+  long, consider the same treatment there.
 - `dm/pages/handout-logbook.html` — the Act 2 discovery prop, in-fiction
   titled "Chimera Codex Logbook #145,666" (7-entry Infernal ledger,
   House Ferrox entry flagged; the closing note implies the full ledger
