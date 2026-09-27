@@ -6,8 +6,9 @@ Every operative — Obsidian and Gray alike — bears two sigils implanted at bi
 **Trigger:** A PC takes an action that directly defies an order given by their bound superior.
 
 **Each PC can break the oath twice per encounter — one sigil per break:**
-- **1st break (right-hand sigil):** 2d6 damage (Constitution save, DC 14, for half) + disadvantage on the next roll made immediately after
-- **2nd break (left-hand sigil):** 2d6 damage (Constitution save, DC 14, for half) + disadvantage on the next roll + **1 level of exhaustion**
+- **1st break (right-hand sigil):** 2d6 psychic damage (Constitution save, DC 14, for half) + disadvantage on the next roll made immediately after
+- **2nd break (left-hand sigil):** 2d6 psychic damage (Constitution save, DC 14, for half) + disadvantage on the next roll + **1 level of exhaustion**
+- Once the right-hand sigil has broken, that PC's next defiant action automatically breaks the left-hand sigil too — no new order is required to trigger it
 - **After both sigils are broken:** the PC is fully free of the compulsion for the rest of the encounter — further orders have no mechanical effect on them
 
 The compulsion is passive and always active — it doesn't require an action to resist, it simply triggers the moment defiance occurs. Players should know their oath is watching before Act 3, ideally reinforced narratively in Act 1 (a beat where an Obsidian visibly can't act against an order, or flinches when tempted to). Consider narrating the sigils visibly cracking/burning out on each break for a strong table moment.
@@ -64,6 +65,8 @@ This gives you a built-in campaign tension for later: a Red or Copper with real 
 ## Caste Traits (Racial-Style Templates)
 Caste layers mechanical traits on top of class, similar to a race/species template in standard 5e.
 
+*Your Color's ability score increases and traits stack with your race's. You get both.*
+
 **Obsidian — bred for war, raised harsh**
 - +2 Strength, +1 Constitution
 - **Unbreaking:** advantage on saves vs. exhaustion; resistance to damage from extreme environments (cold, heat, falling)
@@ -88,31 +91,37 @@ Caste layers mechanical traits on top of class, similar to a race/species templa
 
 ## Weapons & Armor
 
+*Every operative is issued all Universal gear: Duro-Steel Armor, Stem Injectors, a Pulse Blade, a Pulse Rifle, a Pulse Fist, and 2 Pulse Grenades.*
+
 **Razor**
 - Martial melee weapon, finesse, 1d8 slashing, light
-- **Ignores armor:** when calculating a target's AC against a razor attack, ignore the AC bonus granted by worn armor (shields and magic bonuses still apply) — effectively treats the target as unarmored + Dex + shield/magic bonus only
+- Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count.
 - Neurally/thought-linked — requires attunement or a minimum Int/Dex to wield without penalty; thematically tied to Gold training, though any sufficiently trained PC could plausibly wield one (both the Gold and the Gray Troupe Leader carry one in the Act 3 climax, making both sides of the final fight equally lethal)
 - Optional flavor rule: a natural 20 can sever a limb or disable a body part narratively — no mechanical stat needed, just table drama
 
 **Whip Mode.** The razor instantaneously toggles between blade and whip form — switching costs an **item interaction** (free, doesn't use the action or bonus action). In whip form:
 - **Reach 10 ft.** instead of 5 ft.
-- **1d6 slashing** instead of 1d8 (the thinner whip-form edge trades power for range) — still ignores armor as normal
+- **1d6 slashing** instead of 1d8 (the thinner whip-form edge trades power for range) — still treats the target as unarmored as normal
 - **No longer light** — can't be used for a two-weapon fighting off-hand attack while in whip form
 - As an alternative to dealing damage on a hit, the wielder can instead attempt to **disarm or trip** the target at range, using the attack roll in place of the normal contested check
 
+**Pulse Fist (universal)**
+- **3 charges per short rest** (including the planar jump); bonus action, 15-ft. cone, 2d6 force + push (DC 15 Dex)
+
 **Pulse Armor (Gold)**
 - Equivalent to Plate (base AC 18)
-- **Pulse Field:** grants resistance to slashing damage from razors specifically (or slashing generally, if simpler) — the in-fiction counter to a razor's armor-ignoring trait
+- **Pulse Shield** (built in): grants resistance to slashing damage from razors specifically — the in-fiction counter to a razor's unarmored-treatment trait
 - Heavy armor, Strength requirement as normal
 
 **Duro-Steel Armor (everyone else)**
 - Maps directly to standard 5e armor types at equivalent AC (Light/Medium/Heavy = Leather/Chain/Plate equivalents)
-- No special property — fully vulnerable to a razor's armor-ignoring trait
+- No special property — fully vulnerable to a razor's unarmored-treatment trait
 
 **Stem Injectors (universal — all armor)**
 - Built into every suit of armor in this one-shot, Duro-Steel and Pulse Armor alike
 - Holds **3 charges per short rest**; each charge triggers as a **bonus action** and functions as a Greater Healing Potion (4d4+4 healing)
 - Replaces the need to track consumable healing potions or rely on a dedicated healer — anyone can self-stabilize mid-fight
+- An ally within 5 ft. can trigger a downed or incapacitated creature's injector as an action (one charge from the wearer's armor)
 
 **Gravity Boots (Gold)**
 - Magnetized boots standard-issue to Gold officers for shipboard and void operations
@@ -124,6 +133,8 @@ Caste layers mechanical traits on top of class, similar to a race/species templa
 
 ## Iron Rain / Drop Pod Mechanics
 Two pods launch during the hot/early Iron Rain (Act 1): **Pod 1** carries the Gold + Obsidian PCs; **Pod 2** carries the Gray Troupe Leader + Gray PCs. Both land in the same district of Dis but not adjacent — a short in-fiction gap gives each group a brief solo scene before converging (good spot for early suspicion-seeding with the Grays, or a command moment with the Obsidians and the Gold).
+
+**The planar jump is a short rest.** The jump from the Concordia to Dis takes roughly an hour and counts as a short rest — Hit Dice, short-rest features, Stem Injectors (3), and Pulse Fists (3) all refill before landing. The landing hazard below happens after the jump, on arrival.
 
 - **Landing hazard:** each PC makes a Dexterity save (DC 13) as their pod takes damage during the hot launch
   - **Failure:** pod lands off-target and rough — 2d6 bludgeoning damage, and the PC lands slightly separated from their pod-mate(s)
@@ -141,7 +152,7 @@ No mechanics needed — narrated/described only (small fiend-crewed strike ships
 
 **Round 1:** The leechcraft carves fully through the hull. Flying devils (Barbtail Skirmishers) pour through first, followed by their commander, the Iron Ward Enforcer.
 
-**Mid-fight escalation:** At a dramatic moment — triggered by the Enforcer going down, a ship countermeasure, or a player reaching the leechcraft's exterior control panel — the leechcraft tears free from the hull. This creates a **single round of vacuum pull with debris**, not an ongoing hazard: a sharp, dangerous spike rather than a constant drain.
+**Mid-fight escalation:** The leechcraft tears free from the hull when the first Enforcer dies, or at the start of round 4, whichever comes first (a ship countermeasure or a player reaching the leechcraft's exterior control panel can also trigger it earlier). This creates a **single round of vacuum pull with debris**, not an ongoing hazard: a sharp, dangerous spike rather than a constant drain.
 
 **End condition:** The encounter ends when the enemy is dead and the shuttle bay door opens.
 
@@ -149,8 +160,9 @@ No mechanics needed — narrated/described only (small fiend-crewed strike ships
 
 - **Movement:** No walking in zero-G. To move, push off a surface (Strength (Athletics) check, DC 12) to drift your speed in a straight line until you hit something or reach an anchor point. Changing direction requires reaching a new anchor to push off again.
 - **Anchors:** Fixed points (pipes, crates, support struts) placed through the corridor like stepping stones — these define the viable route.
-- **Vacuum pull + debris (the one round the leechcraft tears free):** everyone in the corridor makes a Strength save (DC 13) or is pulled toward the opening; on the same round, debris deals 1d6 bludgeoning to anyone who fails a Dexterity save (DC 12). This is a single, sharp spike, not ongoing — after this round, the breach seals or the pull dissipates (the leechcraft is gone, taking the worst of the suction with it).
+- **Vacuum pull + debris (the one round the leechcraft tears free — first Enforcer death, or the start of round 4, whichever comes first):** everyone in the corridor makes a Strength save (DC 13) or is pulled toward the opening; on the same round, debris deals 1d6 bludgeoning to anyone who fails a Dexterity save (DC 12). This is a single, sharp spike, not ongoing — after this round, the breach seals or the pull dissipates (the leechcraft is gone, taking the worst of the suction with it).
 - **Recoil:** Any weapon attack (melee or ranged) made while not braced against an anchor point pushes the attacker 5 ft directly away from their target immediately after the attack resolves. Bracing against an anchor when attacking cancels the recoil. This cuts both ways — a useful retreat or a shove straight into debris or the vacuum pull.
+- **Adrift:** A creature left unbraced after a failed push-off, a recoil, or the vacuum pull is Adrift until the start of its next turn. Melee attacks against an Adrift creature have advantage. Devils are never Adrift.
 - **Enemies:** Devils in this section (Barbtail Skirmishers, the Iron Ward Enforcer) aren't slowed by zero-G the way PCs are — let them move and reposition freely, making them feel more dangerous here than elsewhere in the one-shot.
 
 Caste traits matter here: Obsidians push off harder and resist the vacuum pull more easily (Strength); Grays thread debris and stick anchor grabs more reliably (Dexterity).
@@ -164,7 +176,7 @@ Caste traits matter here: Obsidians push off harder and resist the vacuum pull m
 |---|---|
 | Session open / setup | 10 min |
 | Act 1 — Benediction ceremony + RP | 20 min |
-| Act 1 — Combat (cargo hold → launch bay) + Iron Rain hazard | 30–35 min |
+| Act 1 — Combat (cargo hold → launch bay) + Iron Rain hazard | 35–45 min |
 | Act 2 — Landing/regroup scene | 10–15 min |
 | Act 2 — Library approach + Logbook discovery | 20–25 min |
 | Act 2 — Combat (library guards, lighter) | 20 min |

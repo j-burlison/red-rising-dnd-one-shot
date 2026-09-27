@@ -114,6 +114,8 @@ h1{
   <h1>GEAR CODEX</h1>
   <div class="subtitle">The Society — Standard &amp; Restricted Equipment</div>
 
+  <p style="text-align:center; font-style:italic; color:var(--bone); opacity:0.85; font-size:13.5px; margin:0 0 24px;">Every operative is issued all Universal gear below by default.</p>
+
   <div class="item universal-item">
     <div class="item-head">
       <div class="item-name">DURO-STEEL ARMOR</div>
@@ -122,7 +124,7 @@ h1{
     <p class="desc">Standard-issue armor across every Color below Gold. Rugged, mass-produced, and reliable — the backbone of every Gray and Obsidian loadout.</p>
     <div class="stats">
       Maps directly to standard armor types at equivalent AC (Light / Medium / Heavy).<br>
-      <b>No special property</b> — fully vulnerable to a razor's armor-ignoring cut.
+      <b>No special property</b> — fully vulnerable to a razor's unarmored-treatment cut.
     </div>
   </div>
 
@@ -135,7 +137,8 @@ h1{
     <div class="stats">
       <b>3 charges</b> per short rest.<br>
       <b>Bonus action</b> to trigger.<br>
-      Each charge functions as a <b>Greater Healing Potion</b> (4d4+4 healing).
+      Each charge functions as a <b>Greater Healing Potion</b> (4d4+4 healing).<br>
+      An ally within 5 ft. can trigger a downed or incapacitated creature's injector as an action (one charge from the wearer's armor).
     </div>
   </div>
 
@@ -168,7 +171,7 @@ h1{
     </div>
     <p class="desc">A shield- or gauntlet-mounted concussive emitter. A solid slam clears space fast — useful for breaking up a crowd or buying a round to breathe.</p>
     <div class="stats">
-      <b>3 charges</b> per short rest. <b>Bonus action</b> to use.<br>
+      <b>3 charges</b> per short rest, including the planar jump. <b>Bonus action</b> to use.<br>
       15-ft. cone of concussive force. Each creature in the cone makes a <b>Dexterity save (DC 15)</b>: on a failure, <b>2d6 force damage</b> and pushed 10 ft. away; on a success, half damage and no push.
     </div>
   </div>
@@ -194,10 +197,10 @@ h1{
     <p class="desc">Neurally-linked, impossibly sharp, and terrifying to face — a razor doesn't just cut through armor, it cuts through the idea that armor matters. Never seen outside trained Gold hands.</p>
     <div class="stats">
       Martial melee weapon, finesse, light. <b>1d8 slashing.</b><br>
-      <b>Ignores armor:</b> treats the target's AC as if unarmored (Dex + shield/magic bonus only).<br>
+      Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count.<br>
       Requires attunement or a minimum Int/Dex to wield without penalty.<br>
       <i>Natural 20: DM may rule a severed limb or disabled body part.</i><br><br>
-      <b>Whip Mode</b> (item interaction to toggle, free): reach 10 ft., <b>1d6 slashing</b>, loses light property. Still ignores armor. Instead of damage, a hit can attempt to disarm or trip at range using the attack roll.
+      <b>Whip Mode</b> (item interaction to toggle, free): reach 10 ft., <b>1d6 slashing</b>, loses light property. Still treats the target as unarmored. Instead of damage, a hit can attempt to disarm or trip at range using the attack roll.
     </div>
   </div>
 
@@ -209,7 +212,7 @@ h1{
     <p class="desc">The only real answer to a razor. Golds don't win fights by being harder to hit — they win by being harder to cut.</p>
     <div class="stats">
       Heavy armor, equivalent to Plate (<b>base AC 18</b>).<br>
-      <b>Pulse Field:</b> resistance to slashing damage from razors specifically.
+      <b>Pulse Shield</b> (built in): resistance to slashing damage from razors specifically.
     </div>
   </div>
 

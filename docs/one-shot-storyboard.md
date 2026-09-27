@@ -15,11 +15,12 @@
 - **Break:** hellish leechcraft breach through portals in space, devils board **The Concordia**
 - **"All units to launch bays. Prepare for planar jump and Iron Rain."**
 - Both squads reach the corridor between cargo hold and launch bay together — ship shakes, hull visibly getting cut into, gravity fails, roll initiative
-- **Round 1:** leechcraft carves through the hull; Barbtail Skirmishers pour in first, followed by the Iron Ward Enforcer
-- **Mid-fight escalation:** leechcraft tears free (Enforcer's death, a countermeasure, or a player reaching its control panel) — one sharp round of vacuum pull + debris, not ongoing
+- **Servian and Ryn fight alongside the party** in the corridor. Servian's gravity boots let him ignore zero-G until they fail.
+- **Round 1:** leechcraft carves through the hull; Barbtail Skirmishers and the first Ash-Bound Wretches pour in. **Round 2:** the Iron Ward Enforcers follow with the rest of the swarm.
+- **Mid-fight escalation:** leechcraft tears free (Enforcer's death, a countermeasure, a player reaching its control panel, or at the start of round 4) — one sharp round of vacuum pull + debris, not ongoing
 - **Zero-G Corridor:** the escape route is a physical puzzle layered on the fight (see Lore & Mechanics for full rules) — anchors, movement-by-push, and attack recoil throughout
 - **End condition:** enemies dead, shuttle bay door opens
-- Ship jumps as pods launch — this is also what makes the Iron Rain hot and early
+- **The planar jump that follows is a short rest** — HD, short-rest features, Stem Injectors, and Pulse Fists all refill before the landing hazard on arrival. This is also what makes the Iron Rain hot and early.
 - **Hazard:** NPC pods shot down around the PCs; failed save = fall damage on arrival at Dis
 
 **Knowledge split:** 1–2 PCs (Gold's confidants) know the true objective now. Everyone else believes it's a standard intel-extraction mission.
@@ -35,7 +36,7 @@
 - A horde of devils arrives as the party secures the book
 - **The Gray troupe leader turns**, reveals the full truth to everyone, sides against the Society
 - **The Gold orders the party to kill the Gray and the devils** — every PC (Obsidian and Gray alike) is Oathbound and must actively break the oath to defy this order
-- **Climax combat:** PCs choose a side — fight for the Gold, fight for the Gray/Rising, or break the oath entirely and run with the book
+- **Climax combat:** PCs choose a side — fight for the Gold, fight for the Gray/Rising, or break the oath entirely and run with the book. If the party turns on Servian, one Barbtail Skirmisher turns on him too in round 1.
 - One-shot ends at the close of this combat
 
 ### Three Endings

@@ -165,8 +165,9 @@ nav.back a:hover{ color:var(--gold); }
   <div class="box">
     <h3>Each PC can break the oath twice per encounter — one sigil per break</h3>
     <ul>
-      <li><b>1st break (right-hand sigil):</b> 2d6 damage (Constitution save, DC 14, for half) + disadvantage on the next roll made immediately after</li>
-      <li><b>2nd break (left-hand sigil):</b> 2d6 damage (Constitution save, DC 14, for half) + disadvantage on the next roll + 1 level of exhaustion</li>
+      <li><b>1st break (right-hand sigil):</b> 2d6 psychic damage (Constitution save, DC 14, for half) + disadvantage on the next roll made immediately after</li>
+      <li><b>2nd break (left-hand sigil):</b> 2d6 psychic damage (Constitution save, DC 14, for half) + disadvantage on the next roll + 1 level of exhaustion</li>
+      <li>Once the right-hand sigil has broken, that PC's next defiant action automatically breaks the left-hand sigil too — no new order is required to trigger it</li>
       <li><b>After both sigils are broken:</b> the PC is fully free of the compulsion for the rest of the encounter — further orders have no mechanical effect on them</li>
     </ul>
   </div>
@@ -228,6 +229,7 @@ nav.back a:hover{ color:var(--gold); }
   </ul>
 
   <h2>Caste Traits (Racial-Style Templates)</h2>
+  <p><i>Your Color's ability score increases and traits stack with your race's. You get both.</i></p>
   <div class="tierbox">
     <h3>Obsidian — bred for war, raised harsh</h3>
     <ul>
@@ -257,11 +259,12 @@ nav.back a:hover{ color:var(--gold); }
   </div>
 
   <h2>Weapons &amp; Armor</h2>
+  <p><i>Every operative is issued all Universal gear: Duro-Steel Armor, Stem Injectors, a Pulse Blade, a Pulse Rifle, a Pulse Fist, and 2 Pulse Grenades.</i></p>
   <div class="stat-item">
     <div class="stat-name">Razor</div>
     <div class="stat-line">
       Martial melee weapon, finesse, 1d8 slashing, light.<br>
-      <b>Ignores armor</b> — ignore the AC bonus from worn armor (shields/magic bonuses still apply).<br>
+      Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count.<br>
       Requires attunement or a minimum Int/Dex to wield without penalty.<br>
       <i>Natural 20: DM may rule a severed limb or disabled body part (flavor only).</i>
     </div>
@@ -269,21 +272,25 @@ nav.back a:hover{ color:var(--gold); }
   <div class="stat-item">
     <div class="stat-name">Whip Mode</div>
     <div class="stat-line">
-      Free item interaction to toggle. Reach 10 ft., <b>1d6 slashing</b>, no longer light, still ignores armor.<br>
+      Free item interaction to toggle. Reach 10 ft., <b>1d6 slashing</b>, no longer light, still treats the target as unarmored.<br>
       Instead of damage, a hit can attempt to disarm or trip at range using the attack roll.
     </div>
   </div>
   <div class="stat-item">
+    <div class="stat-name">Pulse Fist (universal)</div>
+    <div class="stat-line"><b>3 charges</b> per short rest (including the planar jump). Bonus action, 15-ft. cone, 2d6 force + push (DC 15 Dex).</div>
+  </div>
+  <div class="stat-item">
     <div class="stat-name">Pulse Armor (Gold)</div>
-    <div class="stat-line">Heavy armor, equivalent to Plate (<b>base AC 18</b>). <b>Pulse Field:</b> resistance to slashing damage from razors specifically.</div>
+    <div class="stat-line">Heavy armor, equivalent to Plate (<b>base AC 18</b>). <b>Pulse Shield</b> (built in): resistance to slashing damage from razors specifically.</div>
   </div>
   <div class="stat-item">
     <div class="stat-name">Duro-Steel Armor (everyone else)</div>
-    <div class="stat-line">Maps to standard armor types at equivalent AC. No special property — fully vulnerable to a razor's armor-ignoring cut.</div>
+    <div class="stat-line">Maps to standard armor types at equivalent AC. No special property — fully vulnerable to a razor's unarmored-treatment cut.</div>
   </div>
   <div class="stat-item">
     <div class="stat-name">Stem Injectors (universal)</div>
-    <div class="stat-line"><b>3 charges</b> per short rest. Bonus action. Each charge = Greater Healing Potion (4d4+4).</div>
+    <div class="stat-line"><b>3 charges</b> per short rest. Bonus action. Each charge = Greater Healing Potion (4d4+4). An ally within 5 ft. can trigger a downed or incapacitated creature's injector as an action (one charge from the wearer's armor).</div>
   </div>
   <div class="stat-item">
     <div class="stat-name">Gravity Boots (Gold)</div>
@@ -292,6 +299,7 @@ nav.back a:hover{ color:var(--gold); }
 
   <h2>Iron Rain / Drop Pod Mechanics</h2>
   <p>Two pods launch during the hot/early Iron Rain (Act 1): <b>Pod 1</b> carries the Gold + Obsidian PCs; <b>Pod 2</b> carries the Gray Troupe Leader + Gray PCs. Both land in the same district of Dis but not adjacent.</p>
+  <p><b>The planar jump is a short rest.</b> The jump from the Concordia to Dis takes roughly an hour and counts as a short rest — Hit Dice, short-rest features, Stem Injectors (3), and Pulse Fists (3) all refill before landing. The landing hazard below happens after the jump, on arrival.</p>
   <ul>
     <li><b>Landing hazard:</b> each PC makes a Dexterity save (DC 13) as their pod takes damage during the hot launch</li>
     <li><b>Failure:</b> pod lands off-target and rough — 2d6 bludgeoning damage, PC lands slightly separated from pod-mate(s)</li>
@@ -301,13 +309,14 @@ nav.back a:hover{ color:var(--gold); }
   <h2>Zero-G Corridor (Act 1 escape puzzle)</h2>
   <p><b>Setup:</b> both squads reach the corridor together. The ship shakes, hull gets cut into from outside, gravity fails. Roll initiative.</p>
   <p><b>Round 1:</b> the leechcraft carves fully through the hull. Flying devils (Barbtail Skirmishers) pour through first, followed by the Iron Ward Enforcer.</p>
-  <p><b>Mid-fight escalation:</b> at a dramatic moment, the leechcraft tears free — a single round of vacuum pull with debris, not an ongoing hazard.</p>
+  <p><b>Mid-fight escalation:</b> the leechcraft tears free when the first Enforcer dies, or at the start of round 4, whichever comes first (a countermeasure or a PC reaching the control panel can also trigger it earlier) — a single round of vacuum pull with debris, not an ongoing hazard.</p>
   <p><b>End condition:</b> enemy dead, shuttle bay door opens.</p>
   <ul>
     <li><b>Movement:</b> no walking in zero-G. Push off a surface (Strength (Athletics), DC 12) to drift your speed in a straight line until you hit something or reach an anchor.</li>
     <li><b>Anchors:</b> fixed points placed like stepping stones through the corridor — these define the viable route.</li>
-    <li><b>Vacuum pull + debris (one round only):</b> Strength save (DC 13) or pulled toward the opening; Dexterity save (DC 12) or 1d6 bludgeoning from debris.</li>
+    <li><b>Vacuum pull + debris (one round only, triggers when the first Enforcer dies or at the start of round 4, whichever comes first):</b> Strength save (DC 13) or pulled toward the opening; Dexterity save (DC 12) or 1d6 bludgeoning from debris.</li>
     <li><b>Recoil:</b> any weapon attack made while not braced against an anchor pushes the attacker 5 ft. directly away from their target after the attack resolves.</li>
+    <li><b>Adrift:</b> a creature left unbraced after a failed push-off, a recoil, or the vacuum pull is Adrift until the start of its next turn. Melee attacks against an Adrift creature have advantage. Devils are never Adrift.</li>
     <li><b>Enemies</b> aren't slowed by zero-G the way PCs are — let them move freely.</li>
   </ul>
   <p style="font-style:italic;">Caste traits matter here: Obsidians push off harder and resist the vacuum pull more easily (Strength); Grays thread debris and stick anchor grabs more reliably (Dexterity).</p>
@@ -318,7 +327,7 @@ nav.back a:hover{ color:var(--gold); }
     <tr><th>Segment</th><th>Time</th></tr>
     <tr><td>Session open / setup</td><td>10 min</td></tr>
     <tr><td>Act 1 — Benediction ceremony + RP</td><td>20 min</td></tr>
-    <tr><td>Act 1 — Combat (cargo hold &rarr; launch bay) + Iron Rain hazard</td><td>30–35 min</td></tr>
+    <tr><td>Act 1 — Combat (cargo hold &rarr; launch bay) + Iron Rain hazard</td><td>35–45 min</td></tr>
     <tr><td>Act 2 — Landing/regroup scene</td><td>10–15 min</td></tr>
     <tr><td>Act 2 — Library approach + Logbook discovery</td><td>20–25 min</td></tr>
     <tr><td>Act 2 — Combat (library guards, lighter)</td><td>20 min</td></tr>
