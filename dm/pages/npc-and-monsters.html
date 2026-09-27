@@ -189,6 +189,19 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
 }
 .enc-list{ font-size:12.5px; line-height:1.7; margin:0 0 8px; padding-left:18px; }
 .enc-note{ font-size:11.5px; font-style:italic; color:var(--muted); line-height:1.5; }
+table.enc-scale{
+  width:100%;
+  border-collapse:collapse;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  margin:8px 0 10px;
+}
+table.enc-scale th, table.enc-scale td{
+  text-align:left;
+  padding:5px 6px 5px 0;
+  border-bottom:1px solid var(--hair);
+}
+table.enc-scale th{ color:var(--gold); font-size:9.5px; text-transform:uppercase; letter-spacing:0.5px; }
 </style>
 </head>
 <body>
@@ -251,22 +264,23 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
     <div class="sb-name">Servian au Ferrox</div>
     <div class="sb-type">Medium humanoid (Gold), lawful neutral — CR 6 (2,300 XP)</div>
     <div class="sb-core">
-      <b>AC</b> 20 (Pulse Armor + Pulse Shield) &nbsp;|&nbsp; <b>HP</b> 130 (14d10+42) &nbsp;|&nbsp; <b>Speed</b> 30 ft.<br>
+      <b>AC</b> 20 (Pulse Armor + Aegis Shield) &nbsp;|&nbsp; <b>HP</b> 130 (14d10+42) &nbsp;|&nbsp; <b>Speed</b> 30 ft.<br>
       <b>STR</b> 20 (+5) &nbsp;<b>DEX</b> 12 (+1) &nbsp;<b>CON</b> 16 (+3) &nbsp;<b>INT</b> 13 (+1) &nbsp;<b>WIS</b> 14 (+2) &nbsp;<b>CHA</b> 18 (+4)<br>
       <b>Saving Throws</b> Wis +5, Cha +7, Con +6 (Peerless Instinct)<br>
       <b>Skills</b> Athletics +8, Insight +5, Persuasion +7<br>
-      <b>Damage Resistances</b> slashing from razors (Pulse Field)<br>
+      <b>Damage Resistances</b> slashing damage from razors (Pulse Shield, built into his Pulse Armor)<br>
       <b>Senses</b> passive Perception 12 &nbsp;|&nbsp; <b>Languages</b> Common, Infernal
     </div>
-    <div class="sb-ability"><b>Bred to Command (3/Short Rest).</b> Grants an ally within 30 ft. advantage on its next attack roll, saving throw, or ability check.</div>
+    <div class="sb-ability"><b>Bred to Command (3/Short Rest, Bonus Action).</b> Grants an ally within 30 ft. advantage on its next attack roll, saving throw, or ability check.</div>
     <div class="sb-ability"><b>Aura of Protection.</b> Servian and allies within 10 ft. add +4 (Cha mod) to saving throws.</div>
     <div class="sb-ability"><b>Lay on Hands.</b> Pool of 35 HP; action to restore HP to a touched creature, up to the pool's remaining total.</div>
     <div class="sb-ability"><b>Peerless Reflexes (1/Day).</b> If Servian fails a save, he can choose to succeed instead.</div>
-    <div class="sb-ability"><b>Pulse Shield.</b> +2 AC (included above).</div>
+    <div class="sb-ability"><b>Aegis Shield.</b> An arm-mounted kinetic shield on Servian's off-hand, +2 AC (included above). It also houses his Pulse Fist emitter.</div>
     <div class="sb-ability"><b>Multiattack.</b> Two razor attacks.</div>
-    <div class="sb-ability"><b>Razor.</b> +9 to hit, reach 5 ft. <i>Hit:</i> 1d8+5 slashing; ignores the target's armor AC bonus.</div>
+    <div class="sb-ability"><b>Razor.</b> +9 to hit, reach 5 ft. <i>Hit:</i> 1d8+5 slashing; treats the target as unarmored (10 + Dex or Unarmored Defense, + shield/magic).</div>
     <div class="sb-ability"><b>Divine Smite.</b> On a razor hit, expend a spell slot for +2d8 radiant (+1d8 per slot level above 1st).</div>
-    <div class="sb-ability"><b>Pulse Fist (3/Short Rest, Bonus Action).</b> 15-ft. cone; DC 15 Dex save or 2d6 force + pushed 10 ft. (half damage, no push on success).</div>
+    <div class="sb-ability"><b>Spell Slots (Paladin 7).</b> 1st level (4), 2nd level (3). Divine Smite spends these slots.</div>
+    <div class="sb-ability"><b>Pulse Fist (3/Short Rest, Bonus Action).</b> Slams the Aegis Shield; 15-ft. cone; DC 15 Dex save or 2d6 force + pushed 10 ft. (half damage, no push on success).</div>
     <div class="sb-ability"><b>Gravity Boots.</b> Functions as <i>Boots of Flying</i> in the Zero-G Corridor. 2 charges, recharge on long rest.</div>
     <div class="callout"><b>DM Note:</b> consider having Servian's gravity boots run out of charges or take damage during the Act 1 corridor fight — disabling them mid-encounter. The damaged boots can carry forward as flavor into Act 3 without further mechanical effect (Act 3 has normal gravity).</div>
   </div>
@@ -287,7 +301,7 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
     <div class="sb-ability"><b>Hunter's Mark (1/Short Rest, no slot).</b> Bonus action, mark a creature within 90 ft.; weapon attacks against it deal +1d6.</div>
     <div class="sb-ability"><b>Multiattack.</b> Two attacks — Pulse Blade, Razor, Pulse Rifle, or a combination.</div>
     <div class="sb-ability"><b>Pulse Blade (longsword).</b> +8 to hit, reach 5 ft. <i>Hit:</i> 1d8+4 slashing (1d10+4 two-handed). Her visible "legal" weapon until the reveal.</div>
-    <div class="sb-ability"><b>Razor (Act 3 Reveal).</b> +8 to hit, reach 5 ft. <i>Hit:</i> 1d8+4 slashing; ignores the target's armor AC bonus. <i>Hold this back until Ryn's betrayal is revealed.</i></div>
+    <div class="sb-ability"><b>Razor (Act 3 Reveal).</b> +8 to hit, reach 5 ft. <i>Hit:</i> 1d8+4 slashing; treats the target as unarmored (10 + Dex or Unarmored Defense, + shield/magic). <i>Hold this back until Ryn's betrayal is revealed.</i></div>
     <div class="sb-ability"><b>Pulse Rifle.</b> +8 to hit, range 150/600 ft. <i>Hit:</i> 1d8+4 piercing.</div>
     <div class="sb-ability"><b>Pulse Grenade (3, thrown, Action).</b> 15-ft. radius; DC 15 Dex save or 3d8 force (half on success).</div>
     <div class="callout">Both statted for a level-5 party facing level-7-equivalent NPCs; adjust HP down slightly if the party fights both simultaneously without splitting off against devils/each other.<br><br><b>DM Note — Weakening Servian before Act 3:</b> have him personally engage the Act 2 library guards — spend a Lay on Hands charge, use Pulse Fist once or twice, or take a smite on a guard. He should walk into Act 3 visibly capable but not at full resources.</div>
@@ -305,6 +319,7 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
       <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> fire, poison<br>
       <b>Senses</b> darkvision 60 ft., passive Perception 9 &nbsp;|&nbsp; <b>Languages</b> understands Infernal, can't speak
     </div>
+    <div class="sb-ability"><b>Ash Burst.</b> When the Wretch dies, it bursts into cinders. Each creature within 5 ft. of it must make a DC 11 Dexterity saving throw, taking 1d6 fire damage on a failed save or half as much on a successful one. <i>(Other devils are immune to fire, so the swarm can pile in safely.)</i></div>
     <div class="sb-ability"><b>Claw.</b> +2 to hit, reach 5 ft. <i>Hit:</i> 1d4 slashing.</div>
     <div class="callout">Swarm in numbers — deploy in packs of 3-6 as filler threats around a stronger devil.</div>
   </div>
@@ -318,9 +333,9 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
       <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> poison<br>
       <b>Senses</b> darkvision 60 ft., passive Perception 11 &nbsp;|&nbsp; <b>Languages</b> understands Infernal, can't speak
     </div>
-    <div class="sb-ability"><b>Multiattack.</b> Two claw attacks, or one claw and one tail spike.</div>
-    <div class="sb-ability"><b>Claw.</b> +4 to hit, reach 5 ft. <i>Hit:</i> 1d4+2 slashing.</div>
-    <div class="sb-ability"><b>Tail Spike.</b> +4 to hit, range 20/80 ft. <i>Hit:</i> 1d4+2 piercing.</div>
+    <div class="sb-ability"><b>Multiattack.</b> The Skirmisher makes one claw attack and one tail spike attack.</div>
+    <div class="sb-ability"><b>Claw.</b> +4 to hit, reach 5 ft. <i>Hit:</i> 1d6+2 slashing.</div>
+    <div class="sb-ability"><b>Tail Spike.</b> <i>Melee or Ranged Weapon Attack:</i> +4 to hit, reach 5 ft. or range 20/80 ft. <i>Hit:</i> 2d4+2 piercing.</div>
   </div>
 
   <div class="statblock devil">
@@ -332,7 +347,7 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
       <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> poison<br>
       <b>Senses</b> darkvision 60 ft., passive Perception 10 &nbsp;|&nbsp; <b>Languages</b> Infernal
     </div>
-    <div class="sb-ability"><b>Multiattack.</b> Two glaive attacks.</div>
+    <div class="sb-ability"><b>Multiattack.</b> The Enforcer makes three glaive attacks.</div>
     <div class="sb-ability"><b>Glaive.</b> +5 to hit, reach 10 ft. <i>Hit:</i> 1d10+3 slashing, and DC 12 Con save or 1d6 poison from the barbed edge.</div>
     <div class="sb-ability"><b>Rally Cry (Recharge 5-6).</b> Up to 3 Ash-Bound Wretches/Barbtail Skirmishers within 30 ft. that can hear it gain advantage on their next attack roll before the end of their next turn.</div>
   </div>
@@ -342,11 +357,17 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
     <div class="enc-card">
       <div class="enc-title">Act 1 — Ship-Boarding Party</div>
       <ul class="enc-list">
-        <li>4x Ash-Bound Wretch</li>
-        <li>2x Barbtail Skirmisher</li>
-        <li>1x Iron Ward Enforcer</li>
+        <li>Round 1: 7x Barbtail Skirmisher + 3x Ash-Bound Wretch</li>
+        <li>Round 2: 3x Iron Ward Enforcer + 3x Ash-Bound Wretch</li>
+        <li>Total: 16 devils (5-PC default)</li>
       </ul>
-      <div class="enc-note">Deploy in waves, not all at once — stagger devils in small groups as the party moves through the corridor.</div>
+      <table class="enc-scale">
+        <tr><th>PCs</th><th>Round 1</th><th>Round 2</th><th>Total</th></tr>
+        <tr><td>5</td><td>7 Skirmisher + 3 Wretch</td><td>3 Enforcer + 3 Wretch</td><td>16</td></tr>
+        <tr><td>4</td><td>6 Skirmisher + 3 Wretch</td><td>3 Enforcer + 3 Wretch</td><td>15</td></tr>
+        <tr><td>3</td><td>5 Skirmisher + 3 Wretch</td><td>2 Enforcer + 3 Wretch</td><td>13</td></tr>
+      </table>
+      <div class="enc-note">Rule of thumb: Skirmishers = PCs + 2; Enforcers = 3 (2 at three PCs); Wretches = 6. Servian (gravity boots) and Ryn (Pulse Blade) fight alongside the party. Skirmishers and the first Wretches pour through the breach in round 1; the Enforcers and the rest of the Wretches follow in round 2. The leechcraft tears free (vacuum round) when the first Enforcer dies, or at the start of round 4, whichever comes first.</div>
     </div>
     <div class="enc-card">
       <div class="enc-title">Act 2 — Library Guards</div>
@@ -354,16 +375,23 @@ li{ font-size:13.5px; line-height:1.65; opacity:0.92; margin-bottom:6px; }
         <li>2x Barbtail Skirmisher</li>
         <li>2x Ash-Bound Wretch</li>
       </ul>
-      <div class="enc-note">Deliberately undertuned, no Enforcer — sells the "ally, not warzone" reframe. Consider hesitation/questions before combat breaks out.</div>
+      <div class="enc-note">Deliberately undertuned, no Enforcer — sells the "ally, not warzone" reframe. Servian and Ryn are present and fight; consider having Servian spend resources here. Consider hesitation/questions before combat breaks out. Optional: add the Devil Patrol Leader using the Iron Ward Enforcer stat block. The fight stays light.</div>
     </div>
     <div class="enc-card">
       <div class="enc-title">Act 3 — Final Horde</div>
       <ul class="enc-list">
-        <li>3x Ash-Bound Wretch</li>
-        <li>3x Barbtail Skirmisher</li>
-        <li>2x Iron Ward Enforcer</li>
+        <li>4x Ash-Bound Wretch</li>
+        <li>6x Barbtail Skirmisher</li>
+        <li>1x Iron Ward Enforcer</li>
+        <li>Total: 11 devils (5-PC default)</li>
       </ul>
-      <div class="enc-note">Scale live depending on how the party splits between Servian and Ryn. If siding with Ryn, consider 1-2 Skirmishers fighting alongside the party against Servian.</div>
+      <table class="enc-scale">
+        <tr><th>PCs</th><th>Horde</th></tr>
+        <tr><td>5</td><td>4 Wretch + 6 Skirmisher + 1 Enforcer</td></tr>
+        <tr><td>4</td><td>4 Wretch + 5 Skirmisher + 1 Enforcer</td></tr>
+        <tr><td>3</td><td>3 Wretch + 2 Skirmisher + 1 Enforcer</td></tr>
+      </table>
+      <div class="enc-note"><b>Society path</b> (party sides with Servian): Servian fights alongside the party against Ryn and the full horde. The devils follow Ryn.<br><b>Rising path</b> (party turns on Servian): the devils attack Servian and anyone in Society armor, but never Ryn. In round 1, one Skirmisher turns on Servian and fights with the party. The fight ends when Servian falls or is driven off.<br>Tested at 4–5 PCs, both paths land at about a 55% chance that at least one PC drops, and deaths are rare. "The choice is about loyalty, not safety" now holds.</div>
     </div>
   </div>
 </div>

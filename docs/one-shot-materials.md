@@ -38,15 +38,15 @@ Non-combat NPCs encountered near the library or archive — souls or servants (m
 ### Servian au Ferrox
 *Medium humanoid (Gold), lawful neutral — CR 6 (2,300 XP)*
 
-- **AC** 20 (Pulse Armor + Pulse Shield) | **HP** 130 (14d10+42) | **Speed** 30 ft.
+- **AC** 20 (Pulse Armor + Aegis Shield) | **HP** 130 (14d10+42) | **Speed** 30 ft.
 - **STR** 20 (+5) **DEX** 12 (+1) **CON** 16 (+3) **INT** 13 (+1) **WIS** 14 (+2) **CHA** 18 (+4)
 - **Saving Throws** Wis +5, Cha +7, Con +6 (Peerless Instinct)
 - **Skills** Athletics +8, Insight +5, Persuasion +7
-- **Damage Resistances** slashing damage from razors (Pulse Field)
+- **Damage Resistances** slashing damage from razors (Pulse Shield, built into his Pulse Armor)
 - **Senses** passive Perception 12
 - **Languages** Common, Infernal
 
-**Bred to Command (3/Short Rest).** Servian grants an ally within 30 ft. advantage on its next attack roll, saving throw, or ability check.
+**Bred to Command (3/Short Rest, Bonus Action).** Servian grants an ally within 30 ft. advantage on its next attack roll, saving throw, or ability check.
 
 **Aura of Protection.** Servian and allies within 10 ft. add +4 (his Cha modifier) to saving throws.
 
@@ -54,15 +54,17 @@ Non-combat NPCs encountered near the library or archive — souls or servants (m
 
 **Peerless Reflexes (1/Day).** If Servian fails a saving throw, he can choose to succeed instead.
 
-**Pulse Shield.** A kinetic field projector worn on Servian's off-hand arm, contributing +2 AC (included above).
+**Aegis Shield.** An arm-mounted kinetic shield on Servian's off-hand, +2 AC (included above). It also houses his Pulse Fist emitter.
 
 **Multiattack.** Servian makes two razor attacks.
 
-**Razor.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 1d8+5 slashing damage. A razor's cut ignores the AC bonus granted by the target's worn armor (shields and magic bonuses still apply).
+**Razor.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 1d8+5 slashing damage. Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count.
 
 **Divine Smite.** When Servian hits with a razor, he can expend a spell slot to deal an extra 2d8 radiant damage (+1d8 per spell slot level above 1st).
 
-**Pulse Fist (3 charges/Short Rest, Bonus Action).** Servian slams the Pulse Shield into the ground or air, unleashing a 15-ft. cone of concussive force from his position. Each creature in the cone makes a Dexterity save (DC 15); on a failure, a creature takes 2d6 force damage and is pushed 10 ft. away from Servian; on a success, half damage and no push.
+**Spell Slots (Paladin 7).** 1st level (4), 2nd level (3). Divine Smite spends these slots.
+
+**Pulse Fist (3 charges/Short Rest, Bonus Action).** Servian slams the Aegis Shield into the ground or air, unleashing a 15-ft. cone of concussive force from his position. Each creature in the cone makes a Dexterity save (DC 15); on a failure, a creature takes 2d6 force damage and is pushed 10 ft. away from Servian; on a success, half damage and no push.
 
 **Gravity Boots.** Magnetized boots standard-issue to Gold officers for shipboard and void operations, functioning mechanically like *Boots of Flying* — while active, Servian has a flying speed equal to his normal speed and ignores the Zero-G Corridor's push-off/anchor rules entirely, moving freely along any surface. Limited to 2 charges (as the source item), recharging after a long rest — not unlimited.
 
@@ -92,7 +94,7 @@ Non-combat NPCs encountered near the library or archive — souls or servants (m
 
 **Pulse Blade (longsword).** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 1d8+4 slashing damage (versatile, 1d10+4 if used two-handed). Ryn's visible, "legal" weapon for most of the encounter — swap to her Razor for the Act 3 reveal.
 
-**Razor (Act 3 Reveal).** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 1d8+4 slashing damage. A razor's cut ignores the AC bonus granted by the target's worn armor (shields and magic bonuses still apply). *DM note: hold this weapon back until Ryn's betrayal is revealed — she fights with the Pulse Blade up to that point, and drawing the Razor should land as a visible escalation at the table.*
+**Razor (Act 3 Reveal).** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 1d8+4 slashing damage. Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count. *DM note: hold this weapon back until Ryn's betrayal is revealed — she fights with the Pulse Blade up to that point, and drawing the Razor should land as a visible escalation at the table.*
 
 **Pulse Rifle.** *Ranged Weapon Attack:* +8 to hit, range 150/600 ft., one target. *Hit:* 1d8+4 piercing damage.
 
@@ -123,6 +125,8 @@ Original homebrew devils, styled for Dis's iron-and-ash aesthetic. Three tiers b
 - **Senses** darkvision 60 ft., passive Perception 9
 - **Languages** understands Infernal, can't speak
 
+**Ash Burst.** When the Wretch dies, it bursts into cinders. Each creature within 5 ft. of it must make a DC 11 Dexterity saving throw, taking 1d6 fire damage on a failed save or half as much on a successful one. *(Other devils are immune to fire, so the swarm can pile in safely.)*
+
 **Claw.** *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1d4 slashing damage.
 
 *Ash-Bound Wretches swarm in numbers — deploy in packs of 3-6 as filler threats around a stronger devil.*
@@ -135,11 +139,11 @@ Original homebrew devils, styled for Dis's iron-and-ash aesthetic. Three tiers b
 - **Senses** darkvision 60 ft., passive Perception 11
 - **Languages** understands Infernal, can't speak
 
-**Multiattack.** The Skirmisher makes two claw attacks, or one claw attack and one tail spike attack.
+**Multiattack.** The Skirmisher makes one claw attack and one tail spike attack.
 
-**Claw.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1d4+2 slashing damage.
+**Claw.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1d6+2 slashing damage.
 
-**Tail Spike.** *Ranged Weapon Attack:* +4 to hit, range 20/80 ft., one target. *Hit:* 1d4+2 piercing damage.
+**Tail Spike.** *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 20/80 ft., one target. *Hit:* 2d4+2 piercing damage.
 
 ### Iron Ward Enforcer (squad leader)
 *Medium fiend, CR 3 (700 XP)*
@@ -149,7 +153,7 @@ Original homebrew devils, styled for Dis's iron-and-ash aesthetic. Three tiers b
 - **Senses** darkvision 60 ft., passive Perception 10
 - **Languages** Infernal
 
-**Multiattack.** The Enforcer makes two glaive attacks.
+**Multiattack.** The Enforcer makes three glaive attacks.
 
 **Glaive.** *Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 1d10+3 slashing damage, and the target must succeed on a DC 12 Constitution save or take 1d6 poison damage from the glaive's barbed edge.
 
@@ -158,27 +162,48 @@ Original homebrew devils, styled for Dis's iron-and-ash aesthetic. Three tiers b
 ---
 
 ### Act 1 — Ship-Boarding Party (Leechcraft breach)
-Suggested composition for a level-5 party (hard encounter, sets an early-session tone):
-- 4x Ash-Bound Wretch
-- 2x Barbtail Skirmisher
-- 1x Iron Ward Enforcer (squad leader)
+Suggested composition for a 5-PC party (hard encounter, sets an early-session tone), deployed in two waves:
+- **Round 1:** 7x Barbtail Skirmisher, 3x Ash-Bound Wretch
+- **Round 2:** 3x Iron Ward Enforcer, 3x Ash-Bound Wretch
+- **Total:** 16 devils
 
-*Deploy in waves rather than all at once — the corridor from cargo hold to launch bay is a good excuse to stagger devils in small groups as the party moves, keeping the "fighting through" feel rather than one static room fight.*
+Scaling by party size:
+
+| PCs | Round 1 | Round 2 | Total |
+|---|---|---|---|
+| 5 | 7 Skirmisher + 3 Wretch | 3 Enforcer + 3 Wretch | 16 |
+| 4 | 6 Skirmisher + 3 Wretch | 3 Enforcer + 3 Wretch | 15 |
+| 3 | 5 Skirmisher + 3 Wretch | 2 Enforcer + 3 Wretch | 13 |
+
+*Rule of thumb: Skirmishers = PCs+2; Enforcers = 3 (2 at 3 PCs); Wretches = 6. Servian and Ryn fight alongside the party in this encounter. Round 1 sends the Skirmishers and first Wretches through the hull cut; the Enforcers and the rest of the swarm follow in round 2. This also lines up with the vacuum-pull trigger (first Enforcer death, or start of round 4, whichever comes first).*
 
 ### Act 2 — Library Guards (lighter than expected)
 Deliberately undertuned — sells the "ally, not warzone" reframe:
 - 2x Barbtail Skirmisher
 - 2x Ash-Bound Wretch
 
-*No Enforcer present — these are Dis's peacetime library security, not soldiers. Consider having them hesitate or ask questions before combat breaks out, reinforcing that they didn't expect an attack.*
+*No Enforcer present — these are Dis's peacetime library security, not soldiers. Servian and Ryn are present and will fight if it comes to that, but consider having the guards hesitate or ask questions before combat breaks out, reinforcing that they didn't expect an attack. Optional: add a Devil Patrol Leader using the Iron Ward Enforcer stat block for a bit more tension — the fight stays light either way.*
 
 ### Act 3 — Final Horde
-Scale this up or down live depending on how the party splits between Servian and Ryn:
-- 3x Ash-Bound Wretch
-- 3x Barbtail Skirmisher
-- 2x Iron Ward Enforcer
+Suggested composition for a 5-PC party:
+- 4x Ash-Bound Wretch
+- 6x Barbtail Skirmisher
+- 1x Iron Ward Enforcer
+- **Total:** 11 devils
 
-*These represent Dis's own devils reacting to the betrayal in real time — chaotic, alarmed, and hostile to the Society specifically. If the party sides with Ryn, consider having 1-2 Barbtail Skirmishers fight alongside the party against Servian rather than against everyone equally.*
+Scaling by party size:
+
+| PCs | Wretch | Skirmisher | Enforcer | Total |
+|---|---|---|---|---|
+| 5 | 4 | 6 | 1 | 11 |
+| 4 | 4 | 5 | 1 | 10 |
+| 3 | 3 | 2 | 1 | 6 |
+
+*Rule of thumb (4+ PCs): 4 Wretch, Skirmishers = PCs+1, 1 Enforcer.*
+
+- **Society path (party sides with Servian):** Servian fights alongside the party against Ryn and the full horde. The devils follow Ryn.
+- **Rising path (party turns on Servian):** the devils attack Servian and anyone in Society armor, but never Ryn. In round 1, one Barbtail Skirmisher turns on Servian and fights with the party. The fight ends when Servian falls or is driven off.
+- *Tested at 4–5 PCs, both paths land at about a 55% chance that at least one PC drops, and deaths are rare. "The choice is about loyalty, not safety" now holds.*
 
 ---
 
