@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DM Dashboard — Benediction of Dis</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root{
   --ink:#0B0C0F;
@@ -28,6 +28,7 @@ body{
   font-family:'Inter',sans-serif;
   color:var(--bone);
 }
+a{ color:var(--gold); }
 .nav{
   position:sticky;
   top:0;
@@ -35,7 +36,7 @@ body{
   background:rgba(11,12,15,0.96);
   backdrop-filter:blur(6px);
   border-bottom:1px solid var(--hair);
-  padding:12px 20px;
+  padding:12px 16px;
   display:flex;
   gap:16px;
   flex-wrap:wrap;
@@ -54,7 +55,7 @@ body{
 .nav a:hover{ color:var(--gold); border-color:var(--gold); }
 
 .hero{
-  padding:50px 24px 30px;
+  padding:50px 16px 24px;
   text-align:center;
 }
 .eyebrow{
@@ -78,19 +79,20 @@ h1{
   font-style:italic;
   font-size:13.5px;
   color:var(--muted);
-  max-width:560px;
+  max-width:600px;
   margin:0 auto;
+  line-height:1.6;
 }
 
 .wrap{
-  max-width:900px;
+  max-width:960px;
   margin:0 auto;
-  padding:20px 24px 100px;
+  padding:20px 16px 100px;
 }
 h2{
   font-family:'Cinzel',serif;
   font-weight:700;
-  font-size:24px;
+  font-size:26px;
   letter-spacing:1.5px;
   color:var(--gold);
   margin:60px 0 6px;
@@ -105,7 +107,6 @@ h2{
   margin-bottom:22px;
 }
 .h2-sub a{ color:var(--purple); text-decoration:none; border-bottom:1px solid var(--purple); text-transform:none; letter-spacing:0.3px; }
-.h2-sub a:hover{ opacity:0.8; }
 h3{
   font-family:'Cinzel',serif;
   font-weight:700;
@@ -113,20 +114,315 @@ h3{
   color:var(--bone);
   margin:26px 0 8px;
 }
+h4{
+  font-family:'JetBrains Mono',monospace;
+  font-weight:500;
+  font-size:10.5px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin:18px 0 8px;
+}
 p{
   font-size:14px;
   line-height:1.7;
   color:var(--bone);
-  opacity:0.9;
+  opacity:0.92;
   margin:0 0 12px;
 }
+ul.beats, ol.beats{
+  margin:0 0 12px;
+  padding-left:20px;
+  font-size:14px;
+  line-height:1.7;
+}
+ul.beats li, ol.beats li{ margin-bottom:6px; }
+ul.beats li b, ol.beats li b{ color:var(--gold); font-weight:600; }
 .rule{
   height:1px;
   background:linear-gradient(90deg, transparent, var(--hair) 20%, var(--hair) 80%, transparent);
   margin:50px 0;
 }
 
-/* Link grid */
+/* Inline check chips */
+.chk{
+  display:inline-block;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11.5px;
+  font-weight:500;
+  color:var(--gold);
+  background:rgba(212,175,55,0.08);
+  border:1px solid #6B5A22;
+  border-radius:3px;
+  padding:0 6px;
+  white-space:nowrap;
+}
+.chk.new{ border-style:dashed; }
+.chk.new::after{ content:"\2020"; margin-left:2px; color:var(--red); }
+
+/* Overview */
+.premise{
+  background:var(--panel);
+  border:1px solid var(--hair);
+  border-left:3px solid var(--gold);
+  border-radius:4px;
+  padding:16px 20px;
+  margin-bottom:14px;
+}
+.premise p:last-child{ margin-bottom:0; }
+.legend{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  color:var(--muted);
+  line-height:1.9;
+  margin:14px 0 4px;
+}
+.scroll-x{ overflow-x:auto; }
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+  margin:6px 0 12px;
+}
+th{
+  text-align:left;
+  color:var(--gold);
+  font-weight:500;
+  text-transform:uppercase;
+  font-size:9.5px;
+  letter-spacing:1px;
+  padding:0 10px 8px 0;
+  border-bottom:1px solid var(--hair);
+  white-space:nowrap;
+}
+td{
+  padding:8px 10px 8px 0;
+  border-bottom:1px solid rgba(42,45,52,0.6);
+  color:var(--bone);
+  vertical-align:top;
+  line-height:1.55;
+}
+td a{ color:var(--bone); text-decoration:none; border-bottom:1px dotted var(--muted); }
+td a:hover{ color:var(--gold); }
+td b{ color:var(--gold); font-weight:500; }
+tr.combat td:first-child{ color:var(--red); }
+
+/* Acts and scenes */
+.act-sub{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:1.5px;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.scene{
+  background:var(--panel);
+  border:1px solid var(--hair);
+  border-radius:6px;
+  padding:20px 22px 10px;
+  margin:18px 0;
+  scroll-margin-top:60px;
+}
+.scene-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px 16px;
+  border-bottom:1px solid var(--hair);
+  padding-bottom:10px;
+  margin-bottom:14px;
+}
+.scene-title{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:19px;
+  color:var(--bone);
+}
+.scene-title .num{ color:var(--gold); margin-right:8px; }
+.time{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  color:var(--muted);
+  white-space:nowrap;
+}
+.time b{ color:var(--gold); font-weight:500; }
+.links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0 0 14px;
+}
+.links a{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:0.5px;
+  text-decoration:none;
+  color:var(--blue);
+  border:1px solid #1F4A5C;
+  border-radius:3px;
+  padding:3px 8px;
+}
+.links a.dm{ color:var(--red); border-color:#5C2415; }
+.links a:hover{ opacity:0.8; }
+
+/* Rules box (mechanics inline with the story) */
+.rules-box{
+  background:rgba(212,175,55,0.04);
+  border:1px solid #3d3519;
+  border-radius:6px;
+  padding:14px 18px;
+  margin:12px 0 16px;
+  scroll-margin-top:60px;
+}
+.rules-box .rb-title{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:8px;
+}
+.rules-box ul{ margin:0; padding-left:18px; font-size:13.5px; line-height:1.7; }
+.rules-box li{ margin-bottom:4px; }
+.rules-box li b{ color:var(--gold); font-weight:600; }
+
+/* Encounter box */
+.enc{
+  border:1px solid #5C2415;
+  border-left:3px solid var(--red);
+  border-radius:6px;
+  background:rgba(193,80,46,0.035);
+  padding:16px 18px 6px;
+  margin:12px 0 16px;
+}
+.enc-title{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--red);
+  margin-bottom:10px;
+}
+.enc h4:first-of-type{ margin-top:4px; }
+.enc p, .enc ul, .enc ol{ font-size:13.5px; }
+
+/* Main NPC links */
+.npc-link{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:4px 12px;
+  text-decoration:none;
+  background:var(--panel-2);
+  border:1px solid #6B5A22;
+  border-radius:4px;
+  padding:9px 12px;
+  margin-bottom:8px;
+  color:var(--bone);
+}
+.npc-link:hover{ border-color:var(--gold); }
+.npc-link .nl-name{ font-family:'Cinzel',serif; font-weight:700; font-size:15px; color:var(--gold); }
+.npc-link .nl-stats{ font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted); }
+.npc-link .nl-go{ font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--purple); margin-left:auto; }
+.npc-link .nl-note{ flex-basis:100%; font-size:13px; line-height:1.6; opacity:0.9; }
+
+/* Two-path layout */
+.paths{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+  gap:12px;
+  margin:6px 0 14px;
+}
+.path{
+  background:var(--panel-2);
+  border:1px solid var(--hair);
+  border-radius:6px;
+  padding:12px 14px;
+  font-size:13px;
+  line-height:1.65;
+}
+.path .p-title{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:6px;
+}
+
+/* Devil stat blocks (same look as npc-and-monsters.html) */
+.sb-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:12px;
+  margin:6px 0 12px;
+}
+.statblock{
+  background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border:1px solid #4C1D7A;
+  border-radius:8px;
+  padding:16px 18px;
+}
+.sb-name{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:17px;
+  color:var(--purple);
+  margin-bottom:2px;
+}
+.sb-type{
+  font-style:italic;
+  font-size:11.5px;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+.sb-core{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+  line-height:1.8;
+  color:var(--bone);
+  opacity:0.9;
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding:8px 0;
+  margin-bottom:10px;
+}
+.sb-core b{ color:var(--purple); }
+.sb-ability{
+  font-size:12.5px;
+  line-height:1.55;
+  margin-bottom:7px;
+}
+.sb-ability b{ font-family:'JetBrains Mono',monospace; font-weight:600; }
+.sb-tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--red);
+  margin-bottom:4px;
+}
+
+.dm-tip{
+  background:rgba(193,80,46,0.06);
+  border:1px solid #5C2415;
+  border-radius:6px;
+  padding:12px 16px;
+  margin:10px 0 14px;
+  font-size:13px;
+  line-height:1.7;
+  color:var(--bone);
+}
+.dm-tip b{ color:var(--red); }
+
+/* Reference tables */
+table.ref td:first-child{ color:var(--gold); white-space:nowrap; }
+table.ref td:nth-child(2), table.ref td:nth-child(3){ color:var(--muted); }
+
+/* File directory */
 .link-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
@@ -155,141 +451,6 @@ p{
   margin-bottom:2px;
 }
 
-/* Act beats */
-.act-block{
-  background:var(--panel);
-  border:1px solid var(--hair);
-  border-left:3px solid var(--gold);
-  border-radius:4px;
-  padding:18px 22px;
-  margin-bottom:16px;
-}
-.act-block h3{ margin-top:0; color:var(--gold); }
-.act-block ul{
-  margin:0;
-  padding-left:18px;
-  font-size:13px;
-  line-height:1.75;
-  color:var(--bone);
-  opacity:0.9;
-}
-.act-block li{ margin-bottom:4px; }
-
-/* NPC cards */
-.npc-card{
-  background:var(--panel);
-  border:1px solid var(--hair);
-  border-radius:6px;
-  padding:20px 24px;
-  margin-bottom:16px;
-}
-.npc-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:baseline;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-bottom:8px;
-}
-.npc-name{
-  font-family:'Cinzel',serif;
-  font-weight:700;
-  font-size:19px;
-  color:var(--gold);
-}
-.npc-stat-row{
-  font-family:'JetBrains Mono',monospace;
-  font-size:12px;
-  color:var(--muted);
-}
-.npc-abilities{
-  font-size:12.5px;
-  line-height:1.8;
-  margin-top:10px;
-  border-left:2px solid var(--hair);
-  padding-left:14px;
-}
-.npc-abilities b{ color:var(--gold); }
-.npc-note{
-  margin-top:10px;
-  font-size:12px;
-  font-style:italic;
-  color:var(--muted);
-  border-top:1px dashed var(--hair);
-  padding-top:10px;
-}
-
-/* Monster table */
-table.mon-table{
-  width:100%;
-  border-collapse:collapse;
-  font-family:'JetBrains Mono',monospace;
-  font-size:11.5px;
-  margin-top:10px;
-}
-table.mon-table th{
-  text-align:left;
-  color:var(--gold);
-  font-weight:500;
-  text-transform:uppercase;
-  font-size:9.5px;
-  letter-spacing:1px;
-  padding:0 10px 8px 0;
-  border-bottom:1px solid var(--hair);
-}
-table.mon-table td{
-  padding:9px 10px 9px 0;
-  border-bottom:1px solid rgba(42,45,52,0.5);
-  color:var(--bone);
-  vertical-align:top;
-}
-
-/* Mechanics quick ref */
-.mech-item{
-  background:var(--panel);
-  border:1px solid var(--hair);
-  border-radius:6px;
-  padding:16px 20px;
-  margin-bottom:12px;
-}
-.mech-item .mname{
-  font-family:'Cinzel',serif;
-  font-weight:700;
-  font-size:15px;
-  color:var(--gold);
-  margin-bottom:6px;
-  display:block;
-}
-.mech-item p{ font-size:12.5px; margin-bottom:0; opacity:0.85; }
-
-.dm-tip{
-  background:rgba(193,80,46,0.06);
-  border:1px solid #5C2415;
-  border-radius:6px;
-  padding:14px 18px;
-  margin-top:10px;
-  font-size:12.5px;
-  line-height:1.7;
-  color:var(--bone);
-  opacity:0.92;
-}
-.dm-tip b{ color:var(--red); }
-
-/* Pacing table */
-table.pace-table{
-  width:100%;
-  border-collapse:collapse;
-  font-family:'JetBrains Mono',monospace;
-  font-size:12px;
-  margin-top:10px;
-}
-table.pace-table th, table.pace-table td{
-  text-align:left;
-  padding:8px 10px;
-  border-bottom:1px solid var(--hair);
-}
-table.pace-table th{ color:var(--gold); font-size:10px; text-transform:uppercase; letter-spacing:1px; }
-
 .footer-note{
   text-align:center;
   font-family:'JetBrains Mono',monospace;
@@ -298,16 +459,25 @@ table.pace-table th{ color:var(--gold); font-size:10px; text-transform:uppercase
   margin-top:70px;
   letter-spacing:1px;
 }
+
+@media (max-width:600px){
+  h1{ font-size:28px; }
+  h2{ font-size:22px; }
+  .scene{ padding:16px 14px 6px; }
+  .enc{ padding:14px 12px 4px; }
+  h2, .scene, .rules-box{ scroll-margin-top:96px; }
+}
 </style>
 </head>
 <body>
 
 <div class="nav">
-  <a href="#storyboard">Storyboard</a>
-  <a href="#mechanics">Mechanics</a>
-  <a href="#npcs">NPCs</a>
-  <a href="#monsters">Monsters</a>
-  <a href="#pacing">Pacing</a>
+  <a href="#overview">Overview</a>
+  <a href="#act1">Act 1</a>
+  <a href="#act2">Act 2</a>
+  <a href="#act3">Act 3</a>
+  <a href="#gear">Gear</a>
+  <a href="#rules">Rules</a>
   <a href="pages/supplemental-images.html">Images</a>
   <a href="#files">All Files</a>
 </div>
@@ -315,177 +485,444 @@ table.pace-table th{ color:var(--gold); font-size:10px; text-transform:uppercase
 <div class="hero">
   <div class="eyebrow">DM-Only — Do Not Share With Players</div>
   <h1>BENEDICTION OF DIS</h1>
-  <p class="hero-sub">Command center for running the one-shot. Storyboard, mechanics, NPCs, monsters, pacing, and every linked handout in one place.</p>
+  <p class="hero-sub">Run the session top to bottom from this page. Every scene has its checks, encounter numbers, devil stat blocks, and time budget inline. Servian's and Ryn's stat blocks open in a new tab.</p>
 </div>
 
 <div class="wrap">
 
-  <h2 id="storyboard">Storyboard</h2>
-  <div class="h2-sub">Full detail: <a href="pages/storyboard.html">storyboard.html</a></div>
+  <!-- ============================== OVERVIEW ============================== -->
+  <h2 id="overview">Overview</h2>
+  <div class="h2-sub">Premise · who knows what · session clock</div>
 
-  <div class="act-block">
-    <h3>Act 1 — The Benediction (aboard The Concordia)</h3>
-    <ul>
-      <li>Cold open: Benediction ceremony, Obsidians kneeling, Grays at the margins, "too quiet" unease. Short RP/skill scene.</li>
-      <li>Break: leechcraft breach through portals. "All units to launch bays. Prepare for planar jump and Iron Rain."</li>
-      <li>Both squads reach the corridor together — ship shakes, hull visibly cut open, gravity fails, roll initiative.</li>
-      <li><b>Servian and Ryn fight alongside the party</b> in the corridor. Servian's gravity boots let him ignore zero-G until they fail.</li>
-      <li><b>Round 1:</b> leechcraft carves through the hull; Barbtail Skirmishers and the first Ash-Bound Wretches pour in. <b>Round 2:</b> the Iron Ward Enforcers follow with the rest of the swarm.</li>
-      <li><b>Mid-fight:</b> leechcraft tears free (Enforcer's death / countermeasure / player action / or at the start of round 4) — one sharp round of vacuum pull + debris.</li>
-      <li>Zero-G Corridor rules apply throughout (see Mechanics).</li>
-      <li>Ends when enemies are dead and the shuttle bay door opens. <b>The planar jump that follows is a short rest</b> — HD, short-rest features, Stem Injectors, and Pulse Fists all refill before the landing hazard on arrival.</li>
-      <li>1–2 PCs (Gold's confidants) know the true objective now; everyone else believes it's standard intel extraction.</li>
+  <div class="premise">
+    <p><b>Premise.</b> Obsidian and Gray operators under Servian au Ferrox, a Peerless Scarred Gold, drop onto Dis, capital of Dispater. Their stated orders are to extract intel on troop movements. The real target is <b>the Chimera Codex</b>, a spellbook that lets Colors bargain with devils for cross-color breeding, getting around the Society's caste laws. Dis has long been a Society <i>ally</i>, so the Iron Rain is a betrayal, not a follow-up to a war.</p>
+    <p><b>Who knows.</b> Servian knows the true objective from the start. Ryn Gray, the Gray Troupe Leader, knows it through Rising channels and is a Rising agent. Only 1–2 PCs (Servian's confidants) learn it in Act 1. Everyone else believes it's intel extraction until the Logbook in Act 2.</p>
+  </div>
+
+  <div class="legend">
+    <span class="chk">DC 13 DEX</span> check or save from the source notes &nbsp;·&nbsp;
+    <span class="chk new">DC 13 INT (Investigation)</span> proposed DC, not in the original notes. Adjust freely.
+  </div>
+
+  <h3>Session at a Glance</h3>
+  <div class="scroll-x">
+  <table>
+    <thead><tr><th>Scene</th><th>Time</th><th>Done by</th></tr></thead>
+    <tbody>
+      <tr><td>Session open / setup</td><td>10 min</td><td>~0:10</td></tr>
+      <tr><td><a href="#s1-1">1.1 The Benediction</a></td><td>20 min</td><td>~0:30</td></tr>
+      <tr class="combat"><td><a href="#s1-2">1.2 Breach in the Zero-G Corridor</a></td><td>35–45 min</td><td>~1:15</td></tr>
+      <tr><td><a href="#s2-1">2.1 Planar Jump &amp; Iron Rain</a></td><td>10–15 min</td><td>~1:30</td></tr>
+      <tr><td><a href="#s2-2">2.2 The Arcane Library &amp; the Logbook</a></td><td>20–25 min</td><td>~1:55</td></tr>
+      <tr class="combat"><td><a href="#s2-3">2.3 Library Guards</a></td><td>20 min</td><td>~2:15</td></tr>
+      <tr><td><a href="#s3-1">3.1 The Reveal &amp; the Order</a></td><td>10–15 min</td><td>~2:30</td></tr>
+      <tr class="combat"><td><a href="#s3-2">3.2 Climax at the Extraction Plaza</a></td><td>40–45 min</td><td>~3:15</td></tr>
+      <tr><td><a href="#s3-3">3.3 Endings &amp; wrap-up</a></td><td>10 min</td><td>~3:25</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12.5px; opacity:0.7;">"Done by" uses the top of each range (total ~2:55–3:25). You have runway for a longer session, and extra time is best spent on Act 1–2 roleplay rather than stretching combats.</p>
+
+  <div class="rule"></div>
+
+  <!-- ============================== ACT 1 ============================== -->
+  <h2 id="act1">Act 1 — The Benediction</h2>
+  <div class="act-sub">Aboard The Concordia, in orbit above Farun · ~55–65 min</div>
+
+  <!-- Scene 1.1 -->
+  <div class="scene" id="s1-1">
+    <div class="scene-head">
+      <div class="scene-title"><span class="num">1.1</span>The Benediction Ceremony</div>
+      <div class="time"><b>20 min</b> · done by ~0:30</div>
+    </div>
+    <div class="links">
+      <a href="../shared/assets/location-dreadnought-concordia.jpg" target="_blank" rel="noopener">Show players: The Concordia ↗</a>
+    </div>
+
+    <ul class="beats">
+      <li><b>Cold open.</b> A formal ceremony. The Obsidians kneel for Servian's blessing while the Grays check gear at the margins. There's unease in the air because Dis has been "too quiet."</li>
+      <li><b>Caste roleplay.</b> Obsidians can't speak out of turn. Grays needle at the edges.</li>
+      <li><b>Servian.</b> Cold, Cassius-style composure. Clipped, formal command language, and he never raises his voice. He knows the true objective.</li>
+      <li><b>Ryn.</b> Holiday-style bluntness. She talks to Grays and Obsidians as people, not ranks, and the contrast with Servian is worth playing up. She's quietly probing 1–2 PCs' loyalties during this scene.</li>
+      <li><b>The confidants.</b> Pull 1–2 PCs aside: the real objective is the Chimera Codex. Everyone else hears "troop-movement intel."</li>
+      <li><b>Show the oath working.</b> Give a small order that an Obsidian visibly can't disobey, or let a PC flinch when tempted to. Players should know the sigils are watching before Act 3. Full rules are in <a href="#oathbound">Scene 3.1</a>.</li>
+    </ul>
+
+    <h4>Skill scene: who's suspicious of the mission?</h4>
+    <ul class="beats">
+      <li><span class="chk new">DC 12 WIS (Insight)</span> The briefing is incomplete. Servian is holding something back.</li>
+      <li><span class="chk new">DC 15 WIS (Insight)</span> Ryn is sizing up specific operatives, not just checking gear. This seeds Act 3.</li>
+      <li><span class="chk new">DC 14 CHA (Persuasion or Deception)</span> against Servian. He won't name the objective, but he confirms there's more to this mission than intel and that it's above their clearance.</li>
+      <li>Ryn talks to anyone who speaks to her plainly, with no check needed. She asks more questions than she answers.</li>
+    </ul>
+
+    <p><b style="color:var(--red);">Break.</b> Hellish leechcraft breach through portals in space and devils board The Concordia. Shipwide: <i>"All units to launch bays. Prepare for planar jump and Iron Rain."</i></p>
+  </div>
+
+  <!-- Scene 1.2 -->
+  <div class="scene" id="s1-2">
+    <div class="scene-head">
+      <div class="scene-title"><span class="num">1.2</span>Breach in the Zero-G Corridor</div>
+      <div class="time"><b>35–45 min</b> · done by ~1:15</div>
+    </div>
+    <div class="links">
+      <a href="../shared/pages/battle-map-act1-corridor.html" target="_blank" rel="noopener">Battle map: Zero-G Corridor ↗</a>
+      <a href="pages/supplemental-images.html#enemies" target="_blank" rel="noopener">Show players: devil art ↗</a>
+    </div>
+
+    <p>Both squads reach the corridor between the cargo hold and the launch bay together. The ship shakes, everyone watches the hull get cut open from outside, and gravity fails. <b>Roll initiative.</b></p>
+
+    <div class="enc">
+      <div class="enc-title">Encounter — Ship-Boarding Party</div>
+
+      <h4>The corridor</h4>
+      <p>25 ft. wide, 120 ft. long, 15 ft. ceiling, with a gentle bend. Handholds (anchors) every 10 ft. on both walls and the ceiling. The breach opens on the south wall in round 1. The cargo hold is at one end and the launch bay at the other. The map has no hidden info, so it's safe to screen-share.</p>
+
+      <h4>Allies — fighting alongside the party</h4>
+      <a class="npc-link" href="pages/npc-and-monsters.html#servian-statblock" target="_blank" rel="noopener">
+        <span class="nl-name">Servian au Ferrox</span><span class="nl-stats">AC 20 · HP 130</span><span class="nl-go">stat block ↗</span>
+        <span class="nl-note">His gravity boots (2 charges) let him ignore zero-G. Have them run out or get damaged mid-fight by a debris strike, a solid hit, or the breach event, so he's grounded like everyone else. The damaged boots can carry into Act 3 as flavor.</span>
+      </a>
+      <a class="npc-link" href="pages/npc-and-monsters.html#ryn-statblock" target="_blank" rel="noopener">
+        <span class="nl-name">Ryn Gray</span><span class="nl-stats">AC 16 · HP 85</span><span class="nl-go">stat block ↗</span>
+        <span class="nl-note">Fights with her Pulse Blade and Pulse Rifle. Her Razor stays hidden until Act 3.</span>
+      </a>
+
+      <h4>Forces — two waves, all in by round 2</h4>
+      <div class="scroll-x">
+      <table>
+        <thead><tr><th>PCs</th><th>Round 1</th><th>Round 2</th><th>Total</th></tr></thead>
+        <tbody>
+          <tr><td><b>5</b></td><td>7 Skirmisher + 3 Wretch</td><td>3 Enforcer + 3 Wretch</td><td><b>16</b></td></tr>
+          <tr><td>4</td><td>6 Skirmisher + 3 Wretch</td><td>3 Enforcer + 3 Wretch</td><td>15</td></tr>
+          <tr><td>3</td><td>5 Skirmisher + 3 Wretch</td><td>2 Enforcer + 3 Wretch</td><td>13</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:12.5px; opacity:0.75;">Rule of thumb: Skirmishers = PCs + 2. Enforcers = 3 (2 at three PCs). Wretches = 6.</p>
+
+      <div class="rules-box">
+        <div class="rb-title">Zero-G rules (whole fight)</div>
+        <ul>
+          <li><b>Movement.</b> No walking. Push off a surface with a <span class="chk">DC 12 STR (Athletics)</span> check to drift your speed in a straight line until you hit something or reach an anchor. Changing direction needs a new anchor.</li>
+          <li><b>Anchors.</b> The handholds every 10 ft. define the viable route.</li>
+          <li><b>Recoil.</b> Any weapon attack, melee or ranged, made while not braced against an anchor pushes the attacker 5 ft. directly away from the target after it resolves. Bracing cancels it.</li>
+          <li><b>Adrift.</b> A creature left unbraced after a failed push-off, a recoil, or the vacuum pull is Adrift until the start of its next turn. Melee attacks against an Adrift creature have advantage.</li>
+          <li><b>Devils</b> move and reposition freely and are never Adrift.</li>
+          <li><b>Caste flavor.</b> Obsidians push off harder and resist the pull (Strength). Grays thread debris and stick anchor grabs (Dexterity).</li>
+        </ul>
+      </div>
+
+      <h4>Round by round</h4>
+      <ol class="beats">
+        <li><b>Round 1.</b> The leechcraft carves fully through the hull. The Skirmishers and the first Wretches pour through the breach.</li>
+        <li><b>Round 2.</b> The Enforcers follow with the rest of the Wretches.</li>
+        <li><b>Vacuum round.</b> Triggered when the first Enforcer dies or at the start of round 4, whichever comes first. A ship countermeasure can set it off earlier, or a PC can reach the leechcraft's exterior control panel through the breach and tear its clamps free (action, <span class="chk new">DC 14 STR (Athletics) or INT (Arcana)</span>). For <i>one round only</i>, everyone in the corridor makes a <span class="chk">DC 13 STR save</span> or is pulled toward the opening, and a <span class="chk">DC 12 DEX save</span> or takes 1d6 bludgeoning from debris. A creature pulled loose is Adrift. Afterward the leechcraft is gone and the pull dies.</li>
+        <li><b>End.</b> The enemies are dead and the shuttle bay door opens.</li>
+      </ol>
+
+      <div class="dm-tip"><b>Running it.</b> This fight fields up to 16 devils plus 7 allies and PCs. Roll initiative once per monster type (all Skirmishers act together, and so on). The Skirmishers fly and harass with tail spikes from range. The Wretches swarm into melee and explode in cinders when they die, and the other devils are fire-immune, so they pile in anyway. The Enforcers use their 10-ft. reach and Rally Cry to push the swarm.</div>
+
+      <h4>Devil stat blocks</h4>
+      <div class="sb-grid">
+        <div data-sb="wretch"></div>
+        <div data-sb="skirmisher"></div>
+        <div data-sb="enforcer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- ============================== ACT 2 ============================== -->
+  <h2 id="act2">Act 2 — Iron Rain onto Dis</h2>
+  <div class="act-sub">A district of Dis and its Arcane Library · ~50–60 min</div>
+
+  <!-- Scene 2.1 -->
+  <div class="scene" id="s2-1">
+    <div class="scene-head">
+      <div class="scene-title"><span class="num">2.1</span>Planar Jump &amp; Iron Rain</div>
+      <div class="time"><b>10–15 min</b> · done by ~1:30</div>
+    </div>
+    <div class="links">
+      <a href="../shared/assets/location-dis.jpg" target="_blank" rel="noopener">Show players: Dis ↗</a>
+    </div>
+
+    <p>The ship jumps as the pods launch, which is why the Iron Rain comes in hot and early.</p>
+
+    <div class="rules-box">
+      <div class="rb-title">The planar jump is a short rest</div>
+      <ul>
+        <li>The jump takes about an hour and counts as a short rest. Hit Dice, short-rest features, Stem Injectors (3 charges), and Pulse Fists (3 charges) all refill.</li>
+        <li>The landing hazard below happens <i>after</i> the rest, on arrival.</li>
+      </ul>
+    </div>
+
+    <ul class="beats">
+      <li><b>Pods.</b> Pod 1 carries Servian and the Obsidian PCs. Pod 2 carries Ryn and the Gray PCs. Both land in the same district, but not next to each other.</li>
+      <li><b>Landing hazard.</b> Each PC makes a <span class="chk">DC 13 DEX save</span> as the pod takes fire on the way down. On a failure, the pod lands rough and off-target: 2d6 bludgeoning, and the PC lands separated from their pod-mates. On a success, the landing is clean, with no damage, and the group stays together.</li>
+      <li><b>Optional.</b> An NPC pod of non-PC Obsidians or Grays fails catastrophically and is lost. It shows real danger without punishing a PC for a bad roll.</li>
+      <li><b>Dis.</b> Black iron architecture, screaming stonework, a bruised orange sky, and devils being actively broken by the Society's occupation.</li>
+      <li><b>Solo beats before the pods converge.</b> Ryn seeds suspicion with the Grays. Servian has a command moment with the Obsidians.</li>
+      <li><b>Stated objective.</b> Retrieve troop-movement intel from the Dis Arcane Library.</li>
     </ul>
   </div>
 
-  <div class="act-block">
-    <h3>Act 2 — Iron Rain onto Dis</h3>
-    <ul>
-      <li>Scattered landing across a district of Dis — black iron architecture, screaming stonework, bruised orange sky.</li>
-      <li>Stated objective: retrieve troop movement intel from the Dis Arcane Library.</li>
-      <li><b>Discovery beat:</b> remaining PCs learn the Chimera Codex's true nature via the Logbook — found near the objective, via Investigation/stealth or a social check against a cagey archivist/guard.</li>
-      <li>Combat: library guards, deliberately lighter than expected (2 Barbtail Skirmishers + 2 Ash-Bound Wretches, no Enforcer) — sells the "unprepared ally" reframe.</li>
-      <li><b>DM lever:</b> have Servian spend resources here (Lay on Hands, a Pulse Fist charge, a smite) to weaken him ahead of Act 3.</li>
+  <!-- Scene 2.2 -->
+  <div class="scene" id="s2-2">
+    <div class="scene-head">
+      <div class="scene-title"><span class="num">2.2</span>The Arcane Library &amp; the Logbook</div>
+      <div class="time"><b>20–25 min</b> · done by ~1:55</div>
+    </div>
+    <div class="links">
+      <a href="pages/battle-map-act2-library-player.html" target="_blank" rel="noopener">Battle map (player) ↗</a>
+      <a class="dm" href="pages/battle-map-act2-library-dm.html" target="_blank" rel="noopener">Battle map (DM, objectives) ↗</a>
+      <a class="dm" href="pages/handout-logbook.html" target="_blank" rel="noopener">Logbook handout ↗</a>
+    </div>
+
+    <p><b>Layout.</b> The Main Hall is full of bookshelves (three-quarters cover, difficult terrain). The Records Vault behind it holds the archivist's desk, the Logbook, and the Chimera Codex on a warded pedestal.</p>
+
+    <p><b>The Logbook.</b> An Infernal ledger in the Records Vault, right next to the objective. It records every use of the Chimera Codex: the Color, the date, the requesting House, and the soul-cost paid to devil brokers. Low Colors trade their own souls, and both low and high Colors trade the souls of their slaves. One entry names <b>House Ferrox</b>: Servian's cousin, Lucan au Ferrox. Show the handout once the PCs find it.</p>
+
+    <h4>Three ways to the Logbook</h4>
+    <div class="paths">
+      <div class="path">
+        <div class="p-title">A · Stealth &amp; search</div>
+        <span class="chk new">DC 13 DEX (Stealth)</span> group check to reach the vault unseen. On a failure, the guards notice and <a href="#s2-3">Scene 2.3</a> starts. The PCs can still search afterward.<br>
+        <span class="chk new">DC 13 INT (Investigation)</span> to find the ledger among the vault's records.
+      </div>
+      <div class="path">
+        <div class="p-title">B · The cagey archivist</div>
+        The archivist denies knowing anything.<br>
+        <span class="chk new">DC 13 WIS (Insight)</span> They're lying about the vault.<br>
+        <span class="chk new">DC 14 CHA (Deception)</span> to talk your way in, for example by posing as Society auditors. On a failure, the archivist calls the guards and <a href="#s2-3">Scene 2.3</a> starts.
+      </div>
+      <div class="path">
+        <div class="p-title">C · A petitioner (no check)</div>
+        A soul bound to Dis, or a Society slave brought along for labor, has overheard something and points the PCs to the vault, or simply reacts with fear and resignation. It's the human cost made visible.
+      </div>
+    </div>
+
+    <ul class="beats">
+      <li><b>Reading it.</b> Anyone who reads Infernal reads it outright. Otherwise, <span class="chk new">DC 15 INT (Arcana or Investigation)</span> gets the gist: Colors, Houses, soul-costs. Servian reads Infernal, so if he translates, he finds his cousin's entry himself.</li>
+      <li><b>Servian's crack.</b> He is genuinely surprised and disgusted, one of the only moments his composure slips. Give it a brief flash, then he re-forms the mask and doubles down on the mission. For more ambiguity, let it visibly shake him going into Act 3.</li>
+      <li><b>Knowledge.</b> The rest of the party now learns what the Codex really is.</li>
     </ul>
   </div>
 
-  <div class="act-block">
-    <h3>Act 3 — The Twist and Extraction</h3>
-    <ul>
-      <li>A devil horde arrives as the party secures the Chimera Codex.</li>
-      <li>Ryn Gray turns, reveals the truth to everyone, sides against the Society.</li>
-      <li>Servian orders the party to kill Ryn and the devils — every PC is Oathbound and must actively break the oath to defy this.</li>
-      <li>Both leaders draw razors — Servian and Ryn are equally lethal, so the choice is about loyalty, not safety.</li>
-      <li>Climax combat: PCs choose a side, or break the oath entirely and run with the book. If the party turns on Servian, one Barbtail Skirmisher turns on him too in round 1.</li>
-      <li>Ends at the close of combat.</li>
+  <!-- Scene 2.3 -->
+  <div class="scene" id="s2-3">
+    <div class="scene-head">
+      <div class="scene-title"><span class="num">2.3</span>Library Guards</div>
+      <div class="time"><b>20 min</b> · done by ~2:15</div>
+    </div>
+    <div class="links">
+      <a href="pages/battle-map-act2-library-player.html" target="_blank" rel="noopener">Battle map (player) ↗</a>
+      <a class="dm" href="pages/battle-map-act2-library-dm.html" target="_blank" rel="noopener">Battle map (DM, objectives) ↗</a>
+    </div>
+
+    <div class="enc">
+      <div class="enc-title">Encounter — Library Guards (lighter than expected)</div>
+
+      <h4>Before the fight</h4>
+      <p>These are Dis's peacetime library security, not soldiers. They hesitate and ask questions because they don't understand why their Society allies are attacking. A <span class="chk new">DC 12 WIS (Insight)</span> check reads it: confusion, not hostility. The fight being this easy is a warning sign of its own before Act 3.</p>
+
+      <h4>Allies — present and fighting</h4>
+      <a class="npc-link" href="pages/npc-and-monsters.html#servian-statblock" target="_blank" rel="noopener">
+        <span class="nl-name">Servian au Ferrox</span><span class="nl-stats">AC 20 · HP 130</span><span class="nl-go">stat block ↗</span>
+        <span class="nl-note"><b>DM lever:</b> spend his resources here (Lay on Hands, a Pulse Fist charge or two, a smite on a guard) so he walks into Act 3 capable but not at full strength.</span>
+      </a>
+      <a class="npc-link" href="pages/npc-and-monsters.html#ryn-statblock" target="_blank" rel="noopener">
+        <span class="nl-name">Ryn Gray</span><span class="nl-stats">AC 16 · HP 85</span><span class="nl-go">stat block ↗</span>
+        <span class="nl-note">Still on her Pulse Blade and Pulse Rifle. The Razor stays hidden.</span>
+      </a>
+
+      <h4>Forces</h4>
+      <ul class="beats">
+        <li><b>2 Barbtail Skirmishers + 2 Ash-Bound Wretches.</b> No Enforcer. This is deliberately light and doesn't scale with party size.</li>
+        <li><b>Optional: the Devil Patrol Leader.</b> A guard captain used to routine duty with an ally, not an invasion. Use the Iron Ward Enforcer stat block, reskinned as Dis city watch. The fight stays light either way.</li>
+        <li><b>Terrain.</b> The Main Hall bookshelves give three-quarters cover and are difficult terrain.</li>
+      </ul>
+
+      <h4>Devil stat blocks</h4>
+      <div class="sb-grid">
+        <div data-sb="skirmisher"></div>
+        <div data-sb="wretch"></div>
+        <div><div class="sb-tag">Optional — Patrol Leader</div><div data-sb="enforcer"></div></div>
+      </div>
+    </div>
+
+    <h4>Securing the Codex</h4>
+    <p>The Chimera Codex sits on a warded pedestal in the Records Vault. Unpicking the ward takes an action and a <span class="chk new">DC 14 INT (Arcana)</span> check, and the PCs can retry. On a failure, the ward flares and the alarm carries across the district, which works as the reason the horde descends in Act 3.</p>
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- ============================== ACT 3 ============================== -->
+  <h2 id="act3">Act 3 — The Twist &amp; Extraction</h2>
+  <div class="act-sub">The Extraction Plaza, Dis · ~60–70 min</div>
+
+  <!-- Scene 3.1 -->
+  <div class="scene" id="s3-1">
+    <div class="scene-head">
+      <div class="scene-title"><span class="num">3.1</span>The Reveal &amp; the Order</div>
+      <div class="time"><b>10–15 min</b> · done by ~2:30</div>
+    </div>
+    <div class="links">
+      <a href="pages/battle-map-act3-plaza-player.html" target="_blank" rel="noopener">Battle map: Extraction Plaza ↗</a>
+    </div>
+
+    <ul class="beats">
+      <li><b>The horde.</b> A horde of Dis's own devils arrives as the party secures the book. They're reacting to the betrayal in real time: chaotic, alarmed, and hostile to the Society specifically.</li>
+      <li><b>Ryn turns.</b> She reveals the full truth to everyone (the Logbook, the pipeline, what it costs the people at the bottom) and sides against the Society. She draws a Razor of her own. She isn't asking the party to follow her, only to choose.</li>
+      <li><b>Servian's order.</b> With total calm, he orders the party to kill Ryn and the devils. To him it isn't murder, it's maintenance of the system. He draws his razor.</li>
+      <li><b>The stakes.</b> Both leaders are equally lethal, so the choice is about loyalty, not safety.</li>
     </ul>
-    <div class="dm-tip"><b>Three endings:</b> Society wins (Servian keeps the book) · Rising wins (Ryn's side secures it) · PCs escape with the book (break the oath, abandon both sides).</div>
+
+    <div class="rules-box" id="oathbound">
+      <div class="rb-title">Oathbound Compulsion</div>
+      <ul>
+        <li>Every Obsidian and Gray PC bears two sigils, one on each hand, binding them to Servian's direct spoken orders.</li>
+        <li><b>Trigger.</b> A PC takes an action that directly defies his order. The compulsion is passive and takes no action to resist. It fires the moment defiance happens.</li>
+        <li><b>1st break (right hand).</b> 2d6 psychic damage (<span class="chk">DC 14 CON save</span> for half) and disadvantage on the next roll.</li>
+        <li><b>2nd break (left hand).</b> 2d6 psychic damage (<span class="chk">DC 14 CON save</span> for half), disadvantage on the next roll, and 1 level of exhaustion. After the first break, the PC's next defiant action breaks the second sigil automatically. No new order is needed.</li>
+        <li><b>Both broken.</b> The PC is free of the compulsion for the rest of the encounter.</li>
+        <li>Narrate each sigil visibly cracking or burning out.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Scene 3.2 -->
+  <div class="scene" id="s3-2">
+    <div class="scene-head">
+      <div class="scene-title"><span class="num">3.2</span>Climax at the Extraction Plaza</div>
+      <div class="time"><b>40–45 min</b> · done by ~3:15</div>
+    </div>
+    <div class="links">
+      <a href="pages/battle-map-act3-plaza-player.html" target="_blank" rel="noopener">Battle map (player) ↗</a>
+      <a class="dm" href="pages/battle-map-act3-plaza-dm.html" target="_blank" rel="noopener">Battle map (DM) ↗</a>
+    </div>
+
+    <div class="enc">
+      <div class="enc-title">Encounter — The Final Horde</div>
+
+      <h4>The plaza</h4>
+      <p>An iron courtyard. Iron pillars give half cover. A narrow chokepoint leads to the extraction shuttle. It's the bottleneck, and it's the only way out for anyone running with the book.</p>
+
+      <h4>The leaders</h4>
+      <a class="npc-link" href="pages/npc-and-monsters.html#servian-statblock" target="_blank" rel="noopener">
+        <span class="nl-name">Servian au Ferrox</span><span class="nl-stats">AC 20 · HP 130</span><span class="nl-go">stat block ↗</span>
+        <span class="nl-note">Razor drawn, the "boss reveal" of the fight. Remember any resources he spent in Act 2.</span>
+      </a>
+      <a class="npc-link" href="pages/npc-and-monsters.html#ryn-statblock" target="_blank" rel="noopener">
+        <span class="nl-name">Ryn Gray</span><span class="nl-stats">AC 16 · HP 85</span><span class="nl-go">stat block ↗</span>
+        <span class="nl-note">Now on her Razor. Drawing it should land as a visible escalation. She still has 3 Pulse Grenades.</span>
+      </a>
+
+      <h4>Forces</h4>
+      <div class="scroll-x">
+      <table>
+        <thead><tr><th>PCs</th><th>Horde</th><th>Total</th></tr></thead>
+        <tbody>
+          <tr><td><b>5</b></td><td>4 Wretch + 6 Skirmisher + 1 Enforcer</td><td><b>11</b></td></tr>
+          <tr><td>4</td><td>4 Wretch + 5 Skirmisher + 1 Enforcer</td><td>10</td></tr>
+          <tr><td>3</td><td>3 Wretch + 2 Skirmisher + 1 Enforcer</td><td>6</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:12.5px; opacity:0.75;">Rule of thumb (4+ PCs): 4 Wretches, Skirmishers = PCs + 1, 1 Enforcer.</p>
+
+      <h4>Who fights whom</h4>
+      <div class="paths">
+        <div class="path">
+          <div class="p-title">Society path · party sides with Servian</div>
+          Servian fights alongside the party against Ryn and the full horde. The devils follow Ryn.
+        </div>
+        <div class="path">
+          <div class="p-title">Rising path · party turns on Servian</div>
+          The devils attack Servian and anyone in Society armor, but never Ryn. <b style="color:var(--gold);">In round 1, one Skirmisher turns on Servian</b> and fights with the party. The fight ends when Servian falls or is driven off.
+        </div>
+        <div class="path">
+          <div class="p-title">Run with the book</div>
+          The PCs break both sigils, abandon both sides, and make for the shuttle through the chokepoint.
+        </div>
+      </div>
+      <p style="font-size:12.5px; opacity:0.75;">Tested at 4–5 PCs: both paths land at about a 55% chance that at least one PC drops, and deaths are rare.</p>
+
+      <h4>Devil stat blocks</h4>
+      <div class="sb-grid">
+        <div data-sb="wretch"></div>
+        <div data-sb="skirmisher"></div>
+        <div data-sb="enforcer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scene 3.3 -->
+  <div class="scene" id="s3-3">
+    <div class="scene-head">
+      <div class="scene-title"><span class="num">3.3</span>Endings &amp; Wrap-Up</div>
+      <div class="time"><b>10 min</b> · done by ~3:25</div>
+    </div>
+    <p>The one-shot ends at the close of the climax combat.</p>
+    <ul class="beats">
+      <li><b>Society wins.</b> Servian keeps the book, and Ryn and the Rising are defeated.</li>
+      <li><b>Rising wins.</b> Ryn's side secures the book, and Servian is defeated or driven off.</li>
+      <li><b>The PCs escape with the book.</b> The party breaks the oath, abandons both sides, and flees Dis with the Chimera Codex in hand.</li>
+    </ul>
   </div>
 
   <div class="rule"></div>
 
-  <h2 id="mechanics">Mechanics Quick Reference</h2>
-  <div class="h2-sub">Full detail: <a href="pages/lore-mechanics.html">lore-mechanics.html</a></div>
+  <!-- ============================== GEAR ============================== -->
+  <h2 id="gear">Gear</h2>
+  <div class="h2-sub">Every operative carries all Universal gear · full text: <a href="../shared/pages/gear-codex.html">gear-codex.html</a></div>
 
-  <div class="mech-item">
-    <span class="mname">Oathbound Compulsion</span>
-    <p>Two sigils, one per hand. Each break: 2d6 psychic damage (Con save DC 14 for half) + disadvantage on next roll. 2nd break also costs 1 exhaustion. The next defiant action automatically breaks the 2nd sigil — no new order required. After both sigils break, that PC is free of the compulsion for the rest of the encounter.</p>
-  </div>
-
-  <div class="mech-item">
-    <span class="mname">Zero-G Corridor (Act 1)</span>
-    <p>25 ft. wide, 120 ft. long, 15 ft. ceiling, gentle bend. Movement: push off (Str/Athletics DC 12) to drift in a straight line to next anchor. Anchors every 10 ft. on both walls + ceiling. Vacuum pull round (triggers when the first Enforcer dies, or at the start of round 4, whichever comes first — a countermeasure or PC reaching the control panel can also trigger it earlier): Str save DC 13 or pulled toward breach; debris: Dex save DC 12 or 1d6 bludgeoning. Recoil: unbraced attacks push the attacker 5 ft. away from their target. A creature left unbraced after a failed push-off, recoil, or the vacuum pull is Adrift until the start of its next turn — melee attacks against an Adrift creature have advantage. Devils move freely, never Adrift, unaffected by these rules.</p>
-  </div>
-
-  <div class="mech-item">
-    <span class="mname">Stem Injectors (universal)</span>
-    <p>3 charges/short rest. Bonus action. Each charge = Greater Healing Potion (4d4+4). An ally within 5 ft. can trigger a downed or incapacitated creature's injector as an action (one charge from the wearer's armor).</p>
-  </div>
-
-  <div class="mech-item">
-    <span class="mname">Gravity Boots (Gold only)</span>
-    <p>Functions as Boots of Flying — flying speed = normal speed, ignores zero-G rules. 2 charges, recharge on long rest. Servian wears these into Act 1 — consider having them run out or take damage mid-fight so he's grounded like everyone else for the rest of that encounter.</p>
-  </div>
-
-  <div class="mech-item">
-    <span class="mname">War Chant (Obsidian)</span>
-    <p>Bonus action to start; Concentration. Self + allies within 15 ft. immune to frightened. At the start of the Obsidian's turns, weak creatures (CR 1 or lower — Ash-Bound Wretches) within 30 ft. that can hear it: Wisdom save (DC 8 + prof + Con) or frightened until the Obsidian's next turn.</p>
-  </div>
-
-  <div class="mech-item">
-    <span class="mname">Razor (Gold only)</span>
-    <p>1d8 slashing, finesse, light. Treats the target as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count. <b>Whip Mode:</b> item interaction to toggle (free) — reach 10 ft., 1d6 slashing, loses light; hits can disarm/trip at range instead of dealing damage. Both Servian and Ryn carry one — Ryn's stays hidden (Pulse Blade instead) until her Act 3 reveal.</p>
-  </div>
-
-  <div class="rule"></div>
-
-  <h2 id="npcs">NPCs</h2>
-  <div class="h2-sub">Full stat blocks: <a href="pages/npc-and-monsters.html">npc-and-monsters.html</a></div>
-
-  <div class="npc-card">
-    <div class="npc-head">
-      <span class="npc-name">Servian au Ferrox</span>
-      <span class="npc-stat-row">Gold Paladin 7 · CR 6 · AC 20 · HP 130</span>
-    </div>
-    <p style="margin-bottom:6px;">Cassius-style cold composure — precise, unshaken, never raises his voice. Believes the Chimera Codex was meant to be <i>destroyed</i>, not exploited. Genuinely disgusted when his cousin's House (Lucan au Ferrox) surfaces in the Logbook — one of the only moments his mask slips.</p>
-    <div class="npc-abilities">
-      <b>Multiattack:</b> 2 razor attacks (+9, 1d8+5, treats target as unarmored)<br>
-      <b>Divine Smite:</b> +2d8 radiant/slot on razor hit<br>
-      <b>Spell Slots:</b> 4 × 1st, 3 × 2nd<br>
-      <b>Pulse Fist:</b> 3 charges/short rest, bonus action, 15-ft. cone, 2d6 force + push (DC 15 Dex)<br>
-      <b>Bred to Command:</b> 3/short rest, bonus action, ally advantage<br>
-      <b>Aura of Protection:</b> +4 saves within 10 ft.<br>
-      <b>Lay on Hands:</b> 35 HP pool<br>
-      <b>Peerless Reflexes:</b> 1/day, turn a failed save into a success<br>
-      <b>Gravity Boots:</b> Boots of Flying, 2 charges
-    </div>
-    <div class="npc-note">DM lever: spend his resources on Act 2 guards so he's weaker going into Act 3.</div>
-  </div>
-
-  <div class="npc-card">
-    <div class="npc-head">
-      <span class="npc-name">Ryn Gray</span>
-      <span class="npc-stat-row">Gray Ranger 7 · CR 6 · AC 16 · HP 85</span>
-    </div>
-    <p style="margin-bottom:6px;">Holiday-style bluntness and loyalty — plainspoken, protective of her people over rank. Has been quietly recruiting/vetting the party since Act 1. The betrayal is personal, not calculated.</p>
-    <div class="npc-abilities">
-      <b>Multiattack:</b> 2 attacks — Pulse Blade (+8, 1d8+4) until reveal, then Razor (+8, 1d8+4, treats target as unarmored); or Pulse Rifle (+8, 1d8+4, 150/600)<br>
-      <b>Pulse Grenade:</b> x3, thrown 60 ft., 15-ft. radius, 3d8 force (DC 15 Dex)<br>
-      <b>Hunter's Mark:</b> 1/short rest, no slot, +1d6 on marked target<br>
-      <b>Pack Tactics / Tracker's Eye / +2 Initiative</b>
-    </div>
-    <div class="npc-note">Keep the Razor hidden until the Act 3 reveal — drawing it should land as a visible escalation at the table.</div>
-  </div>
-
-  <div class="rule"></div>
-
-  <h2 id="monsters">Monster Quick Reference</h2>
-  <div class="h2-sub">Full stat blocks: <a href="pages/npc-and-monsters.html">npc-and-monsters.html</a></div>
-
-  <table class="mon-table">
-    <thead><tr><th>Name</th><th>CR</th><th>AC</th><th>HP</th><th>Key Attack</th></tr></thead>
+  <div class="scroll-x">
+  <table class="ref">
+    <thead><tr><th>Item</th><th>Access</th><th>Use</th><th>Effect</th></tr></thead>
     <tbody>
-      <tr><td>Ash-Bound Wretch</td><td>1/8</td><td>11</td><td>11</td><td>Claw +2, 1d4 slashing. Ash Burst on death: 5 ft., DC 11 Dex, 1d6 fire</td></tr>
-      <tr><td>Barbtail Skirmisher</td><td>2</td><td>14</td><td>33</td><td>Claw +4 (1d6+2) + Tail Spike +4 (2d4+2), melee or 20/80 ft.</td></tr>
-      <tr><td>Iron Ward Enforcer</td><td>3</td><td>15</td><td>55</td><td>3× Glaive +5, 1d10+3 + DC 12 Con or 1d6 poison. Rally Cry (recharge 5–6): advantage to 3 allies within 30 ft.</td></tr>
+      <tr><td>Razor</td><td>Gold</td><td>Attack · finesse, light</td><td>1d8 slashing. The target is treated as unarmored: 10 + Dex (or Unarmored Defense), plus shield and magic bonuses. Worn and natural armor don't count. Nat 20: sever or disable a limb (flavor only).</td></tr>
+      <tr><td>· Whip Mode</td><td>Gold</td><td>Free toggle</td><td>Reach 10 ft., 1d6 slashing, loses light, still treats the target as unarmored. A hit can disarm or trip instead of dealing damage.</td></tr>
+      <tr><td>Pulse Blade</td><td>Universal</td><td>Attack · versatile</td><td>1d8 slashing (1d10 two-handed).</td></tr>
+      <tr><td>Pulse Rifle</td><td>Universal</td><td>Attack · heavy, 2-handed</td><td>1d8 piercing, range 150/600 ft.</td></tr>
+      <tr><td>Pulse Fist</td><td>Universal</td><td>Bonus action · 3/short rest</td><td>15-ft. cone, <span class="chk">DC 15 DEX save</span>: 2d6 force and pushed 10 ft. On a success, half damage and no push.</td></tr>
+      <tr><td>Pulse Grenade</td><td>Universal</td><td>Action · 2 per player</td><td>Thrown 60 ft., 15-ft. radius, <span class="chk">DC 15 DEX save</span>: 3d8 force, half on a success. The cap is a loadout limit, not a per-rest charge.</td></tr>
+      <tr><td>Stem Injectors</td><td>Universal (in all armor)</td><td>Bonus action · 3/short rest</td><td>4d4+4 healing. An ally within 5 ft. can trigger a downed or incapacitated wearer's injector as an action, using one of the wearer's charges.</td></tr>
+      <tr><td>Duro-Steel Armor</td><td>Universal</td><td>—</td><td>Standard AC by type (light, medium, or heavy). No protection against razors.</td></tr>
+      <tr><td>Pulse Armor</td><td>Gold</td><td>—</td><td>Plate, AC 18. Built-in Pulse Shield: resistance to slashing damage from razors.</td></tr>
+      <tr><td>Aegis Shield</td><td>Gold</td><td>—</td><td>+2 AC. Houses the wearer's Pulse Fist emitter.</td></tr>
+      <tr><td>Gravity Boots</td><td>Gold</td><td>2 charges/long rest</td><td>Boots of Flying: flying speed equal to walking speed, ignores the zero-G rules.</td></tr>
     </tbody>
   </table>
+  </div>
 
-  <h3>Suggested Compositions</h3>
-  <div class="h2-sub">5-PC defaults shown; scale down at 4 or 3 PCs — see full reference for tables</div>
-  <table class="mon-table">
-    <thead><tr><th>Encounter</th><th>Composition (5 PCs)</th><th>Notes</th></tr></thead>
+  <!-- ============================== RULES ============================== -->
+  <h2 id="rules">Misc Rules</h2>
+  <div class="h2-sub">Rules that can come up in any scene · full text: <a href="pages/lore-mechanics.html">lore-mechanics.html</a></div>
+
+  <div class="scroll-x">
+  <table class="ref">
+    <thead><tr><th>Rule</th><th>Who</th><th>Use</th><th>Effect</th></tr></thead>
     <tbody>
-      <tr><td>Act 1 — Boarding</td><td>Round 1: 7 Skirmisher + 3 Wretch<br>Round 2: 3 Enforcer + 3 Wretch<br>16 total</td><td>Rule of thumb: Skirmishers = PCs+2; Enforcers = 3 (2 at 3 PCs); Wretches = 6. Servian and Ryn fight alongside the party.</td></tr>
-      <tr><td>Act 2 — Library Guards</td><td>2 Skirmisher, 2 Wretch</td><td>Deliberately light — no Enforcer. Optional: add a Devil Patrol Leader using the Iron Ward Enforcer stat block; the fight stays light.</td></tr>
-      <tr><td>Act 3 — Final Horde</td><td>4 Wretch, 6 Skirmisher, 1 Enforcer<br>11 total</td><td>Rule of thumb (4+ PCs): 4 Wretch, Skirmishers = PCs+1, 1 Enforcer. Tested at 4–5 PCs: both paths land at about a 55% chance at least one PC drops, and deaths are rare.</td></tr>
+      <tr><td>War Chant</td><td>Obsidian</td><td>Bonus action · Concentration</td><td>The Obsidian and allies within 15 ft. are immune to frightened. At the start of each of the Obsidian's turns, creatures of CR 1 or lower within 30 ft. that can hear it make a Wis save (DC 8 + prof + Con) or are frightened until the Obsidian's next turn. Wretches (CR 1/8) qualify. Skirmishers and Enforcers don't.</td></tr>
+      <tr><td>Unbreaking</td><td>Obsidian</td><td>Passive</td><td>Advantage on saves against exhaustion. Resistance to damage from extreme environments (cold, heat, falling).</td></tr>
+      <tr><td>Bred for the Line</td><td>Obsidian</td><td>Passive</td><td>+1 melee damage, or advantage on Athletics to shove, grapple, or climb.</td></tr>
+      <tr><td>Bonded Frame</td><td>Obsidian</td><td>Passive</td><td>Counts as one size larger for carrying capacity and grappling.</td></tr>
+      <tr><td>Pack Tactics</td><td>Gray</td><td>Passive</td><td>Advantage on an attack if an ally is within 5 ft. of the target.</td></tr>
+      <tr><td>Tracker's Eye</td><td>Gray</td><td>Passive</td><td>Advantage on Survival checks to track. Proficient in Perception.</td></tr>
+      <tr><td>Fleet-Footed</td><td>Gray</td><td>Passive</td><td>+2 initiative.</td></tr>
+      <tr><td>Oathbound</td><td>Obsidian &amp; Gray PCs</td><td>On defying Servian</td><td>Each break deals 2d6 psychic (<span class="chk">DC 14 CON</span> for half) and disadvantage on the next roll. The 2nd break adds 1 exhaustion. Full rules: <a href="#oathbound">Scene 3.1</a>.</td></tr>
+      <tr><td>Planar jump</td><td>Everyone</td><td>Between Acts 1 and 2</td><td>Counts as a short rest: Hit Dice, short-rest features, injectors, and Pulse Fists refill.</td></tr>
+      <tr><td>Color + race</td><td>PCs</td><td>Character creation</td><td>Color ability score increases and traits stack with race. They get both.</td></tr>
+      <tr><td>Group initiative</td><td>DM</td><td>Big fights</td><td>Roll once per monster type (all Skirmishers act together, and so on).</td></tr>
     </tbody>
   </table>
-  <div class="dm-tip">Act 1 fields up to 16 devils plus 7 allies and PCs. Roll initiative once per monster type (all Skirmishers act together, and so on) to keep rounds moving.</div>
+  </div>
 
   <div class="rule"></div>
 
-  <h2 id="pacing">Session Pacing</h2>
-  <div class="h2-sub">~4-hour floor — you have more runway for a longer Saturday session</div>
-
-  <table class="pace-table">
-    <thead><tr><th>Segment</th><th>Time</th></tr></thead>
-    <tbody>
-      <tr><td>Session open / setup</td><td>10 min</td></tr>
-      <tr><td>Act 1 — Ceremony + RP</td><td>20 min</td></tr>
-      <tr><td>Act 1 — Corridor combat + Zero-G</td><td>35–45 min</td></tr>
-      <tr><td>Act 2 — Landing/regroup</td><td>10–15 min</td></tr>
-      <tr><td>Act 2 — Library approach + Logbook</td><td>20–25 min</td></tr>
-      <tr><td>Act 2 — Combat</td><td>20 min</td></tr>
-      <tr><td>Act 3 — Reveal + order (RP)</td><td>10–15 min</td></tr>
-      <tr><td>Act 3 — Climax combat</td><td>40–45 min</td></tr>
-      <tr><td>Wrap-up</td><td>10 min</td></tr>
-    </tbody>
-  </table>
-  <p style="margin-top:10px; opacity:0.7; font-size:12.5px;">Extra time is best spent on Act 1–2 roleplay rather than stretching combats.</p>
-
-  <div class="rule"></div>
-
+  <!-- ============================== FILES ============================== -->
   <h2 id="files">All Files</h2>
   <div class="h2-sub">Everything linked, wired to this repo's actual folders</div>
 
@@ -497,7 +934,7 @@ table.pace-table th{ color:var(--gold); font-size:10px; text-transform:uppercase
 
   <h3>Full Reference Pages</h3>
   <div class="link-grid">
-    <a class="link-card" href="pages/storyboard.html"><span class="tag">Storyboard</span>Full act-by-act detail</a>
+    <a class="link-card" href="pages/storyboard.html"><span class="tag">Storyboard</span>Act-by-act outline</a>
     <a class="link-card" href="pages/lore-mechanics.html"><span class="tag">Lore &amp; Mechanics</span>Full rules reference</a>
     <a class="link-card" href="pages/npc-and-monsters.html"><span class="tag">NPCs &amp; Monsters</span>Full stat blocks + encounters</a>
   </div>
@@ -535,5 +972,69 @@ table.pace-table th{ color:var(--gold); font-size:10px; text-transform:uppercase
   <div class="footer-note">DM DASHBOARD — BENEDICTION OF DIS</div>
 
 </div>
+
+<!-- Devil stat blocks: written once here, copied into every [data-sb] slot above.
+     Keep in sync with dm/pages/npc-and-monsters.html. -->
+<template id="sb-wretch">
+  <div class="statblock">
+    <div class="sb-name">Ash-Bound Wretch</div>
+    <div class="sb-type">Small fiend, CR 1/8 (25 XP) — fodder</div>
+    <div class="sb-core">
+      <b>AC</b> 11 &nbsp;|&nbsp; <b>HP</b> 11 (2d8+2) &nbsp;|&nbsp; <b>Speed</b> 20 ft.<br>
+      <b>STR</b> 10 (+0) <b>DEX</b> 11 (+0) <b>CON</b> 12 (+1)<br>
+      <b>INT</b> 3 (-4) <b>WIS</b> 8 (-1) <b>CHA</b> 3 (-4)<br>
+      <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> fire, poison<br>
+      <b>Senses</b> darkvision 60 ft., passive Perception 9<br>
+      <b>Languages</b> understands Infernal, can't speak
+    </div>
+    <div class="sb-ability"><b>Ash Burst.</b> When the Wretch dies, it bursts into cinders. Each creature within 5 ft. of it must make a DC 11 Dexterity saving throw, taking 1d6 fire damage on a failed save or half as much on a successful one. <i>(Other devils are immune to fire, so the swarm can pile in safely.)</i></div>
+    <div class="sb-ability"><b>Claw.</b> +2 to hit, reach 5 ft. <i>Hit:</i> 1d4 slashing.</div>
+  </div>
+</template>
+
+<template id="sb-skirmisher">
+  <div class="statblock">
+    <div class="sb-name">Barbtail Skirmisher</div>
+    <div class="sb-type">Small fiend, CR 2 (450 XP) — ranged/flying harasser</div>
+    <div class="sb-core">
+      <b>AC</b> 14 (natural armor) &nbsp;|&nbsp; <b>HP</b> 33 (6d6+12)<br>
+      <b>Speed</b> 20 ft., fly 40 ft.<br>
+      <b>STR</b> 14 (+2) <b>DEX</b> 15 (+2) <b>CON</b> 14 (+2)<br>
+      <b>INT</b> 6 (-2) <b>WIS</b> 12 (+1) <b>CHA</b> 8 (-1)<br>
+      <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> poison<br>
+      <b>Senses</b> darkvision 60 ft., passive Perception 11<br>
+      <b>Languages</b> understands Infernal, can't speak
+    </div>
+    <div class="sb-ability"><b>Multiattack.</b> The Skirmisher makes one claw attack and one tail spike attack.</div>
+    <div class="sb-ability"><b>Claw.</b> +4 to hit, reach 5 ft. <i>Hit:</i> 1d6+2 slashing.</div>
+    <div class="sb-ability"><b>Tail Spike.</b> <i>Melee or Ranged Weapon Attack:</i> +4 to hit, reach 5 ft. or range 20/80 ft. <i>Hit:</i> 2d4+2 piercing.</div>
+  </div>
+</template>
+
+<template id="sb-enforcer">
+  <div class="statblock">
+    <div class="sb-name">Iron Ward Enforcer</div>
+    <div class="sb-type">Medium fiend, CR 3 (700 XP) — squad leader</div>
+    <div class="sb-core">
+      <b>AC</b> 15 (natural armor) &nbsp;|&nbsp; <b>HP</b> 55 (10d8+10)<br>
+      <b>Speed</b> 30 ft.<br>
+      <b>STR</b> 16 (+3) <b>DEX</b> 14 (+2) <b>CON</b> 15 (+2)<br>
+      <b>INT</b> 9 (-1) <b>WIS</b> 11 (+0) <b>CHA</b> 12 (+1)<br>
+      <b>Resist</b> cold &nbsp;|&nbsp; <b>Immune</b> poison<br>
+      <b>Senses</b> darkvision 60 ft., passive Perception 10<br>
+      <b>Languages</b> Infernal
+    </div>
+    <div class="sb-ability"><b>Multiattack.</b> The Enforcer makes three glaive attacks.</div>
+    <div class="sb-ability"><b>Glaive.</b> +5 to hit, reach 10 ft. <i>Hit:</i> 1d10+3 slashing, and DC 12 Con save or 1d6 poison from the barbed edge.</div>
+    <div class="sb-ability"><b>Rally Cry (Recharge 5-6).</b> Up to 3 Ash-Bound Wretches/Barbtail Skirmishers within 30 ft. that can hear it gain advantage on their next attack roll before the end of their next turn.</div>
+  </div>
+</template>
+
+<script>
+document.querySelectorAll('[data-sb]').forEach(function (slot) {
+  var tpl = document.getElementById('sb-' + slot.getAttribute('data-sb'));
+  if (tpl) slot.appendChild(tpl.content.cloneNode(true));
+});
+</script>
 </body>
 </html>

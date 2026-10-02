@@ -28,9 +28,10 @@ Full detail lives in `docs/one-shot-storyboard.md`,
 `docs/lore-mechanics.md`, and `docs/one-shot-materials.md` (raw source
 markdown), in styled full-reference form at `dm/pages/storyboard.html`,
 `dm/pages/lore-mechanics.html`, and `dm/pages/npc-and-monsters.html`, and
-condensed into a single scrolling command center at `dm/index.html` (the
-DM Dashboard) with jump-links to Storyboard/Mechanics/NPCs/Monsters/Pacing
-sections and a directory of every file in the site.
+woven into a single campaign-book-style run sheet at `dm/index.html` (the
+DM Dashboard): every scene in order with its checks, encounter numbers,
+devil stat blocks, and time budget inline, followed by compressed gear
+and misc-rules tables and a directory of every file in the site.
 
 ## Repo structure — why two sites, one URL
 
@@ -54,10 +55,10 @@ red-rising-dnd-one-shot/
 │                            # page under dm/ (see Deployment below)
 ├── dm/
 │   ├── index.html          # DM Dashboard (served at "/dm") — single-page
-│   │                        # command center: condensed storyboard beats,
-│   │                        # mechanics quick reference, NPC/monster
-│   │                        # summaries, pacing table, and a directory
-│   │                        # linking every file in the site
+│   │                        # run sheet: scene-by-scene story with checks,
+│   │                        # encounters, devil stat blocks, and pacing
+│   │                        # inline; gear + misc-rules tables; and a
+│   │                        # directory linking every file in the site
 │   └── pages/               # storyboard.html, lore-mechanics.html,
 │                            #   npc-and-monsters.html — full-detail
 │                            #   versions of the dashboard's sections
@@ -96,14 +97,43 @@ marked version for their own reference.
   and links out to the color cards + gear codex. This *is* the player
   site now, not just a links page — content and copy came from a
   dedicated "player-briefing" artifact.
-- `dm/index.html` — the DM Dashboard: a single scrolling command center
-  (sticky jump-nav to Storyboard/Mechanics/NPCs/Monsters/Pacing/All
-  Files) with condensed versions of every reference — act-by-act beats,
-  a mechanics quick-reference, NPC summary cards for Servian and Ryn, a
-  monster quick-reference table, suggested encounter compositions, the
-  pacing table, and a linked directory of every file in the repo.
-  Content came from a dedicated "dm-dashboard" artifact. Each condensed
-  section links out to its full-detail page under `dm/pages/`.
+- `dm/index.html` — the DM Dashboard, written to read like a published
+  adventure so the DM rarely needs another tab mid-session. A sticky nav
+  (Overview / Act 1–3 / Gear / Rules / Images / All Files) leads to:
+  - **Overview:** premise, who knows the true objective, a check-chip
+    legend, and a "Session at a glance" table (every scene, its time
+    budget, and a "done by" clock using the top of each range).
+  - **Acts 1–3, one card per scene (1.1–3.3):** DM beats with every
+    check/save as an inline chip, rules boxes where a mechanic first
+    matters (Zero-G in 1.2, the short-rest jump in 2.1, Oathbound in
+    3.1), and red-bordered encounter boxes with terrain, map links,
+    party-size scaling tables, round-by-round triggers, tactics, and
+    full devil stat blocks. Map, handout, and "show players" image
+    links sit at the top of each scene.
+  - **Gear** and **Misc Rules:** one-row-per-item compressed tables for
+    things that don't belong to a single scene (razor, War Chant, caste
+    traits, group initiative, etc.).
+  - **All Files:** the directory.
+
+  Servian's and Ryn's stat blocks are deliberately *not* inline (repo
+  owner's call). Each scene they fight in has a link chip (name, AC, HP,
+  and a one-line "how they fight here" note) to
+  `pages/npc-and-monsters.html#servian-statblock` / `#ryn-statblock`,
+  opening in a new tab so the dashboard keeps its scroll position.
+
+  The three devil stat blocks appear in full in every encounter, but
+  each one is written once, in a `<template id="sb-...">` at the bottom
+  of the page, and a small script copies it into each `data-sb` slot. A
+  balance change to a devil is one edit here (plus the same edit in
+  `npc-and-monsters.html` and `docs/one-shot-materials.md`).
+
+  Checks the source notes never gave a DC for (ceremony Insight, Logbook
+  stealth/search/translation, the archivist, the guards' Insight beat,
+  the leechcraft control panel, the Codex's warded pedestal) carry
+  proposed DCs, shown as dashed chips with a red dagger (`.chk.new`).
+  They exist only on the dashboard, not in `docs/` or the full-reference
+  pages. If the repo owner confirms them, drop the `new` class, and
+  consider copying them into `docs/one-shot-storyboard.md`.
 - Color cards (shared, playable/NPC dossiers): Gold, Gray, Obsidian,
   White, Blue, Red, Society overview — the six cards named in
   `docs/one-shot-materials.md` plus Red (introduced later, in the
@@ -123,8 +153,10 @@ marked version for their own reference.
 - DM full-reference pages, converted from the source markdown into the
   site's visual style: Storyboard, Lore & Mechanics, NPCs & Monsters
   (full NPC stat blocks for Servian and Ryn, three devil stat blocks, and
-  per-act encounter compositions) — these are what the dashboard's
-  condensed sections link out to. `npc-and-monsters.html` also carries
+  per-act encounter compositions) — the long-form references behind the
+  dashboard. Servian's and Ryn's stat blocks carry `id="servian-statblock"`
+  and `id="ryn-statblock"` for the dashboard's deep links; keep those IDs
+  if the blocks are edited. `npc-and-monsters.html` also carries
   its own sticky jump-nav (NPCs / NPC Stat Blocks / Monster Stat Blocks /
   Encounters, plus cross-links to DM Home and the Images gallery) — the
   same `.nav` pattern as `dm/index.html` and `supplemental-images.html`,
