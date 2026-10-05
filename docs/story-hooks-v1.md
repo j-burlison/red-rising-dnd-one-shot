@@ -193,3 +193,4 @@ These came from Josh after the v1 handoff and supersede the text above where the
 - **Karnas and Cagney** both know about Lucan's soul trades. Servian doesn't.
 - **The Chimera Codex** also lets someone change their own Color, not just make cross-Color unions.
 - **Irina's change to Gray came from the Codex**, not from Rising Carving. One deal, brokered by the archivist: for a fragment of her soul, the Codex changed her from Copper to Gray, and the same bargain gave her warlock power. Her Logbook row (the "Administrator, Copper" entry) now reads "Color change, Copper to Gray."
+- **The archivist is named Scrivax Vellumhorn.** His portrait is `shared/assets/npc-archivist-portrait.jpg`, in the supplemental images gallery under Named NPCs.

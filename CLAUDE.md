@@ -199,12 +199,14 @@ marked version for their own reference.
 - Reference images are a mix now: Obsidian, Blue, and White still use
   their original ArtStation hotlinks (see `docs/reference-image-links.md`)
   — fine for now, but they could go stale. Every other reference image
-  (Gold, Gray, Red, Servian, Ryn, all three monsters, and both locations)
-  has been swapped for a locally-supplied image under `shared/assets/`
+  (Gold, Gray, Red, Servian, Ryn, Scrivax Vellumhorn the Archivist, all
+  three monsters, and both locations) has been swapped for (or, for
+  Scrivax, added as) a locally-supplied image under `shared/assets/`
   (`color-gold-portrait.jpg`, `color-gray-portrait.jpg`,
   `color-red-portrait.png`, `monster-ash-bound-wretch.jpg`,
   `monster-iron-ward-enforcer.jpg`, `monster-barbtail-skirmisher.jpg`,
-  `npc-servian-portrait.jpg`, `npc-ryn-portrait.jpg`, `location-dis.jpg`,
+  `npc-servian-portrait.jpg`, `npc-ryn-portrait.jpg`,
+  `npc-archivist-portrait.jpg`, `location-dis.jpg`,
   `location-dreadnought-concordia.jpg`), each used by its respective
   color card or `dm/pages/supplemental-images.html` entry. If a
   remaining hotlink goes stale, follow the same pattern — save the file

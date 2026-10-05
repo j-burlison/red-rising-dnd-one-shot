@@ -28,8 +28,10 @@ Been running this troupe long enough that the Grays trust her instincts without 
 ### Karnas & Cagney au Ferrox (Act 1 only; flavor, no stat blocks; Servian's brothers)
 Karnas au Ferrox is absolutely massive and a brute; Cagney au Ferrox is skinny, lithe and a trickster. As the Benediction ends they press Servian on how much the mission matters: it has to be him, because no one will suspect him. The Sovereign herself is depending on him, and so is the honor of their family. Both of them know about Lucan's soul trades; Servian doesn't.
 
-### The Archivist (devil broker; Act 2, Dis Arcane Library; devil broker; name TBD)
+### Scrivax Vellumhorn, the Archivist (Act 2, Dis Arcane Library; devil broker)
 Cagey; denies knowing anything about the vault. He brokered "Irina Gray"'s deal: for a fragment of her soul, the Chimera Codex changed her from Copper to Gray, and the same bargain gave her warlock power. He can see that fragment on her. In front of the squad he calls her "Administrator" unless she shuts him down. Privately he tells her the term is now due, and offers to forgive the remainder if the Codex stays in Dis.
+
+*Looks like: a spindly, horned devil-scholar in a tattered frock coat, with a wild white beard and brows, little round spectacles, a fanged grin, and a long ribbon of a tail, forever juggling a tower of books. Portrait: `shared/assets/npc-archivist-portrait.jpg`.*
 
 ### Devil Patrol Leader (Act 2, Library Guards)
 **Suggested type:** Bearded devil or similar mid-tier fiend, reskinned/renamed as Dis city watch
