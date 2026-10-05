@@ -107,7 +107,7 @@ Rule of thumb (4+ PCs): 4 Wretches, Skirmishers = PCs + 1, 1 Enforcer.
 Replace the existing Act 3 note with:
 
 - **Society path (party sides with Servian):** Servian fights alongside the party against Ryn and the full horde. The devils follow Ryn.
-- **Rising path (party turns on Servian):** the devils attack Servian and anyone in Society armor, but never Ryn. **In round 1, one Skirmisher turns on Servian** and fights with the party. The fight ends when Servian falls or is driven off.
+- **Rising path (party turns on Servian):** the devils attack Servian and anyone in Society armor, but never Ryn. **In round 1, one Skirmisher turns on Servian** and fights with the party. The fight ends when Servian falls or is driven off. *(Removed in story-hooks-v1; the devils never side with the party.)*
 - *Tested at 4–5 PCs, both paths land at about a 55% chance that at least one PC drops, and deaths are rare. "The choice is about loyalty, not safety" now holds.*
 
 ---
@@ -155,7 +155,7 @@ Apply to:
 - Act 1, the "Round 1" bullet becomes: **Round 1:** leechcraft carves through the hull; Barbtail Skirmishers and the first Ash-Bound Wretches pour in. **Round 2:** the Iron Ward Enforcers follow with the rest of the swarm.
 - Act 1, the "Mid-fight escalation" bullet: add "(or at the start of round 4)" to the trigger list.
 - Act 1: add a bullet: **Servian and Ryn fight alongside the party** in the corridor. Servian's gravity boots let him ignore zero-G until they fail.
-- Act 3, the climax bullet: add "If the party turns on Servian, one Barbtail Skirmisher turns on him too in round 1."
+- Act 3, the climax bullet: add "If the party turns on Servian, one Barbtail Skirmisher turns on him too in round 1." *(Removed in story-hooks-v1; the devils never side with the party.)*
 - The dashboard line "Both leaders draw razors — Servian and Ryn are equally lethal, so the choice is about loyalty, not safety" stays. It's now accurate.
 
 ---

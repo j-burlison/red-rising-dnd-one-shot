@@ -139,6 +139,7 @@ Two pods launch during the hot/early Iron Rain (Act 1): **Pod 1** carries the Go
 - **Landing hazard:** each PC makes a Dexterity save (DC 13) as their pod takes damage during the hot launch
   - **Failure:** pod lands off-target and rough — 2d6 bludgeoning damage, and the PC lands slightly separated from their pod-mate(s)
   - **Success:** clean landing, no damage, group stays together
+- **Warlock beat:** as the pods drop into Dis, every warlock's patron speaks up in their head, angry but amused that the Society has come to strike Dis: *"The hubris, to come here and turn upon your ally."*
 - Optional table beat: an NPC pod (non-PC Obsidian/Gray) can fail catastrophically and be lost on landing — reinforces real danger without punishing a PC for a bad roll
 
 ## Leechcraft

@@ -33,6 +33,8 @@ https://cdnb.artstation.com/p/assets/images/images/005/519/975/large/loc-nguyen-
 
 **Ryn Gray (Gray)** — local asset, `shared/assets/npc-ryn-portrait.jpg` (tactical operative in armored gear with a rifle, forest backdrop; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Female Ranger DnD" by Paladraws)
 
+**Scrivax Vellumhorn, the Archivist (devil)** — local asset, `shared/assets/npc-archivist-portrait.jpg` (spindly horned devil-scholar in a tattered frock coat, white beard and round spectacles, juggling a tower of books; supplied directly, no source/artist attribution given)
+
 ## Locations
 
 **The Concordia (Act 1 Dreadnought)** — local asset, `shared/assets/location-dreadnought-concordia.jpg` (paired dreadnought-class capital ships in orbit above a planet; supplied directly, no source/artist attribution given — replaced the earlier hotlinked "Heavy Dreadnought Spaceship Concept" by Piotr Michalak)

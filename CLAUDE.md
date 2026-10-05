@@ -10,7 +10,8 @@ the project context for anyone (human or Claude) picking the repo back up.
 **Premise:** Obsidian and Gray operators under a Peerless Scarred Gold
 (Servian au Ferrox) are sent to Dis, capital of Dispater, ostensibly to
 extract troop-movement intel — actually to retrieve the **Chimera Codex**,
-a spellbook enabling cross-color breeding. Dis has been a long-standing
+a spellbook enabling cross-color breeding and changing one's
+own Color. Dis has been a long-standing
 *ally* of the Society, not conquered territory, which is what makes the
 Iron Rain in Act 1 a betrayal rather than an occupation follow-up.
 
@@ -100,7 +101,10 @@ marked version for their own reference.
 - `dm/index.html` — the DM Dashboard, written to read like a published
   adventure so the DM rarely needs another tab mid-session. A sticky nav
   (Overview / Act 1–3 / Gear / Rules / Images / All Files) leads to:
-  - **Overview:** premise, who knows the true objective, a check-chip
+  - **Overview:** premise, who knows the true objective, a **PC Hooks**
+    box (the three known PCs, Maartog, "Irina Gray," and Smack "Eldorf"
+    Gray, with their hooks and the scenes where each pays off; the full
+    backstories are in `docs/story-hooks-v1.md`), a check-chip
     legend, and a "Session at a glance" table (every scene, its time
     budget, and a "done by" clock; budgets total exactly 5 hours, with
     ~25 minutes of player introductions opening Scene 1.1). The same
@@ -195,12 +199,14 @@ marked version for their own reference.
 - Reference images are a mix now: Obsidian, Blue, and White still use
   their original ArtStation hotlinks (see `docs/reference-image-links.md`)
   — fine for now, but they could go stale. Every other reference image
-  (Gold, Gray, Red, Servian, Ryn, all three monsters, and both locations)
-  has been swapped for a locally-supplied image under `shared/assets/`
+  (Gold, Gray, Red, Servian, Ryn, Scrivax Vellumhorn the Archivist, all
+  three monsters, and both locations) has been swapped for (or, for
+  Scrivax, added as) a locally-supplied image under `shared/assets/`
   (`color-gold-portrait.jpg`, `color-gray-portrait.jpg`,
   `color-red-portrait.png`, `monster-ash-bound-wretch.jpg`,
   `monster-iron-ward-enforcer.jpg`, `monster-barbtail-skirmisher.jpg`,
-  `npc-servian-portrait.jpg`, `npc-ryn-portrait.jpg`, `location-dis.jpg`,
+  `npc-servian-portrait.jpg`, `npc-ryn-portrait.jpg`,
+  `npc-archivist-portrait.jpg`, `location-dis.jpg`,
   `location-dreadnought-concordia.jpg`), each used by its respective
   color card or `dm/pages/supplemental-images.html` entry. If a
   remaining hotlink goes stale, follow the same pattern — save the file
