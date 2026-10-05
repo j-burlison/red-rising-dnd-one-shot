@@ -10,7 +10,8 @@ the project context for anyone (human or Claude) picking the repo back up.
 **Premise:** Obsidian and Gray operators under a Peerless Scarred Gold
 (Servian au Ferrox) are sent to Dis, capital of Dispater, ostensibly to
 extract troop-movement intel — actually to retrieve the **Chimera Codex**,
-a spellbook enabling cross-color breeding. Dis has been a long-standing
+a spellbook enabling cross-color breeding and changing one's
+own Color. Dis has been a long-standing
 *ally* of the Society, not conquered territory, which is what makes the
 Iron Rain in Act 1 a betrayal rather than an occupation follow-up.
 

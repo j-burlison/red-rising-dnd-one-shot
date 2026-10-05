@@ -183,3 +183,13 @@ This prop is shown to players at the table, so keep it in-fiction.
 - [ ] Scene time budgets are unchanged, and the "Session at a Glance" total is still 5:00.
 - [ ] The Logbook handout shows the loose Slate page and keeps the cousin entry flagged.
 - [ ] Every edited page still loads behind the DM gate and renders in the existing style (open each one in a browser).
+
+---
+
+## Decisions after v1
+
+These came from Josh after the v1 handoff and supersede the text above where they conflict.
+
+- **Karnas and Cagney** both know about Lucan's soul trades. Servian doesn't.
+- **The Chimera Codex** also lets someone change their own Color, not just make cross-Color unions.
+- **Irina's change to Gray came from the Codex**, not from Rising Carving. One deal, brokered by the archivist: for a fragment of her soul, the Codex changed her from Copper to Gray, and the same bargain gave her warlock power. Her Logbook row (the "Administrator, Copper" entry) now reads "Color change, Copper to Gray."

@@ -26,10 +26,10 @@ Been running this troupe long enough that the Grays trust her instincts without 
 - **Relationships:** Smack "Eldorf" Gray is her right hand of ten years and doesn't know she's Rising. Before the mission she asked him to have her back, and told him that if she says anything about breaking something, that's his cue. She does not know Irina is Rising either.
 
 ### Karnas & Cagney au Ferrox (Act 1 only; flavor, no stat blocks; Servian's brothers)
-Karnas au Ferrox is absolutely massive and a brute; Cagney au Ferrox is skinny, lithe and a trickster. As the Benediction ends they press Servian on how much the mission matters: it has to be him, because no one will suspect him. The Sovereign herself is depending on him, and so is the honor of their family. Still open: whether either of them knows about Lucan's soul trades.
+Karnas au Ferrox is absolutely massive and a brute; Cagney au Ferrox is skinny, lithe and a trickster. As the Benediction ends they press Servian on how much the mission matters: it has to be him, because no one will suspect him. The Sovereign herself is depending on him, and so is the honor of their family. Both of them know about Lucan's soul trades; Servian doesn't.
 
 ### The Archivist (devil broker; Act 2, Dis Arcane Library; devil broker; name TBD)
-Cagey; denies knowing anything about the vault. He is the broker who sold "Irina Gray" her power for a fragment of her soul, and he can see that fragment on her. In front of the squad he calls her "Administrator" unless she shuts him down. Privately he tells her the term is now due, and offers to forgive the remainder if the Codex stays in Dis.
+Cagey; denies knowing anything about the vault. He brokered "Irina Gray"'s deal: for a fragment of her soul, the Chimera Codex changed her from Copper to Gray, and the same bargain gave her warlock power. He can see that fragment on her. In front of the squad he calls her "Administrator" unless she shuts him down. Privately he tells her the term is now due, and offers to forgive the remainder if the Codex stays in Dis.
 
 ### Devil Patrol Leader (Act 2, Library Guards)
 **Suggested type:** Bearded devil or similar mid-tier fiend, reskinned/renamed as Dis city watch
