@@ -126,6 +126,45 @@ tbody tr.flagged td{
   font-style:italic;
   text-align:center;
 }
+.loose{
+  position:relative;
+  margin:26px 10px 4px;
+  padding:18px 20px 16px;
+  background:
+    radial-gradient(ellipse at 82% 28%, rgba(120,72,30,0.22) 0%, transparent 38%),
+    radial-gradient(ellipse at 14% 86%, rgba(90,52,22,0.20) 0%, transparent 34%),
+    linear-gradient(180deg, #1d1912 0%, #15120d 100%);
+  border:1px solid #4a3d2b;
+  border-radius:2px;
+  transform:rotate(-1.2deg);
+  box-shadow:0 14px 30px rgba(0,0,0,0.55);
+}
+.loose-head{
+  font-family:'JetBrains Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:12px;
+  font-style:italic;
+}
+.loose dl{
+  display:grid;
+  grid-template-columns:max-content 1fr;
+  gap:6px 14px;
+  margin:0;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;
+}
+.loose dt{
+  color:var(--accent);
+  text-transform:uppercase;
+  font-size:9.5px;
+  letter-spacing:1px;
+  padding-top:1px;
+}
+.loose dd{ margin:0; color:var(--bone); opacity:0.85; }
+.loose dd.col-cost{ white-space:normal; }
 </style>
 </head>
 <body>
@@ -152,6 +191,7 @@ tbody tr.flagged td{
         <td class="notes">Cross-Color union w/ a Violet consort. Payment brokered directly.</td>
       </tr>
       <tr>
+        <!-- TODO: Irina's real Copper name goes here -->
         <td>4 yrs. ago</td>
         <td>Administrator, Copper</td>
         <td class="col-cost">1 fragment, own soul</td>
@@ -191,6 +231,16 @@ tbody tr.flagged td{
   </table>
 
   <div class="torn">— remaining pages show thousands of similar transactions —</div>
+
+  <div class="loose">
+    <div class="loose-head">Loose page — filed out of order</div>
+    <dl>
+      <dt>Date</dt><dd>20 yrs. ago</dd>
+      <dt>Requester</dt><dd>House Ferrox (Gold)</dd>
+      <dt>Soul-Cost</dt><dd class="col-cost">War-chief "Slate" and tribe — Obsidian stock — 40 souls, full</dd>
+      <dt>Notes</dt><dd class="notes">"Chief declared oathbreaker. Record sealed."</dd>
+    </dl>
+  </div>
 </div>
 </body>
 </html>

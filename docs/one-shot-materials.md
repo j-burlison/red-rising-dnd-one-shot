@@ -10,8 +10,8 @@ Golds carry House names ("au [House]" — e.g., *Servian au Ferrox*). All other 
 
 A Peerless Scarred commander, bred and trained since birth for exactly this kind of operation — decisive, controlled, and utterly convinced of the righteousness of the Society's order. Doesn't relish cruelty, which makes him scarier: every order he gives in Act 3, including "kill the Gray," is delivered with total calm, because to him it isn't murder, it's maintenance of the system that keeps the galaxy — and now the planes — from chaos. (Play him with a Cassius au Bellona-style cold composure: precise, unshaken, dangerous specifically because he never seems to struggle.)
 
-- **Personal stake:** knows the true objective from the start — the mission is to retrieve the Chimera Codex and bring the cross-color breeding pipeline fully "in house." He believes the book was meant to be *destroyed*, not exploited; he does not know the true scale of its use.
-- **The cousin twist:** when the Logbook surfaces his cousin's House, Servian is genuinely **surprised and disgusted** — this is a real crack in his composure, one of the only moments in the one-shot where his control visibly slips. Play this as a rare, brief flash of real emotion before he re-forms his mask and doubles down on the mission (or, if you want more ambiguity, lets it visibly shake his certainty going into Act 3).
+- **Personal stake:** knows the true objective from the start — the mission is to retrieve the Chimera Codex and bring the cross-color breeding pipeline fully "in house." He believes the book was meant to be *destroyed*, not exploited; he does not know the true scale of its use. He shares the objective with no one. He means to burn the Logbook to protect his family, and demands it from the party at the Extraction Plaza in Act 3.
+- **The cousin twist:** when the Logbook surfaces his cousin's House, Servian is genuinely **surprised and disgusted** — this is a real crack in his composure, one of the only moments in the one-shot where his control visibly slips. Play this as a rare, brief flash of real emotion before he re-forms his mask and doubles down on the mission (or, if you want more ambiguity, lets it visibly shake his certainty going into Act 3). He finds the loose Slate page (House Ferrox selling Slate's tribe, 40 Obsidian souls, 20 years ago) at the same moment as his cousin's entries, so he learns his House has been doing this for a generation.
 - **Roleplay hook:** clipped, formal command language even under pressure; never raises his voice
 - **In Act 3:** draws a razor once the party's loyalty is in question — the "boss reveal" of the fight
 
@@ -22,7 +22,14 @@ Been running this troupe long enough that the Grays trust her instincts without 
 
 - **Personal stake:** knows the true objective via Rising channels from the start; delivers the Grays' mission brief (the cover story) during the Act 1 ceremony, and has likely been probing 1-2 PCs' loyalties since then
 - **Roleplay hook:** talks to Grays and Obsidians alike as people rather than ranks — the contrast between her command style and Servian's is worth playing up throughout
-- **In Act 3:** reveals the truth when the devil horde arrives, draws a razor of her own, makes it clear she's not asking the party to follow her — just choose
+- **In Act 3:** reveals herself when Servian demands the Logbook at the Extraction Plaza, answering with the Rising call sign "Break the chains." Draws a razor of her own, throws Smack the Codex ("Get this to the Rising, whatever happens to me"), and makes it clear she's not asking the party to follow her — just choose
+- **Relationships:** Smack "Eldorf" Gray is her right hand of ten years and doesn't know she's Rising. Before the mission she asked him to have her back, and told him that if she says anything about breaking something, that's his cue. She does not know Irina is Rising either.
+
+### Karnas & Cagney au Ferrox (Act 1 only; flavor, no stat blocks; Servian's brothers)
+Karnas au Ferrox is absolutely massive and a brute; Cagney au Ferrox is skinny, lithe and a trickster. As the Benediction ends they press Servian on how much the mission matters: it has to be him, because no one will suspect him. The Sovereign herself is depending on him, and so is the honor of their family. Still open: whether either of them knows about Lucan's soul trades.
+
+### The Archivist (devil broker; Act 2, Dis Arcane Library; devil broker; name TBD)
+Cagey; denies knowing anything about the vault. He is the broker who sold "Irina Gray" her power for a fragment of her soul, and he can see that fragment on her. In front of the squad he calls her "Administrator" unless she shuts him down. Privately he tells her the term is now due, and offers to forgive the remainder if the Codex stays in Dis.
 
 ### Devil Patrol Leader (Act 2, Library Guards)
 **Suggested type:** Bearded devil or similar mid-tier fiend, reskinned/renamed as Dis city watch
@@ -202,8 +209,8 @@ Scaling by party size:
 *Rule of thumb (4+ PCs): 4 Wretch, Skirmishers = PCs+1, 1 Enforcer.*
 
 - **Society path (party sides with Servian):** Servian fights alongside the party against Ryn and the full horde. The devils follow Ryn.
-- **Rising path (party turns on Servian):** the devils attack Servian and anyone in Society armor, but never Ryn. In round 1, one Barbtail Skirmisher turns on Servian and fights with the party. The fight ends when Servian falls or is driven off.
-- *Tested at 4–5 PCs, both paths land at about a 55% chance that at least one PC drops, and deaths are rare. "The choice is about loyalty, not safety" now holds.*
+- **Rising path (party turns on Servian):** the devils attack Servian and anyone in Society armor, but never Ryn. The fight ends when Servian falls or is driven off.
+- *Tested at 4–5 PCs: about a 55% chance that at least one PC drops on the Society path and about 65% on the Rising path. Deaths are rare on both. "The choice is about loyalty, not safety" now holds.*
 
 ---
 
