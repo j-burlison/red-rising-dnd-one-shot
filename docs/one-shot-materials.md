@@ -20,7 +20,7 @@ A Peerless Scarred commander, bred and trained since birth for exactly this kind
 
 Been running this troupe long enough that the Grays trust her instincts without question — which is exactly what let her quietly recruit and vet the party over the course of the mission without anyone noticing. Genuinely cares about the Grays under her command; the betrayal in Act 3 isn't cold calculation like the Gold's orders, it's personal. She's seen enough of what deals like the Logbook cost the people at the bottom of the hierarchy, low Colors and slaves alike, and she's decided she's done being complicit. (Play her with a Holiday-style bluntness and loyalty — plainspoken, protective of her people over any chain of command, quietly formidable rather than showy about it.)
 
-- **Personal stake:** knows the true objective via Rising channels from the start; has likely been probing 1-2 PCs' loyalties since Act 1's ceremony scene
+- **Personal stake:** knows the true objective via Rising channels from the start; delivers the Grays' mission brief (the cover story) during the Act 1 ceremony, and has likely been probing 1-2 PCs' loyalties since then
 - **Roleplay hook:** talks to Grays and Obsidians alike as people rather than ranks — the contrast between her command style and Servian's is worth playing up throughout
 - **In Act 3:** reveals the truth when the devil horde arrives, draws a razor of her own, makes it clear she's not asking the party to follow her — just choose
 

@@ -170,20 +170,20 @@ Caste traits matter here: Obsidians push off harder and resist the vacuum pull m
 ---
 
 ## Session Pacing / Time Budget
-(~4-hour baseline — you've indicated a longer Saturday session is likely, so treat these as minimums with room to breathe; extra time can go into RP in Act 1/2, more table banter during travel/regroup beats, or a slower burn on the Logbook discovery)
+(5-hour session. Act 1 opens with ~25 minutes of in-character player introductions before the ceremony.)
 
 | Segment | Time |
 |---|---|
-| Session open / setup | 10 min |
-| Act 1 — Benediction ceremony + RP | 20 min |
-| Act 1 — Combat (cargo hold → launch bay) + Iron Rain hazard | 35–45 min |
-| Act 2 — Landing/regroup scene | 10–15 min |
-| Act 2 — Library approach + Logbook discovery | 20–25 min |
-| Act 2 — Combat (library guards, lighter) | 20 min |
-| Act 3 — Gray's reveal + Gold's order (RP/tension beat) | 10–15 min |
-| Act 3 — Climax combat | 40–45 min |
-| Ending / wrap-up | 10 min |
-| **Total (floor)** | **~3.5–4 hrs** |
+| Session open / setup | 15 min |
+| Act 1 — Player introductions + Benediction ceremony + RP | 50 min |
+| Act 1 — Combat (cargo hold → launch bay) + Iron Rain hazard | 60 min |
+| Act 2 — Landing/regroup scene | 20 min |
+| Act 2 — Library approach + Logbook discovery | 35 min |
+| Act 2 — Combat (library guards, lighter) | 25 min |
+| Act 3 — Gray's reveal + Gold's order (RP/tension beat) | 20 min |
+| Act 3 — Climax combat | 60 min |
+| Ending / wrap-up | 15 min |
+| **Total** | **5 hrs** |
 
 Act 1 and Act 3 combats remain the biggest fixed costs — keep both tight (fewer, tougher enemies over big swarms). With a longer session, the extra time is best spent on Acts 1–2 roleplay rather than stretching combats, which can drag if padded.
 

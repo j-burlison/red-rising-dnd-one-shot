@@ -11,6 +11,7 @@
 ## Act 1 — The Benediction (aboard The Concordia, orbit above Farun)
 - **Cold open:** formal ceremony — Obsidians kneeling for the Gold's blessing, Grays checking gear at the margins, unease in the air (Dis has been "too quiet")
 - Roleplay caste dynamics: Obsidians can't speak out of turn, Grays needle at the edges
+- **Ryn briefs the Grays** during the ceremony with the cover story (troop-movement intel). The Obsidians get no brief, only orders when it's time. Servian gives no brief at all.
 - Short skill scene (Insight/Persuasion/Deception) — establish who's suspicious of the mission
 - **Break:** hellish leechcraft breach through portals in space, devils board **The Concordia**
 - **"All units to launch bays. Prepare for planar jump and Iron Rain."**
@@ -23,7 +24,7 @@
 - **The planar jump that follows is a short rest** — HD, short-rest features, Stem Injectors, and Pulse Fists all refill before the landing hazard on arrival. This is also what makes the Iron Rain hot and early.
 - **Hazard:** NPC pods shot down around the PCs; failed save = fall damage on arrival at Dis
 
-**Knowledge split:** 1–2 PCs (Gold's confidants) know the true objective now. Everyone else believes it's a standard intel-extraction mission.
+**Knowledge split (set up before the session):** one PC is a Rising agent like Ryn and knows the true objective; another has a hint. Everyone else believes it's a standard intel-extraction mission.
 
 ## Act 2 — Iron Rain onto Dis
 - Landing scattered across a district of Dis: black iron architecture, screaming stonework, bruised orange sky, devils being actively broken by Society occupation
