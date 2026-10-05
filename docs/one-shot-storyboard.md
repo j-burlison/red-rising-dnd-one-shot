@@ -26,7 +26,7 @@
 - **End condition:** enemies dead, shuttle bay door opens
 - **The planar jump that follows is a short rest** — HD, short-rest features, Stem Injectors, and Pulse Fists all refill before the landing hazard on arrival. This is also what makes the Iron Rain hot and early.
 - **Hazard:** NPC pods shot down around the PCs; failed save = fall damage on arrival at Dis
-- **Warlock beat:** as the pods fall into Dis, every warlock's patron screams in their head, shocked to find them suddenly in the realm of Hell (Irina and any other warlock)
+- **Warlock beat:** as the pods fall into Dis, every warlock's patron speaks up in their head, angry but amused that the Society has come to strike Dis: *"The hubris, to come here and turn upon your ally."* (Irina and any other warlock)
 
 **Knowledge split (set up before the session):** Irina is a Rising agent like Ryn and knows the true objective (her orders put the Logbook first, the Codex second); Smack has a hint (Ryn asked him to have her back, and anything she says about breaking something is his cue). Servian tells no one. Maartog and everyone else believe it's a standard intel-extraction mission.
 
