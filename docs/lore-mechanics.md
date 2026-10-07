@@ -131,16 +131,15 @@ Caste layers mechanical traits on top of class, similar to a race/species templa
 
 ---
 
-## Iron Rain / Drop Pod Mechanics
-Two pods launch during the hot/early Iron Rain (Act 1): **Pod 1** carries the Gold + Obsidian PCs; **Pod 2** carries the Gray Troupe Leader + Gray PCs. Both land in the same district of Dis but not adjacent — a short in-fiction gap gives each group a brief solo scene before converging (good spot for early suspicion-seeding with the Grays, or a command moment with the Obsidians and the Gold).
+## Iron Rain / Drop Ship Mechanics
+Both squads ride down together during the hot/early Iron Rain (Act 1): Servian, Ryn, and every PC in a single drop ship flown by a Blue pilot. On the way down they see another drop ship destroyed by a bolt of infernal magic and a Gold's starShell tackled midair by a massive winged devil, then a second winged devil spears the Blue through the cockpit window and the ship crash-lands. In the wreckage afterward is a good spot for Ryn to seed suspicion with the Grays, or for a command moment between Servian and the Obsidians.
 
-**The planar jump is a short rest.** The jump from the Concordia to Dis takes roughly an hour and counts as a short rest — Hit Dice, short-rest features, Stem Injectors (3), and Pulse Fists (3) all refill before landing. The landing hazard below happens after the jump, on arrival.
+**The planar jump is a short rest.** The jump from the Concordia to Dis only takes a few minutes, but time and space warp as the Concordia makes it, so the party gets the benefits of a short rest — Hit Dice, short-rest features, Stem Injectors (3), and Pulse Fists (3) all refill before landing. The crash landing below happens after the jump, on arrival.
 
-- **Landing hazard:** each PC makes a Dexterity save (DC 13) as their pod takes damage during the hot launch
-  - **Failure:** pod lands off-target and rough — 2d6 bludgeoning damage, and the PC lands slightly separated from their pod-mate(s)
-  - **Success:** clean landing, no damage, group stays together
-- **Warlock beat:** as the pods drop into Dis, every warlock's patron speaks up in their head, angry but amused that the Society has come to strike Dis: *"The hubris, to come here and turn upon your ally."*
-- Optional table beat: an NPC pod (non-PC Obsidian/Gray) can fail catastrophically and be lost on landing — reinforces real danger without punishing a PC for a bad roll
+- **Crash landing:** each PC makes a Dexterity save (DC 13) as the drop ship hits the ground
+  - **Failure:** 2d6 bludgeoning damage, and the PC is thrown clear of the wreck, separated from the squad
+  - **Success:** braces in time, no damage, climbs out with the group
+- **Warlock beat:** as the drop ship falls into Dis, every warlock's patron speaks up in their head, angry but amused that the Society has come to strike Dis: *"The hubris, to come here and turn upon your ally."*
 
 ## Leechcraft
 No mechanics needed — narrated/described only (small fiend-crewed strike ships breaching The Concordia via portals in Act 1).
