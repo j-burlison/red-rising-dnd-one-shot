@@ -19,7 +19,7 @@ The compulsion is passive and always active — it doesn't require an action to 
 *(see storyboard, Act 2)*
 - Infernal-language ledger found near the Chimera Codex, recording every use: Color, date, requesting House, soul-cost paid to devil brokers
 - Entries show low Colors trading their own souls, and both low and high Colors trading the souls of their slaves
-- One entry ties to a Gold House sharing the strike team's Gold's family name — his cousin
+- One entry ties to a Gold House sharing the strike team's Gold's family name — his father, Lucan au Ferrox, whose cross-Color unions produced Servian's half-siblings
 - Discoverable via Investigation/stealth or a social check (Deception/Insight) against a cagey archivist/guard
 
 ---

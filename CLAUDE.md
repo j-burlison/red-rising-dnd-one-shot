@@ -19,7 +19,7 @@ Three acts: **Act 1** — the Benediction ceremony aboard The Concordia, a
 leechcraft breach, and a Zero-G Corridor escape fight. **Act 2** — Iron
 Rain landing on Dis, the Dis Arcane Library, and the discovery of The
 Logbook (evidence of a cross-color soul-trading pipeline, tied to
-Servian's own cousin's House). **Act 3** — Ryn Gray (the Gray Troupe
+Servian's own father, Lucan au Ferrox). **Act 3** — Ryn Gray (the Gray Troupe
 Leader) reveals she's a Rising agent and turns against the Society;
 Servian orders the party to kill her; every PC is Oathbound and must
 actively break a compulsion sigil to defy that order. Three possible
