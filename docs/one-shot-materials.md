@@ -28,7 +28,7 @@ Been running this troupe long enough that the Grays trust her instincts without 
 ### Karnas & Cagney au Ferrox (Act 1 only; flavor, no stat blocks; Servian's brothers)
 Karnas au Ferrox is absolutely massive and a brute; Cagney au Ferrox is skinny, lithe and a trickster. As the Benediction ends they press Servian on how much the mission matters: it has to be him, because no one will suspect him. The Sovereign herself is depending on him, and so is the honor of their family. Both of them know about their father Lucan's soul trades; Servian doesn't.
 
-### Scrivax Vellumhorn, the Archivist (Act 2, Dis Arcane Library; devil broker)
+### Scrivax Vellumhorn, the Archivist (Act 2, one of the Arcane Libraries of Dis; devil broker)
 Cagey; denies knowing anything about the vault. He brokered "Irina Gray"'s deal: for a fragment of her soul, the Chimera Codex changed her from Copper to Gray, and the same bargain gave her warlock power. He can see that fragment on her. In front of the squad he calls her "Administrator" unless she shuts him down. Privately he tells her the term is now due, and offers to forgive the remainder if the Codex stays in Dis.
 
 *Looks like: a spindly, horned devil-scholar in a tattered frock coat, with a wild white beard and brows, little round spectacles, a fanged grin, and a long ribbon of a tail, forever juggling a tower of books. Portrait: `shared/assets/npc-archivist-portrait.jpg`.*
@@ -188,7 +188,7 @@ Scaling by party size:
 
 ### Act 2 — Library Guards (lighter than expected)
 Deliberately undertuned — sells the "ally, not warzone" reframe:
-- 2x Barbtail Skirmisher
+- 2x Barbtail Skirmisher (on guard at the library's front door)
 - 2x Ash-Bound Wretch
 
 *No Enforcer present — these are Dis's peacetime library security, not soldiers. Servian and Ryn are present and will fight if it comes to that, but consider having the guards hesitate or ask questions before combat breaks out, reinforcing that they didn't expect an attack. Optional: add a Devil Patrol Leader using the Iron Ward Enforcer stat block for a bit more tension — the fight stays light either way.*
