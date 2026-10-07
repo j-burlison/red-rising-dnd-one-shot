@@ -10,6 +10,7 @@ Every operative — Obsidian and Gray alike — bears two sigils implanted at bi
 - **2nd break (left-hand sigil):** 2d6 psychic damage (Constitution save, DC 14, for half) + disadvantage on the next roll + **1 level of exhaustion**
 - Once the right-hand sigil has broken, that PC's next defiant action automatically breaks the left-hand sigil too — no new order is required to trigger it
 - **After both sigils are broken:** the PC is fully free of the compulsion for the rest of the encounter — further orders have no mechanical effect on them
+- **Disabled sigils:** a Rising agent's sigils may already be dead, cut by a devil's pact or by the Rising (Irina's are). The compulsion has no effect on them, so each direct order becomes a choice: pretend to still be bound, or defy it openly and break cover
 
 The compulsion is passive and always active — it doesn't require an action to resist, it simply triggers the moment defiance occurs. Players should know their oath is watching before Act 3, ideally reinforced narratively in Act 1 (a beat where an Obsidian visibly can't act against an order, or flinches when tempted to). Consider narrating the sigils visibly cracking/burning out on each break for a strong table moment.
 

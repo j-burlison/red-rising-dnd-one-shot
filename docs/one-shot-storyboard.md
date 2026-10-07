@@ -43,7 +43,7 @@
 - **Ryn takes the Codex** once the pedestal's ward is down; she needs it in hand for Act 3
 
 ## Act 3 — The Twist and Extraction
-- **The Logbook demand:** on the way to the shuttle, at the Extraction Plaza, Servian stops and demands the Logbook so he can burn it. Irina is carrying it, and refusing is defiance that breaks her first sigil. Servian can offer Maartog the Slate page, and Slate's name restored before the Sovereign, if he stands with him.
+- **The Logbook demand:** on the way to the shuttle, at the Extraction Plaza, Servian stops and demands the Logbook so he can burn it. Irina is carrying it. Her sigils are disabled (by her pact or by the Rising), so refusing costs her nothing, but defying him openly breaks her cover; she can play bound, fake a sigil breaking, or unmask. Servian can offer Maartog the Slate page, and Slate's name restored before the Sovereign, if he stands with him.
 - **"Break the chains":** Ryn answers with the Rising call sign. Irina recognizes it at once. Smack recognizes his cue, then realizes his closest friend has lied to him for ten years and is calling in his promise.
 - **The Gray troupe leader turns**, reveals the full truth to everyone, sides against the Society, and **throws Smack the Codex**: "Get this to the Rising, whatever happens to me."
 - **The horde pours in:** Dis's devils, drawn by the alarm and the attack, flood the plaza at Ryn's reveal, hostile to the Society and never to Ryn
