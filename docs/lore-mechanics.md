@@ -10,6 +10,7 @@ Every operative — Obsidian and Gray alike — bears two sigils implanted at bi
 - **2nd break (left-hand sigil):** 2d6 psychic damage (Constitution save, DC 14, for half) + disadvantage on the next roll + **1 level of exhaustion**
 - Once the right-hand sigil has broken, that PC's next defiant action automatically breaks the left-hand sigil too — no new order is required to trigger it
 - **After both sigils are broken:** the PC is fully free of the compulsion for the rest of the encounter — further orders have no mechanical effect on them
+- **Disabled sigils:** a Rising agent's sigils may already be dead, cut by a devil's pact or by the Rising (Irina's are). The compulsion has no effect on them, so each direct order becomes a choice: pretend to still be bound, or defy it openly and break cover
 
 The compulsion is passive and always active — it doesn't require an action to resist, it simply triggers the moment defiance occurs. Players should know their oath is watching before Act 3, ideally reinforced narratively in Act 1 (a beat where an Obsidian visibly can't act against an order, or flinches when tempted to). Consider narrating the sigils visibly cracking/burning out on each break for a strong table moment.
 
@@ -19,7 +20,7 @@ The compulsion is passive and always active — it doesn't require an action to 
 *(see storyboard, Act 2)*
 - Infernal-language ledger found near the Chimera Codex, recording every use: Color, date, requesting House, soul-cost paid to devil brokers
 - Entries show low Colors trading their own souls, and both low and high Colors trading the souls of their slaves
-- One entry ties to a Gold House sharing the strike team's Gold's family name — his cousin
+- One entry ties to a Gold House sharing the strike team's Gold's family name — his father, Lucan au Ferrox, whose cross-Color unions produced Servian's half-siblings
 - Discoverable via Investigation/stealth or a social check (Deception/Insight) against a cagey archivist/guard
 
 ---
@@ -103,7 +104,9 @@ Caste layers mechanical traits on top of class, similar to a race/species templa
 - **Reach 10 ft.** instead of 5 ft.
 - **1d6 slashing** instead of 1d8 (the thinner whip-form edge trades power for range) — still treats the target as unarmored as normal
 - **No longer light** — can't be used for a two-weapon fighting off-hand attack while in whip form
-- As an alternative to dealing damage on a hit, the wielder can instead attempt to **disarm or trip** the target at range, using the attack roll in place of the normal contested check
+- A hit deals its damage, and the wielder can also **trip or disarm** the target at range. The target makes a Strength saving throw (DC 8 + the wielder's proficiency bonus + the Strength or Dexterity modifier used for the attack).
+  - **Trip:** on a failure, a Large or smaller target is knocked prone
+  - **Disarm:** on a failure, the target drops one item of the wielder's choice that it's holding
 
 **Pulse Fist (universal)**
 - **3 charges per short rest** (including the planar jump); bonus action, 15-ft. cone, 2d6 force + push (DC 15 Dex)
@@ -131,16 +134,15 @@ Caste layers mechanical traits on top of class, similar to a race/species templa
 
 ---
 
-## Iron Rain / Drop Pod Mechanics
-Two pods launch during the hot/early Iron Rain (Act 1): **Pod 1** carries the Gold + Obsidian PCs; **Pod 2** carries the Gray Troupe Leader + Gray PCs. Both land in the same district of Dis but not adjacent — a short in-fiction gap gives each group a brief solo scene before converging (good spot for early suspicion-seeding with the Grays, or a command moment with the Obsidians and the Gold).
+## Iron Rain / Drop Ship Mechanics
+Both squads ride down together during the hot/early Iron Rain (Act 1): Servian, Ryn, and every PC in a single drop ship flown by a Blue pilot. On the way down they see another drop ship destroyed by a bolt of infernal magic and a Gold's starShell tackled midair by a massive winged devil, then a second winged devil spears the Blue through the cockpit window and the ship crash-lands. In the wreckage afterward is a good spot for Ryn to seed suspicion with the Grays, or for a command moment between Servian and the Obsidians.
 
-**The planar jump is a short rest.** The jump from the Concordia to Dis takes roughly an hour and counts as a short rest — Hit Dice, short-rest features, Stem Injectors (3), and Pulse Fists (3) all refill before landing. The landing hazard below happens after the jump, on arrival.
+**The planar jump is a short rest.** The jump from the Concordia to Dis only takes a few minutes, but time and space warp as the Concordia makes it, so the party gets the benefits of a short rest — Hit Dice, short-rest features, Stem Injectors (3), and Pulse Fists (3) all refill before landing. The crash landing below happens after the jump, on arrival.
 
-- **Landing hazard:** each PC makes a Dexterity save (DC 13) as their pod takes damage during the hot launch
-  - **Failure:** pod lands off-target and rough — 2d6 bludgeoning damage, and the PC lands slightly separated from their pod-mate(s)
-  - **Success:** clean landing, no damage, group stays together
-- **Warlock beat:** as the pods drop into Dis, every warlock's patron speaks up in their head, angry but amused that the Society has come to strike Dis: *"The hubris, to come here and turn upon your ally."*
-- Optional table beat: an NPC pod (non-PC Obsidian/Gray) can fail catastrophically and be lost on landing — reinforces real danger without punishing a PC for a bad roll
+- **Crash landing:** each PC makes a Dexterity save (DC 13) as the drop ship hits the ground
+  - **Failure:** 2d6 bludgeoning damage, and the PC is thrown clear of the wreck, separated from the squad
+  - **Success:** braces in time, no damage, climbs out with the group
+- **Warlock beat:** as the drop ship falls into Dis, every warlock's patron speaks up in their head, angry but amused that the Society has come to strike Dis: *"The hubris, to come here and turn upon your ally."*
 
 ## Leechcraft
 No mechanics needed — narrated/described only (small fiend-crewed strike ships breaching The Concordia via portals in Act 1).

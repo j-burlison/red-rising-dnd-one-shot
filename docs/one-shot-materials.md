@@ -11,7 +11,7 @@ Golds carry House names ("au [House]" — e.g., *Servian au Ferrox*). All other 
 A Peerless Scarred commander, bred and trained since birth for exactly this kind of operation — decisive, controlled, and utterly convinced of the righteousness of the Society's order. Doesn't relish cruelty, which makes him scarier: every order he gives in Act 3, including "kill the Gray," is delivered with total calm, because to him it isn't murder, it's maintenance of the system that keeps the galaxy — and now the planes — from chaos. (Play him with a Cassius au Bellona-style cold composure: precise, unshaken, dangerous specifically because he never seems to struggle.)
 
 - **Personal stake:** knows the true objective from the start — the mission is to retrieve the Chimera Codex and bring the cross-color breeding pipeline fully "in house." He believes the book was meant to be *destroyed*, not exploited; he does not know the true scale of its use. He shares the objective with no one. He means to burn the Logbook to protect his family, and demands it from the party at the Extraction Plaza in Act 3.
-- **The cousin twist:** when the Logbook surfaces his cousin's House, Servian is genuinely **surprised and disgusted** — this is a real crack in his composure, one of the only moments in the one-shot where his control visibly slips. Play this as a rare, brief flash of real emotion before he re-forms his mask and doubles down on the mission (or, if you want more ambiguity, lets it visibly shake his certainty going into Act 3). He finds the loose Slate page (House Ferrox selling Slate's tribe, 40 Obsidian souls, 20 years ago) at the same moment as his cousin's entries, so he learns his House has been doing this for a generation.
+- **The father twist:** when the Logbook names his father, Lucan au Ferrox, and shows his cross-Color unions produced children (Servian's own half-siblings), Servian is genuinely **surprised and disgusted** — this is a real crack in his composure, one of the only moments in the one-shot where his control visibly slips. Play this as a rare, brief flash of real emotion before he re-forms his mask and doubles down on the mission (or, if you want more ambiguity, lets it visibly shake his certainty going into Act 3). He finds the loose Slate page (House Ferrox selling Slate's tribe, 40 Obsidian souls, 20 years ago) at the same moment as his father's entries, so he learns his House has been doing this for a generation.
 - **Roleplay hook:** clipped, formal command language even under pressure; never raises his voice
 - **In Act 3:** draws a razor once the party's loyalty is in question — the "boss reveal" of the fight
 
@@ -26,9 +26,9 @@ Been running this troupe long enough that the Grays trust her instincts without 
 - **Relationships:** Smack "Eldorf" Gray is her right hand of ten years and doesn't know she's Rising. Before the mission she asked him to have her back, and told him that if she says anything about breaking something, that's his cue. She does not know Irina is Rising either.
 
 ### Karnas & Cagney au Ferrox (Act 1 only; flavor, no stat blocks; Servian's brothers)
-Karnas au Ferrox is absolutely massive and a brute; Cagney au Ferrox is skinny, lithe and a trickster. As the Benediction ends they press Servian on how much the mission matters: it has to be him, because no one will suspect him. The Sovereign herself is depending on him, and so is the honor of their family. Both of them know about Lucan's soul trades; Servian doesn't.
+Karnas au Ferrox is absolutely massive and a brute; Cagney au Ferrox is skinny, lithe and a trickster. As the Benediction ends they press Servian on how much the mission matters: it has to be him, because no one will suspect him. The Sovereign herself is depending on him, and so is the honor of their family. Both of them know about their father Lucan's soul trades; Servian doesn't.
 
-### Scrivax Vellumhorn, the Archivist (Act 2, Dis Arcane Library; devil broker)
+### Scrivax Vellumhorn, the Archivist (Act 2, one of the Arcane Libraries of Dis; devil broker)
 Cagey; denies knowing anything about the vault. He brokered "Irina Gray"'s deal: for a fragment of her soul, the Chimera Codex changed her from Copper to Gray, and the same bargain gave her warlock power. He can see that fragment on her. In front of the squad he calls her "Administrator" unless she shuts him down. Privately he tells her the term is now due, and offers to forgive the remainder if the Codex stays in Dis.
 
 *Looks like: a spindly, horned devil-scholar in a tattered frock coat, with a wild white beard and brows, little round spectacles, a fanged grin, and a long ribbon of a tail, forever juggling a tower of books. Portrait: `shared/assets/npc-archivist-portrait.jpg`.*
@@ -69,6 +69,8 @@ Non-combat NPCs encountered near the library or archive — souls or servants (m
 
 **Razor.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 1d8+5 slashing damage. Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count.
 
+**Whip Mode (free toggle).** The razor's reach becomes 10 ft. *Hit:* 1d6+5 slashing, still treating the target as unarmored, and Servian can also trip or disarm the target: **DC 16** Strength saving throw (8 + 3 proficiency + 5 Strength). On a failure, a Large or smaller target is knocked prone (trip), or drops one item of his choice that it's holding (disarm).
+
 **Divine Smite.** When Servian hits with a razor, he can expend a spell slot to deal an extra 2d8 radiant damage (+1d8 per spell slot level above 1st).
 
 **Spell Slots (Paladin 7).** 1st level (4), 2nd level (3). Divine Smite spends these slots.
@@ -104,6 +106,8 @@ Non-combat NPCs encountered near the library or archive — souls or servants (m
 **Pulse Blade (longsword).** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 1d8+4 slashing damage (versatile, 1d10+4 if used two-handed). Ryn's visible, "legal" weapon for most of the encounter — swap to her Razor for the Act 3 reveal.
 
 **Razor (Act 3 Reveal).** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 1d8+4 slashing damage. Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count. *DM note: hold this weapon back until Ryn's betrayal is revealed — she fights with the Pulse Blade up to that point, and drawing the Razor should land as a visible escalation at the table.*
+
+**Whip Mode (free toggle).** The razor's reach becomes 10 ft. *Hit:* 1d6+4 slashing, still treating the target as unarmored, and Ryn can also trip or disarm the target: **DC 15** Strength saving throw (8 + 3 proficiency + 4 Dexterity). On a failure, a Large or smaller target is knocked prone (trip), or drops one item of her choice that it's holding (disarm).
 
 **Pulse Rifle.** *Ranged Weapon Attack:* +8 to hit, range 150/600 ft., one target. *Hit:* 1d8+4 piercing damage.
 
@@ -188,7 +192,7 @@ Scaling by party size:
 
 ### Act 2 — Library Guards (lighter than expected)
 Deliberately undertuned — sells the "ally, not warzone" reframe:
-- 2x Barbtail Skirmisher
+- 2x Barbtail Skirmisher (on guard at the library's front door)
 - 2x Ash-Bound Wretch
 
 *No Enforcer present — these are Dis's peacetime library security, not soldiers. Servian and Ryn are present and will fight if it comes to that, but consider having the guards hesitate or ask questions before combat breaks out, reinforcing that they didn't expect an attack. Optional: add a Devil Patrol Leader using the Iron Ward Enforcer stat block for a bit more tension — the fight stays light either way.*
