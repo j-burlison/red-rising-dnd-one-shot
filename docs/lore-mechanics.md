@@ -104,7 +104,7 @@ Caste layers mechanical traits on top of class, similar to a race/species templa
 - **Reach 10 ft.** instead of 5 ft.
 - **1d6 slashing** instead of 1d8 (the thinner whip-form edge trades power for range) — still treats the target as unarmored as normal
 - **No longer light** — can't be used for a two-weapon fighting off-hand attack while in whip form
-- As an alternative to dealing damage on a hit, the wielder can **trip or disarm** the target at range. The target makes a Strength saving throw (DC 8 + the wielder's proficiency bonus + the Strength or Dexterity modifier used for the attack).
+- A hit deals its damage, and the wielder can also **trip or disarm** the target at range. The target makes a Strength saving throw (DC 8 + the wielder's proficiency bonus + the Strength or Dexterity modifier used for the attack).
   - **Trip:** on a failure, a Large or smaller target is knocked prone
   - **Disarm:** on a failure, the target drops one item of the wielder's choice that it's holding
 

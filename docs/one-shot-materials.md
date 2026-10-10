@@ -69,7 +69,7 @@ Non-combat NPCs encountered near the library or archive — souls or servants (m
 
 **Razor.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 1d8+5 slashing damage. Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count.
 
-**Whip Mode (free toggle).** The razor's reach becomes 10 ft. *Hit:* 1d6+5 slashing, still treating the target as unarmored. Instead of damage, Servian can trip or disarm the target: DC 16 Strength saving throw. On a failure, a Large or smaller target is knocked prone (trip), or drops one item of his choice that it's holding (disarm).
+**Whip Mode (free toggle).** The razor's reach becomes 10 ft. *Hit:* 1d6+5 slashing, still treating the target as unarmored, and Servian can also trip or disarm the target: **DC 16** Strength saving throw (8 + 3 proficiency + 5 Strength). On a failure, a Large or smaller target is knocked prone (trip), or drops one item of his choice that it's holding (disarm).
 
 **Divine Smite.** When Servian hits with a razor, he can expend a spell slot to deal an extra 2d8 radiant damage (+1d8 per spell slot level above 1st).
 
@@ -107,7 +107,7 @@ Non-combat NPCs encountered near the library or archive — souls or servants (m
 
 **Razor (Act 3 Reveal).** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 1d8+4 slashing damage. Against a razor, the target is treated as unarmored: its AC is what it would be without armor (10 + its Dexterity modifier, or its Unarmored Defense if it has that feature), plus any shield and magic bonuses. Worn armor and natural armor don't count. *DM note: hold this weapon back until Ryn's betrayal is revealed — she fights with the Pulse Blade up to that point, and drawing the Razor should land as a visible escalation at the table.*
 
-**Whip Mode (free toggle).** The razor's reach becomes 10 ft. *Hit:* 1d6+4 slashing, still treating the target as unarmored. Instead of damage, Ryn can trip or disarm the target: DC 15 Strength saving throw. On a failure, a Large or smaller target is knocked prone (trip), or drops one item of her choice that it's holding (disarm).
+**Whip Mode (free toggle).** The razor's reach becomes 10 ft. *Hit:* 1d6+4 slashing, still treating the target as unarmored, and Ryn can also trip or disarm the target: **DC 15** Strength saving throw (8 + 3 proficiency + 4 Dexterity). On a failure, a Large or smaller target is knocked prone (trip), or drops one item of her choice that it's holding (disarm).
 
 **Pulse Rifle.** *Ranged Weapon Attack:* +8 to hit, range 150/600 ft., one target. *Hit:* 1d8+4 piercing damage.
 
